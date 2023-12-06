@@ -1,0 +1,10 @@
+driver,field_id,cfg,zone_id,name
+sph_p,22040069,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B133BZ01,sph_p2204006922040069
+sph_p,22040208,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B133BZ01,sph_p2204020822040208
+sph_p,22040207,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B131BZ02,sph_p2204020722040207
+sph_p,22040209,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B135CZ02,sph_p2204020922040209
+sph_p,22040202,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B137AZ01,sph_p2204020222040202
+sph_p,22040203,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B135CZ01,sph_p2204020322040203
+sph_p,22040218,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B133BZ02,sph_p2204021822040218
+sph_p,22040217,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B131BZ01,sph_p2204021722040217
+sph_p,22040201,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B137AZ02,sph_p2204020122040201

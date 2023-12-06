@@ -1,0 +1,215 @@
+#file: noinspection SpellCheckingInspection
+# IP mapping
+# INIT_IP = 192.168.92.10
+# INIT_IP_MQTT = 192.168.35.10
+# DB_IP = 192.168.92.11
+# BROKER_I P =192.168.35.2
+# HC_IP_DB = 192.168.92.15
+# HC_IP_MQTT = 192.168.35.15
+# GATEWAY_IP_DB = 192.168.92.14
+# GATEWAY_IP_MQTT = 192.168.35.14
+# PROCESSOR_IP_DB = 192.168.92.13
+# PROCESSOR_IP_MQTT = 192.168.35.13
+
+version: "3.9"
+
+x-common-variables: &common-variables
+  MYSQL_DATABASE: collectief
+  MYSQL_USER: collectief_user
+  MYSQL_PASSWORD: collectief_user
+
+services:
+  mysql_db:
+    image: mysql
+    restart: always
+    cap_add:
+      - SYS_NICE
+    volumes:
+      - "./../collectief-ui/setup.sql:/docker-entrypoint-initdb.d/setup.sql"
+    ports:
+      - "3307:3307"
+    expose:
+      - 3307
+    environment:
+      <<: *common-variables
+      MYSQL_ROOT_PASSWORD: "OuPfme45oAM#$6m6S8lqy4P!%QffaxlYFlCnmP45zyaloZ5Zw="
+      MYSQL_HOST: localhost
+      MYSQL_TCP_PORT: 3307
+    command: --sql-mode=""
+  nginx:
+    depends_on:
+      - api
+      - client
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./../collectief-ui/nginx
+    ports:
+      - "3050:80"
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: "./../collectief-ui/server"
+    depends_on:
+      - mysql_db
+    restart: always
+    volumes:
+      - /app/node_modules
+      - ./../collectief-ui/server:/app
+    ports:
+      - "3002:3002"
+    environment:
+      <<: *common-variables
+      MYSQL_HOST_IP: mysql_db
+
+  client:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: ./../collectief-ui/client   
+    volumes:
+      - /app/node_modules
+      - ./../collectief-ui/client:/app
+    ports:
+      - "3003:3000"
+
+  mariadb:
+    image: mariadb:10.11.3
+    restart: always
+    container_name: test_db
+    hostname: mariadb
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      BRIG_ID: ${BRIG_ID}
+
+      innodb_force_recovery: 1
+    volumes:
+      - ./db/data:/var/lib/mysql
+    networks:
+      dbnet:
+        ipv4_address: 192.168.92.11
+    ports:
+      - 3306:${DB_PORT}
+      # the reason for the healthcheck is to ensure that the other containers are active when and only when 
+    healthcheck:
+#      test: ["CMD", 'mysqladmin', 'ping', '-h', 'localhost', '-u', 'root', '--password=$MYSQL_ROOT_PASSWORD', '-e']
+      test: ["CMD", "sh", "-c", "mysql -h localhost -u root -p$MYSQL_ROOT_PASSWORD -e 'USE $MYSQL_DATABASE'"]
+      interval: 10s
+      timeout: 30s
+      retries: 10
+      start_period: 5s
+
+  mosquitto:
+#    image: efrecon/mosquitto:2.0.15
+    build: ./mqtt
+    hostname: pi_broker
+    container_name: pi_broker
+    environment:
+      BRIG_ID: ${BRIG_ID}
+      MQTT_PASSWORD: ${MQTT_PASSWORD}
+    networks:
+      brokernet:
+        ipv4_address: 192.168.35.2
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mqtt/config:/mosquitto/config
+      - ./mqtt/log:/mosquitto/data/log
+    healthcheck:
+      test: ["CMD-SHELL", "timeout -t 5 mosquitto_sub -t '$$SYS/#' -C 1 | grep -v Error || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
+
+  db_manager:
+    build: ./db
+    command: python main.py -i
+    hostname: db_manager
+    container_name: db_manager
+    depends_on:
+        mariadb:
+          condition: service_healthy
+        mosquitto:
+          condition: service_started
+    environment:
+      DB_CONNECTOR: "mariadb+mariadbconnector"
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      ROOT_USERNAME: ${ROOT_USERNAME}
+      DB_HOST: 192.168.92.11
+      DB_PORT: ${DB_PORT}
+      BRIG_ID: ${BRIG_ID}
+      MQTT_HOST: 192.168.35.2
+      MQTT_PORT: 1883
+    volumes:
+      # mount volumes, differently from named volumes, can actually detect changes from host
+      - ./data/sphensor_data:/app/data
+      - ./db/models.py:/app/models.py
+      - ./db/migration:/app/migration
+    networks:
+      dbnet:
+        ipv4_address: 192.168.92.10
+      brokernet:
+        ipv4_address: 192.168.35.10
+
+  hub-core:
+    build: ./../hub-core
+    command: python main.py
+    hostname: hubcore
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      mosquitto:
+        condition: service_started
+      db_manager:
+        condition: service_started
+    container_name: hub_core
+    deploy:
+      resources:
+        limits:
+          memory: 8g
+    networks:
+      dbnet:
+        ipv4_address: 192.168.92.15
+      brokernet:
+        ipv4_address: 192.168.35.15
+    volumes:
+      - ./../hub-core/hub_core/config:/hub_core/config
+      - ./../hub-core/hub_core/certs:/hub_core/certs
+      - ./../hub-core/hub_core/driver:/hub_core/driver
+      - ./db/models.py:/hub_core/modules/database/models.py
+
+volumes:
+  alembic:
+
+networks:
+  dbnet: # this is the network for connecting to the database
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.92.0/24"
+  brokernet:
+    ipam: # this is the network for connecting to the mqtt broker
+      driver: default
+      config:
+        - subnet: "192.168.35.0/24"

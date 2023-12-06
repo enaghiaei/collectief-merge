@@ -1,0 +1,2055 @@
+1696484750: mosquitto version 2.0.15 starting
+1696484750: Config loaded from /mosquitto/config/mosquitto.conf.
+1696484750: Opening ipv4 listen socket on port 1883.
+1696484750: Opening ipv6 listen socket on port 1883.
+1696484750: Connecting bridge test (93.41.220.38:1883)
+1696484750: mosquitto version 2.0.15 running
+1696484774: New connection from 192.168.35.15:41187 on port 1883.
+1696484774: New client connected from 192.168.35.15:41187 as auto-30842546-24D3-784F-ACE4-46FF38CCD78D (p2, c1, k60, u'22040349').
+1696485086: New connection from 192.168.35.10:47629 on port 1883.
+1696485086: New client connected from 192.168.35.10:47629 as manager_22040349 (p2, c1, k60, u'22040349').
+1696485086: New connection from 192.168.35.10:34207 on port 1883.
+1696485086: New client connected from 192.168.35.10:34207 as auto-F8956188-3413-83BF-854C-EC4E34C246D0 (p2, c1, k60).
+1696485116: Client auto-F8956188-3413-83BF-854C-EC4E34C246D0 closed its connection.
+1696485116: Client manager_22040349 closed its connection.
+1696496435: Client local.pi_broker.test closed its connection.
+1696496440: Connecting bridge test (93.41.220.38:1883)
+1696498073: Client local.pi_broker.test disconnected: No error information.
+1696498079: Connecting bridge test (93.41.220.38:1883)
+1696504454: Client local.pi_broker.test closed its connection.
+1696504460: Connecting bridge test (93.41.220.38:1883)
+1696508057: Client local.pi_broker.test closed its connection.
+1696508062: Connecting bridge test (93.41.220.38:1883)
+1696518102: Client auto-30842546-24D3-784F-ACE4-46FF38CCD78D closed its connection.
+1696518103: mosquitto version 2.0.15 terminating
+1697123457: mosquitto version 2.0.15 starting
+1697123457: Config loaded from /mosquitto/config/mosquitto.conf.
+1697123457: Opening ipv4 listen socket on port 1883.
+1697123457: Opening ipv6 listen socket on port 1883.
+1697123457: Connecting bridge test (93.41.220.38:1883)
+1697123457: mosquitto version 2.0.15 running
+1697123470: New connection from 192.168.35.10:42837 on port 1883.
+1697123470: New client connected from 192.168.35.10:42837 as manager_22040349 (p2, c1, k60, u'22040349').
+1697123470: New connection from 192.168.35.10:48297 on port 1883.
+1697123470: New client connected from 192.168.35.10:48297 as auto-1EB21C60-0A79-F832-A3D4-39D5ED0C8403 (p2, c1, k60).
+1697123473: New connection from 192.168.35.15:45453 on port 1883.
+1697123473: New client connected from 192.168.35.15:45453 as auto-6257A287-F625-6959-E5A3-50C7BB8D1646 (p2, c1, k60, u'22040349').
+1697123500: Client auto-1EB21C60-0A79-F832-A3D4-39D5ED0C8403 closed its connection.
+1697123500: Client manager_22040349 closed its connection.
+1697132285: Client auto-6257A287-F625-6959-E5A3-50C7BB8D1646 closed its connection.
+1697132286: mosquitto version 2.0.15 terminating
+1698417168: mosquitto version 2.0.15 starting
+1698417168: Config loaded from /mosquitto/config/mosquitto.conf.
+1698417168: Opening ipv4 listen socket on port 1883.
+1698417168: Opening ipv6 listen socket on port 1883.
+1698417168: Connecting bridge test (93.41.220.38:1883)
+1698417168: mosquitto version 2.0.15 running
+1698417174: mosquitto version 2.0.15 terminating
+1698417187: mosquitto version 2.0.15 starting
+1698417187: Config loaded from /mosquitto/config/mosquitto.conf.
+1698417187: Opening ipv4 listen socket on port 1883.
+1698417187: Opening ipv6 listen socket on port 1883.
+1698417187: Connecting bridge test (93.41.220.38:1883)
+1698417187: mosquitto version 2.0.15 running
+1698417199: New connection from 192.168.35.10:49099 on port 1883.
+1698417199: New client connected from 192.168.35.10:49099 as manager_22040349 (p2, c1, k60, u'22040349').
+1698417200: New connection from 192.168.35.10:56759 on port 1883.
+1698417200: New client connected from 192.168.35.10:56759 as auto-3099E898-0FD4-E213-F4AE-74B76713C644 (p2, c1, k60).
+1698417201: New connection from 192.168.35.15:59065 on port 1883.
+1698417201: New client connected from 192.168.35.15:59065 as auto-46EE59AB-E2EB-D56E-F44E-70C9DDA53856 (p2, c1, k60, u'22040349').
+1698417230: Client auto-3099E898-0FD4-E213-F4AE-74B76713C644 closed its connection.
+1698417230: Client manager_22040349 closed its connection.
+1698461019: Client local.pi_broker.test closed its connection.
+1698461024: Connecting bridge test (93.41.220.38:1883)
+1698461025: Client local.pi_broker.test disconnected: Connection refused.
+1698461036: Connecting bridge test (93.41.220.38:1883)
+1698461036: Client local.pi_broker.test disconnected: Connection refused.
+1698461053: Connecting bridge test (93.41.220.38:1883)
+1698461367: Client local.pi_broker.test disconnected: No error information.
+1698479814: Connecting bridge test (93.41.220.38:1883)
+1698502810: Connecting bridge test (93.41.220.38:1883)
+1698506236: Connecting bridge test (93.41.220.38:1883)
+1698513968: Client local.pi_broker.test closed its connection.
+1698513973: Connecting bridge test (93.41.220.38:1883)
+1698513989: Client local.pi_broker.test closed its connection.
+1698513994: Connecting bridge test (93.41.220.38:1883)
+1698513994: Client local.pi_broker.test disconnected: Broken pipe.
+1698514001: Connecting bridge test (93.41.220.38:1883)
+1698514001: Client local.pi_broker.test disconnected: Broken pipe.
+1698514009: Connecting bridge test (93.41.220.38:1883)
+1698514009: Client local.pi_broker.test disconnected: Broken pipe.
+1698514015: Connecting bridge test (93.41.220.38:1883)
+1698514015: Client local.pi_broker.test disconnected: Broken pipe.
+1698514029: Connecting bridge test (93.41.220.38:1883)
+1698514226: Client local.pi_broker.test closed its connection.
+1698514231: Connecting bridge test (93.41.220.38:1883)
+1698514614: Client local.pi_broker.test closed its connection.
+1698514619: Connecting bridge test (93.41.220.38:1883)
+1698514619: Client local.pi_broker.test disconnected: Broken pipe.
+1698514629: Connecting bridge test (93.41.220.38:1883)
+1698514629: Client local.pi_broker.test disconnected: Broken pipe.
+1698514647: Connecting bridge test (93.41.220.38:1883)
+1698514733: Client local.pi_broker.test closed its connection.
+1698514748: Connecting bridge test (93.41.220.38:1883)
+1698518900: Client local.pi_broker.test disconnected: Connection refused.
+1698518905: Connecting bridge test (93.41.220.38:1883)
+1698518905: Client local.pi_broker.test disconnected: Broken pipe.
+1698518919: Connecting bridge test (93.41.220.38:1883)
+1698518919: Client local.pi_broker.test disconnected: Broken pipe.
+1698518950: Connecting bridge test (93.41.220.38:1883)
+1698520159: Client local.pi_broker.test closed its connection.
+1698520165: Connecting bridge test (93.41.220.38:1883)
+1698555036: Client local.pi_broker.test closed its connection.
+1698555041: Connecting bridge test (93.41.220.38:1883)
+1698555042: Client local.pi_broker.test disconnected: Connection refused.
+1698555050: Connecting bridge test (93.41.220.38:1883)
+1698555050: Client local.pi_broker.test disconnected: Broken pipe.
+1698555057: Connecting bridge test (93.41.220.38:1883)
+1698555057: Client local.pi_broker.test disconnected: Broken pipe.
+1698555074: Connecting bridge test (93.41.220.38:1883)
+1698555098: Client local.pi_broker.test closed its connection.
+1698555104: Connecting bridge test (93.41.220.38:1883)
+1698555104: Client local.pi_broker.test disconnected: Connection refused.
+1698555115: Connecting bridge test (93.41.220.38:1883)
+1698555115: Client local.pi_broker.test disconnected: Broken pipe.
+1698555142: Connecting bridge test (93.41.220.38:1883)
+1698571128: Client local.pi_broker.test closed its connection.
+1698571134: Connecting bridge test (93.41.220.38:1883)
+1698571160: Client local.pi_broker.test closed its connection.
+1698571166: Connecting bridge test (93.41.220.38:1883)
+1698571166: Client local.pi_broker.test disconnected: Broken pipe.
+1698571174: Connecting bridge test (93.41.220.38:1883)
+1698571174: Client local.pi_broker.test disconnected: Broken pipe.
+1698571188: Connecting bridge test (93.41.220.38:1883)
+1698574946: Client local.pi_broker.test closed its connection.
+1698574951: Connecting bridge test (93.41.220.38:1883)
+1698575041: Client local.pi_broker.test closed its connection.
+1698575046: Connecting bridge test (93.41.220.38:1883)
+1698575046: Client local.pi_broker.test disconnected: Broken pipe.
+1698575053: Connecting bridge test (93.41.220.38:1883)
+1698575053: Client local.pi_broker.test disconnected: Broken pipe.
+1698575064: Connecting bridge test (93.41.220.38:1883)
+1698575064: Client local.pi_broker.test disconnected: Broken pipe.
+1698575073: Connecting bridge test (93.41.220.38:1883)
+1698575139: Client local.pi_broker.test closed its connection.
+1698575144: Connecting bridge test (93.41.220.38:1883)
+1698575149: Client local.pi_broker.test closed its connection.
+1698575154: Connecting bridge test (93.41.220.38:1883)
+1698576246: Client local.pi_broker.test closed its connection.
+1698576252: Connecting bridge test (93.41.220.38:1883)
+1698576273: Client local.pi_broker.test disconnected: Connection refused.
+1698576281: Connecting bridge test (93.41.220.38:1883)
+1698576283: Client local.pi_broker.test disconnected: Connection refused.
+1698576300: Connecting bridge test (93.41.220.38:1883)
+1698576300: Client local.pi_broker.test disconnected: Broken pipe.
+1698576331: Connecting bridge test (93.41.220.38:1883)
+1698576331: Client local.pi_broker.test disconnected: Broken pipe.
+1698576341: Connecting bridge test (93.41.220.38:1883)
+1698576341: Client local.pi_broker.test disconnected: Broken pipe.
+1698576348: Connecting bridge test (93.41.220.38:1883)
+1698576348: Client local.pi_broker.test disconnected: Broken pipe.
+1698576354: Connecting bridge test (93.41.220.38:1883)
+1698576354: Client local.pi_broker.test disconnected: Broken pipe.
+1698576365: Connecting bridge test (93.41.220.38:1883)
+1698576365: Client local.pi_broker.test disconnected: Broken pipe.
+1698576391: Connecting bridge test (93.41.220.38:1883)
+1698576404: Client local.pi_broker.test disconnected: Connection refused.
+1698576434: Connecting bridge test (93.41.220.38:1883)
+1698576755: Client local.pi_broker.test closed its connection.
+1698576761: Connecting bridge test (93.41.220.38:1883)
+1698576782: Client local.pi_broker.test disconnected: Connection refused.
+1698576791: Connecting bridge test (93.41.220.38:1883)
+1698576812: Client local.pi_broker.test disconnected: Connection refused.
+1698576819: Connecting bridge test (93.41.220.38:1883)
+1698576840: Client local.pi_broker.test disconnected: Connection refused.
+1698576856: Connecting bridge test (93.41.220.38:1883)
+1698576877: Client local.pi_broker.test disconnected: Connection refused.
+1698576890: Connecting bridge test (93.41.220.38:1883)
+1698576911: Client local.pi_broker.test disconnected: Connection refused.
+1698576942: Connecting bridge test (93.41.220.38:1883)
+1698577044: Client local.pi_broker.test closed its connection.
+1698577049: Connecting bridge test (93.41.220.38:1883)
+1698577049: Client local.pi_broker.test disconnected: Broken pipe.
+1698577059: Connecting bridge test (93.41.220.38:1883)
+1698577059: Client local.pi_broker.test disconnected: Broken pipe.
+1698577069: Connecting bridge test (93.41.220.38:1883)
+1698577069: Client local.pi_broker.test disconnected: Broken pipe.
+1698577077: Connecting bridge test (93.41.220.38:1883)
+1698577077: Client local.pi_broker.test disconnected: Broken pipe.
+1698577084: Connecting bridge test (93.41.220.38:1883)
+1698577084: Client local.pi_broker.test disconnected: Broken pipe.
+1698577091: Connecting bridge test (93.41.220.38:1883)
+1698577091: Client local.pi_broker.test disconnected: Broken pipe.
+1698577107: Connecting bridge test (93.41.220.38:1883)
+1698585888: Client local.pi_broker.test closed its connection.
+1698585894: Connecting bridge test (93.41.220.38:1883)
+1698594865: Client auto-46EE59AB-E2EB-D56E-F44E-70C9DDA53856 closed its connection.
+1698594866: mosquitto version 2.0.15 terminating
+1698596432: mosquitto version 2.0.15 starting
+1698596432: Config loaded from /mosquitto/config/mosquitto.conf.
+1698596432: Opening ipv4 listen socket on port 1883.
+1698596432: Opening ipv6 listen socket on port 1883.
+1698596432: Connecting bridge test (93.41.220.38:1883)
+1698596432: mosquitto version 2.0.15 running
+1698596444: New connection from 192.168.35.10:34485 on port 1883.
+1698596444: New client connected from 192.168.35.10:34485 as manager_22040349 (p2, c1, k60, u'22040349').
+1698596444: New connection from 192.168.35.10:53273 on port 1883.
+1698596444: New client connected from 192.168.35.10:53273 as auto-30302532-7535-5BA8-5D5A-8296503C1D98 (p2, c1, k60).
+1698596445: New connection from 192.168.35.15:44943 on port 1883.
+1698596445: New client connected from 192.168.35.15:44943 as auto-12FBF91A-2F3F-B656-88D6-1300E8842FCD (p2, c1, k60, u'22040349').
+1698596474: Client auto-30302532-7535-5BA8-5D5A-8296503C1D98 closed its connection.
+1698596474: Client manager_22040349 closed its connection.
+1698604869: Client local.pi_broker.test closed its connection.
+1698604875: Connecting bridge test (93.41.220.38:1883)
+1698604905: Client local.pi_broker.test closed its connection.
+1698604911: Connecting bridge test (93.41.220.38:1883)
+1698604911: Client local.pi_broker.test disconnected: Broken pipe.
+1698604918: Connecting bridge test (93.41.220.38:1883)
+1698604997: Client local.pi_broker.test closed its connection.
+1698605003: Connecting bridge test (93.41.220.38:1883)
+1698609827: Client auto-12FBF91A-2F3F-B656-88D6-1300E8842FCD closed its connection.
+1698609828: mosquitto version 2.0.15 terminating
+1698653875: mosquitto version 2.0.15 starting
+1698653875: Config loaded from /mosquitto/config/mosquitto.conf.
+1698653875: Opening ipv4 listen socket on port 1883.
+1698653875: Opening ipv6 listen socket on port 1883.
+1698653875: Connecting bridge test (93.41.220.38:1883)
+1698653875: mosquitto version 2.0.15 running
+1698653886: New connection from 192.168.35.10:57061 on port 1883.
+1698653886: New client connected from 192.168.35.10:57061 as manager_22040349 (p2, c1, k60, u'22040349').
+1698653886: New connection from 192.168.35.10:42121 on port 1883.
+1698653886: New client connected from 192.168.35.10:42121 as auto-10E71B24-BD61-0CA8-7036-89C28A00AC59 (p2, c1, k60).
+1698653888: New connection from 192.168.35.15:47843 on port 1883.
+1698653888: New client connected from 192.168.35.15:47843 as auto-19A7726F-BA3D-0E24-8CAB-B0977F76ABB2 (p2, c1, k60, u'22040349').
+1698653916: Client auto-10E71B24-BD61-0CA8-7036-89C28A00AC59 closed its connection.
+1698653916: Client manager_22040349 closed its connection.
+1698654723: Client local.pi_broker.test closed its connection.
+1698654729: Connecting bridge test (93.41.220.38:1883)
+1698655984: Client auto-19A7726F-BA3D-0E24-8CAB-B0977F76ABB2 closed its connection.
+1698655985: mosquitto version 2.0.15 terminating
+1698668824: mosquitto version 2.0.15 starting
+1698668824: Config loaded from /mosquitto/config/mosquitto.conf.
+1698668824: Opening ipv4 listen socket on port 1883.
+1698668824: Opening ipv6 listen socket on port 1883.
+1698668824: Connecting bridge test (93.41.220.38:1883)
+1698668824: mosquitto version 2.0.15 running
+1698668836: New connection from 192.168.35.10:59513 on port 1883.
+1698668836: New client connected from 192.168.35.10:59513 as manager_22040349 (p2, c1, k60, u'22040349').
+1698668836: New connection from 192.168.35.10:43011 on port 1883.
+1698668836: New client connected from 192.168.35.10:43011 as auto-8B51C752-E6C5-15A6-D51C-DC2D0CB15432 (p2, c1, k60).
+1698668837: New connection from 192.168.35.15:44861 on port 1883.
+1698668837: New client connected from 192.168.35.15:44861 as auto-5C0D9EDE-70B9-9286-EB16-EED2BE979359 (p2, c1, k60, u'22040349').
+1698668866: Client auto-8B51C752-E6C5-15A6-D51C-DC2D0CB15432 closed its connection.
+1698668866: Client manager_22040349 closed its connection.
+1698669184: Client local.pi_broker.test closed its connection.
+1698669190: Connecting bridge test (93.41.220.38:1883)
+1698670080: Client auto-5C0D9EDE-70B9-9286-EB16-EED2BE979359 closed its connection.
+1698670080: mosquitto version 2.0.15 terminating
+1698672514: mosquitto version 2.0.15 starting
+1698672514: Config loaded from /mosquitto/config/mosquitto.conf.
+1698672514: Opening ipv4 listen socket on port 1883.
+1698672514: Opening ipv6 listen socket on port 1883.
+1698672514: Connecting bridge test (93.41.220.38:1883)
+1698672514: mosquitto version 2.0.15 running
+1698672526: New connection from 192.168.35.10:46127 on port 1883.
+1698672526: New client connected from 192.168.35.10:46127 as manager_22040349 (p2, c1, k60, u'22040349').
+1698672526: New connection from 192.168.35.10:52311 on port 1883.
+1698672526: New client connected from 192.168.35.10:52311 as auto-50DEB97A-FBFE-2B5E-510C-486912540BC9 (p2, c1, k60).
+1698672556: Client auto-50DEB97A-FBFE-2B5E-510C-486912540BC9 closed its connection.
+1698672556: Client manager_22040349 closed its connection.
+1698672612: mosquitto version 2.0.15 terminating
+1698672627: mosquitto version 2.0.15 starting
+1698672627: Config loaded from /mosquitto/config/mosquitto.conf.
+1698672627: Opening ipv4 listen socket on port 1883.
+1698672627: Opening ipv6 listen socket on port 1883.
+1698672627: Connecting bridge test (93.41.220.38:1883)
+1698672627: mosquitto version 2.0.15 running
+1698672638: New connection from 192.168.35.10:49685 on port 1883.
+1698672638: New client connected from 192.168.35.10:49685 as manager_22040349 (p2, c1, k60, u'22040349').
+1698672639: New connection from 192.168.35.10:43485 on port 1883.
+1698672639: New client connected from 192.168.35.10:43485 as auto-E749619E-9E01-CA5D-0645-D161B4FB9F04 (p2, c1, k60).
+1698672669: Client auto-E749619E-9E01-CA5D-0645-D161B4FB9F04 closed its connection.
+1698672669: Client manager_22040349 closed its connection.
+1698672694: mosquitto version 2.0.15 terminating
+1698672726: mosquitto version 2.0.15 starting
+1698672726: Config loaded from /mosquitto/config/mosquitto.conf.
+1698672726: Opening ipv4 listen socket on port 1883.
+1698672726: Opening ipv6 listen socket on port 1883.
+1698672726: Connecting bridge test (93.41.220.38:1883)
+1698672726: mosquitto version 2.0.15 running
+1698672737: New connection from 192.168.35.10:37771 on port 1883.
+1698672737: New client connected from 192.168.35.10:37771 as manager_22040349 (p2, c1, k60, u'22040349').
+1698672737: New connection from 192.168.35.10:57533 on port 1883.
+1698672737: New client connected from 192.168.35.10:57533 as auto-66BBCA07-F16E-9C44-C4E7-BF167AA08CDC (p2, c1, k60).
+1698672739: New connection from 192.168.35.15:39415 on port 1883.
+1698672739: New client connected from 192.168.35.15:39415 as auto-8F340141-965D-F3A0-F66C-738638712E8E (p2, c1, k60, u'22040349').
+1698672767: Client auto-66BBCA07-F16E-9C44-C4E7-BF167AA08CDC closed its connection.
+1698672767: Client manager_22040349 closed its connection.
+1698674117: Client auto-8F340141-965D-F3A0-F66C-738638712E8E closed its connection.
+1698674117: mosquitto version 2.0.15 terminating
+1698674861: mosquitto version 2.0.15 starting
+1698674861: Config loaded from /mosquitto/config/mosquitto.conf.
+1698674861: Opening ipv4 listen socket on port 1883.
+1698674861: Opening ipv6 listen socket on port 1883.
+1698674861: Connecting bridge test (93.41.220.38:1883)
+1698674861: mosquitto version 2.0.15 running
+1698674872: New connection from 192.168.35.10:38355 on port 1883.
+1698674872: New client connected from 192.168.35.10:38355 as manager_22040349 (p2, c1, k60, u'22040349').
+1698674873: New connection from 192.168.35.10:46707 on port 1883.
+1698674873: New client connected from 192.168.35.10:46707 as auto-AA1F695D-72C6-78E3-B63F-102CFA7ABFCB (p2, c1, k60).
+1698674903: Client auto-AA1F695D-72C6-78E3-B63F-102CFA7ABFCB closed its connection.
+1698674903: Client manager_22040349 closed its connection.
+1698675054: New connection from 192.168.35.15:58481 on port 1883.
+1698675054: New client connected from 192.168.35.15:58481 as auto-71302FBA-A5E8-CDD9-E646-6CDFF81D4A42 (p2, c1, k60, u'22040349').
+1698675623: Client auto-71302FBA-A5E8-CDD9-E646-6CDFF81D4A42 closed its connection.
+1698675624: mosquitto version 2.0.15 terminating
+1698675933: mosquitto version 2.0.15 starting
+1698675933: Config loaded from /mosquitto/config/mosquitto.conf.
+1698675933: Opening ipv4 listen socket on port 1883.
+1698675933: Opening ipv6 listen socket on port 1883.
+1698675933: Connecting bridge test (93.41.220.38:1883)
+1698675933: mosquitto version 2.0.15 running
+1698675944: New connection from 192.168.35.10:53327 on port 1883.
+1698675944: New client connected from 192.168.35.10:53327 as manager_22040349 (p2, c1, k60, u'22040349').
+1698675944: Client manager_22040349 closed its connection.
+1698675946: New connection from 192.168.35.15:34935 on port 1883.
+1698675946: New client connected from 192.168.35.15:34935 as auto-A39E7227-0DBD-DF6C-3DB4-78EC7341386C (p2, c1, k60, u'22040349').
+1698676991: Client local.pi_broker.test closed its connection.
+1698676997: Connecting bridge test (93.41.220.38:1883)
+1698676997: Client local.pi_broker.test disconnected: Broken pipe.
+1698677004: Connecting bridge test (93.41.220.38:1883)
+1698677004: Client local.pi_broker.test disconnected: Broken pipe.
+1698677015: Connecting bridge test (93.41.220.38:1883)
+1698677015: Client local.pi_broker.test disconnected: Broken pipe.
+1698677021: Connecting bridge test (93.41.220.38:1883)
+1698677021: Client local.pi_broker.test disconnected: Broken pipe.
+1698677027: Connecting bridge test (93.41.220.38:1883)
+1698677027: Client local.pi_broker.test disconnected: Broken pipe.
+1698677038: Connecting bridge test (93.41.220.38:1883)
+1698677038: Client local.pi_broker.test disconnected: Broken pipe.
+1698677047: Connecting bridge test (93.41.220.38:1883)
+1698677047: Client local.pi_broker.test disconnected: Broken pipe.
+1698677069: Connecting bridge test (93.41.220.38:1883)
+1698677069: Client local.pi_broker.test disconnected: Broken pipe.
+1698677083: Client auto-A39E7227-0DBD-DF6C-3DB4-78EC7341386C closed its connection.
+1698677084: mosquitto version 2.0.15 terminating
+1698677131: mosquitto version 2.0.15 starting
+1698677131: Config loaded from /mosquitto/config/mosquitto.conf.
+1698677131: Opening ipv4 listen socket on port 1883.
+1698677131: Opening ipv6 listen socket on port 1883.
+1698677131: Connecting bridge test (93.41.220.38:1883)
+1698677131: mosquitto version 2.0.15 running
+1698677131: Client local.pi_broker.test disconnected: Connection refused.
+1698677139: Connecting bridge test (93.41.220.38:1883)
+1698677139: Client local.pi_broker.test disconnected: Broken pipe.
+1698677143: New connection from 192.168.35.10:53891 on port 1883.
+1698677143: New client connected from 192.168.35.10:53891 as manager_22040349 (p2, c1, k60, u'22040349').
+1698677143: New connection from 192.168.35.10:41313 on port 1883.
+1698677143: New client connected from 192.168.35.10:41313 as auto-8A20D97C-329A-6A35-72E8-C436E70A81AA (p2, c1, k60).
+1698677159: Connecting bridge test (93.41.220.38:1883)
+1698677159: Client local.pi_broker.test disconnected: Broken pipe.
+1698677161: Client auto-8A20D97C-329A-6A35-72E8-C436E70A81AA closed its connection.
+1698677161: Client manager_22040349 closed its connection.
+1698677161: mosquitto version 2.0.15 terminating
+1698680022: mosquitto version 2.0.15 starting
+1698680022: Config loaded from /mosquitto/config/mosquitto.conf.
+1698680022: Opening ipv4 listen socket on port 1883.
+1698680022: Opening ipv6 listen socket on port 1883.
+1698680022: Connecting bridge test (93.41.220.38:1883)
+1698680022: mosquitto version 2.0.15 running
+1698680033: New connection from 192.168.35.10:33337 on port 1883.
+1698680033: New client connected from 192.168.35.10:33337 as manager_22040349 (p2, c1, k60, u'22040349').
+1698680033: New connection from 192.168.35.10:46293 on port 1883.
+1698680033: New client connected from 192.168.35.10:46293 as auto-C5D23A9E-A7B9-C890-7B31-3477EF64E5EE (p2, c1, k60).
+1698680063: Client auto-C5D23A9E-A7B9-C890-7B31-3477EF64E5EE closed its connection.
+1698680063: Client manager_22040349 closed its connection.
+1698680641: mosquitto version 2.0.15 terminating
+1698680721: mosquitto version 2.0.15 starting
+1698680721: Config loaded from /mosquitto/config/mosquitto.conf.
+1698680721: Opening ipv4 listen socket on port 1883.
+1698680721: Opening ipv6 listen socket on port 1883.
+1698680721: Connecting bridge test (93.41.220.38:1883)
+1698680721: mosquitto version 2.0.15 running
+1698680733: New connection from 192.168.35.10:41903 on port 1883.
+1698680733: New client connected from 192.168.35.10:41903 as manager_22040349 (p2, c1, k60, u'22040349').
+1698680733: New connection from 192.168.35.10:53039 on port 1883.
+1698680733: New client connected from 192.168.35.10:53039 as auto-FC51A253-FF62-C0F9-A10F-1CBA66D3FC17 (p2, c1, k60).
+1698680763: Client auto-FC51A253-FF62-C0F9-A10F-1CBA66D3FC17 closed its connection.
+1698680763: Client manager_22040349 closed its connection.
+1698680774: Client local.pi_broker.test closed its connection.
+1698680780: Connecting bridge test (93.41.220.38:1883)
+1698680818: mosquitto version 2.0.15 terminating
+1698681142: mosquitto version 2.0.15 starting
+1698681142: Config loaded from /mosquitto/config/mosquitto.conf.
+1698681142: Opening ipv4 listen socket on port 1883.
+1698681142: Opening ipv6 listen socket on port 1883.
+1698681142: Connecting bridge test (93.41.220.38:1883)
+1698681142: mosquitto version 2.0.15 running
+1698681154: New connection from 192.168.35.10:59743 on port 1883.
+1698681154: New client connected from 192.168.35.10:59743 as manager_22040349 (p2, c1, k60, u'22040349').
+1698681154: New connection from 192.168.35.10:51723 on port 1883.
+1698681154: New client connected from 192.168.35.10:51723 as auto-EAE95E70-B0BC-68D4-E605-65F163B06E5F (p2, c1, k60).
+1698681155: New connection from 192.168.35.15:33851 on port 1883.
+1698681155: New client connected from 192.168.35.15:33851 as auto-9A0C2759-678B-7E74-6F33-C05956D2A0A7 (p2, c1, k60, u'22040349').
+1698681184: Client auto-EAE95E70-B0BC-68D4-E605-65F163B06E5F closed its connection.
+1698681184: Client manager_22040349 closed its connection.
+1698690763: Client local.pi_broker.test closed its connection.
+1698690769: Connecting bridge test (93.41.220.38:1883)
+1698694744: Client local.pi_broker.test closed its connection.
+1698694750: Connecting bridge test (93.41.220.38:1883)
+1698694750: Client local.pi_broker.test closed its connection.
+1698694763: Connecting bridge test (93.41.220.38:1883)
+1698694764: Client local.pi_broker.test closed its connection.
+1698694779: Connecting bridge test (93.41.220.38:1883)
+1698694779: Client local.pi_broker.test closed its connection.
+1698694803: Connecting bridge test (93.41.220.38:1883)
+1698694804: Client local.pi_broker.test closed its connection.
+1698694819: Connecting bridge test (93.41.220.38:1883)
+1698694820: Client local.pi_broker.test closed its connection.
+1698694825: Connecting bridge test (93.41.220.38:1883)
+1698694826: Client local.pi_broker.test closed its connection.
+1698694834: Connecting bridge test (93.41.220.38:1883)
+1698694835: Client local.pi_broker.test closed its connection.
+1698694858: Connecting bridge test (93.41.220.38:1883)
+1698694859: Client local.pi_broker.test closed its connection.
+1698694877: Connecting bridge test (93.41.220.38:1883)
+1698694877: Client local.pi_broker.test closed its connection.
+1698694907: Connecting bridge test (93.41.220.38:1883)
+1698694908: Client local.pi_broker.test closed its connection.
+1698694929: Connecting bridge test (93.41.220.38:1883)
+1698694930: Client local.pi_broker.test closed its connection.
+1698694961: Connecting bridge test (93.41.220.38:1883)
+1698694961: Client local.pi_broker.test closed its connection.
+1698694991: Connecting bridge test (93.41.220.38:1883)
+1698694992: Client local.pi_broker.test closed its connection.
+1698695023: Connecting bridge test (93.41.220.38:1883)
+1698695023: Client local.pi_broker.test closed its connection.
+1698695053: Connecting bridge test (93.41.220.38:1883)
+1698695054: Client local.pi_broker.test closed its connection.
+1698695084: Connecting bridge test (93.41.220.38:1883)
+1698695085: Client local.pi_broker.test closed its connection.
+1698695116: Connecting bridge test (93.41.220.38:1883)
+1698695116: Client local.pi_broker.test closed its connection.
+1698695146: Connecting bridge test (93.41.220.38:1883)
+1698695147: Client local.pi_broker.test closed its connection.
+1698695178: Connecting bridge test (93.41.220.38:1883)
+1698695178: Client local.pi_broker.test closed its connection.
+1698695208: Connecting bridge test (93.41.220.38:1883)
+1698695209: Client local.pi_broker.test closed its connection.
+1698695226: Connecting bridge test (93.41.220.38:1883)
+1698695227: Client local.pi_broker.test closed its connection.
+1698695257: Connecting bridge test (93.41.220.38:1883)
+1698695258: Client local.pi_broker.test closed its connection.
+1698695288: Connecting bridge test (93.41.220.38:1883)
+1698695289: Client local.pi_broker.test closed its connection.
+1698695294: Connecting bridge test (93.41.220.38:1883)
+1698695295: Client local.pi_broker.test closed its connection.
+1698695308: Connecting bridge test (93.41.220.38:1883)
+1698695309: Client local.pi_broker.test closed its connection.
+1698695329: Connecting bridge test (93.41.220.38:1883)
+1698695333: Client local.pi_broker.test closed its connection.
+1698695363: Connecting bridge test (93.41.220.38:1883)
+1698695364: Client local.pi_broker.test closed its connection.
+1698695372: Connecting bridge test (93.41.220.38:1883)
+1698695394: Client local.pi_broker.test disconnected: Connection refused.
+1698695401: Connecting bridge test (93.41.220.38:1883)
+1698695401: Client local.pi_broker.test disconnected: Broken pipe.
+1698695407: Connecting bridge test (93.41.220.38:1883)
+1698695407: Client local.pi_broker.test disconnected: Broken pipe.
+1698695413: Connecting bridge test (93.41.220.38:1883)
+1698695414: Client local.pi_broker.test disconnected: Broken pipe.
+1698695427: Connecting bridge test (93.41.220.38:1883)
+1698695427: Client local.pi_broker.test disconnected: Broken pipe.
+1698695457: Connecting bridge test (93.41.220.38:1883)
+1698695457: Client local.pi_broker.test disconnected: Broken pipe.
+1698695489: Connecting bridge test (93.41.220.38:1883)
+1698695489: Client local.pi_broker.test disconnected: Broken pipe.
+1698695520: Connecting bridge test (93.41.220.38:1883)
+1698728216: Client local.pi_broker.test closed its connection.
+1698728222: Connecting bridge test (93.41.220.38:1883)
+1698728222: Client local.pi_broker.test disconnected: Broken pipe.
+1698728228: Connecting bridge test (93.41.220.38:1883)
+1698728253: Client local.pi_broker.test closed its connection.
+1698728269: Connecting bridge test (93.41.220.38:1883)
+1698731340: Client auto-9A0C2759-678B-7E74-6F33-C05956D2A0A7 closed its connection.
+1698731341: mosquitto version 2.0.15 terminating
+1698731614: mosquitto version 2.0.15 starting
+1698731614: Config loaded from /mosquitto/config/mosquitto.conf.
+1698731614: Opening ipv4 listen socket on port 1883.
+1698731614: Opening ipv6 listen socket on port 1883.
+1698731614: Connecting bridge test (93.41.220.38:1883)
+1698731614: mosquitto version 2.0.15 running
+1698731625: New connection from 192.168.35.10:39479 on port 1883.
+1698731625: New client connected from 192.168.35.10:39479 as manager_22040350 (p2, c1, k60, u'22040350').
+1698731625: New connection from 192.168.35.10:37277 on port 1883.
+1698731625: New client connected from 192.168.35.10:37277 as auto-1352ED08-F252-D0ED-B34D-4FE2E8D58FBE (p2, c1, k60).
+1698731626: New connection from 192.168.35.15:49919 on port 1883.
+1698731626: New client connected from 192.168.35.15:49919 as auto-087EADF4-3F97-9921-37DC-2D4F135B03A6 (p2, c1, k60, u'22040350').
+1698731655: Client auto-1352ED08-F252-D0ED-B34D-4FE2E8D58FBE closed its connection.
+1698731655: Client manager_22040350 closed its connection.
+1698732604: Client auto-087EADF4-3F97-9921-37DC-2D4F135B03A6 closed its connection.
+1698732604: mosquitto version 2.0.15 terminating
+1698733449: mosquitto version 2.0.15 starting
+1698733449: Config loaded from /mosquitto/config/mosquitto.conf.
+1698733449: Opening ipv4 listen socket on port 1883.
+1698733449: Opening ipv6 listen socket on port 1883.
+1698733449: Connecting bridge test (93.41.220.38:1883)
+1698733449: mosquitto version 2.0.15 running
+1698733461: New connection from 192.168.35.10:51117 on port 1883.
+1698733461: New client connected from 192.168.35.10:51117 as manager_22040350 (p2, c1, k60, u'22040350').
+1698733461: New connection from 192.168.35.10:43691 on port 1883.
+1698733461: New client connected from 192.168.35.10:43691 as auto-FB7B6F22-2BE7-D211-9F4C-558F52BE58CA (p2, c1, k60).
+1698733463: New connection from 192.168.35.15:54043 on port 1883.
+1698733463: New client connected from 192.168.35.15:54043 as auto-9591BB1E-BA60-A39E-F2C5-C5B15DA31912 (p2, c1, k60, u'22040350').
+1698733492: Client auto-FB7B6F22-2BE7-D211-9F4C-558F52BE58CA closed its connection.
+1698733492: Client manager_22040350 closed its connection.
+1698736746: Client local.pi_broker.test closed its connection.
+1698736751: Connecting bridge test (93.41.220.38:1883)
+1698737983: Client local.pi_broker.test closed its connection.
+1698737989: Connecting bridge test (93.41.220.38:1883)
+1698737997: Client local.pi_broker.test closed its connection.
+1698738007: Connecting bridge test (93.41.220.38:1883)
+1698738014: Client local.pi_broker.test closed its connection.
+1698738038: Connecting bridge test (93.41.220.38:1883)
+1698738046: Client local.pi_broker.test closed its connection.
+1698738057: Connecting bridge test (93.41.220.38:1883)
+1698738078: Client local.pi_broker.test disconnected: Connection refused.
+1698738094: Connecting bridge test (93.41.220.38:1883)
+1698744533: Client local.pi_broker.test closed its connection.
+1698744539: Connecting bridge test (93.41.220.38:1883)
+1698744581: Client local.pi_broker.test closed its connection.
+1698744595: Connecting bridge test (93.41.220.38:1883)
+1698744616: Client local.pi_broker.test disconnected: Connection refused.
+1698744647: Connecting bridge test (93.41.220.38:1883)
+1698744668: Client local.pi_broker.test disconnected: Connection refused.
+1698744678: Connecting bridge test (93.41.220.38:1883)
+1698744699: Client local.pi_broker.test disconnected: Connection refused.
+1698744723: Connecting bridge test (93.41.220.38:1883)
+1698744744: Client local.pi_broker.test disconnected: Connection refused.
+1698744775: Connecting bridge test (93.41.220.38:1883)
+1698744805: Client local.pi_broker.test closed its connection.
+1698744835: Connecting bridge test (93.41.220.38:1883)
+1698744865: Client local.pi_broker.test closed its connection.
+1698744896: Connecting bridge test (93.41.220.38:1883)
+1698744915: Client local.pi_broker.test closed its connection.
+1698744943: Connecting bridge test (93.41.220.38:1883)
+1698744983: Client local.pi_broker.test closed its connection.
+1698745013: Connecting bridge test (93.41.220.38:1883)
+1698745032: Client local.pi_broker.test closed its connection.
+1698745063: Connecting bridge test (93.41.220.38:1883)
+1698745090: Client local.pi_broker.test closed its connection.
+1698745121: Connecting bridge test (93.41.220.38:1883)
+1698745149: Client local.pi_broker.test closed its connection.
+1698745179: Connecting bridge test (93.41.220.38:1883)
+1698745216: Client local.pi_broker.test closed its connection.
+1698745245: Connecting bridge test (93.41.220.38:1883)
+1698745264: Client local.pi_broker.test closed its connection.
+1698745295: Connecting bridge test (93.41.220.38:1883)
+1698745314: Client local.pi_broker.test closed its connection.
+1698745345: Connecting bridge test (93.41.220.38:1883)
+1698745403: Client local.pi_broker.test closed its connection.
+1698745433: Connecting bridge test (93.41.220.38:1883)
+1698750925: Client auto-9591BB1E-BA60-A39E-F2C5-C5B15DA31912 closed its connection.
+1698750926: mosquitto version 2.0.15 terminating
+1698750988: mosquitto version 2.0.15 starting
+1698750988: Config loaded from /mosquitto/config/mosquitto.conf.
+1698750988: Opening ipv4 listen socket on port 1883.
+1698750988: Opening ipv6 listen socket on port 1883.
+1698750988: Connecting bridge test (93.41.220.38:1883)
+1698750988: mosquitto version 2.0.15 running
+1698750999: New connection from 192.168.35.10:39119 on port 1883.
+1698750999: New client connected from 192.168.35.10:39119 as manager_22040350 (p2, c1, k60, u'22040350').
+1698750999: New connection from 192.168.35.10:45129 on port 1883.
+1698750999: New client connected from 192.168.35.10:45129 as auto-760E0876-EC2A-C125-445C-D3AF320131DF (p2, c1, k60).
+1698751029: Client auto-760E0876-EC2A-C125-445C-D3AF320131DF closed its connection.
+1698751029: Client manager_22040350 closed its connection.
+1698756354: mosquitto version 2.0.15 starting
+1698756354: Config loaded from /mosquitto/config/mosquitto.conf.
+1698756354: Opening ipv4 listen socket on port 1883.
+1698756354: Opening ipv6 listen socket on port 1883.
+1698756354: Connecting bridge test (93.41.220.38:1883)
+1698756354: mosquitto version 2.0.15 running
+1698756365: New connection from 192.168.35.10:33349 on port 1883.
+1698756365: New client connected from 192.168.35.10:33349 as manager_22040350 (p2, c1, k60, u'22040350').
+1698756365: New connection from 192.168.35.10:37245 on port 1883.
+1698756365: New client connected from 192.168.35.10:37245 as auto-BD92AB4E-083D-7BD2-9FF0-16B581D8593B (p2, c1, k60).
+1698756367: New connection from 192.168.35.15:38941 on port 1883.
+1698756367: New client connected from 192.168.35.15:38941 as auto-3C0349C8-1210-5F97-DF1C-F96F6D36A615 (p2, c1, k60, u'22040350').
+1698756395: Client auto-BD92AB4E-083D-7BD2-9FF0-16B581D8593B closed its connection.
+1698756395: Client manager_22040350 closed its connection.
+1698778718: Client local.pi_broker.test closed its connection.
+1698778723: Connecting bridge test (93.41.220.38:1883)
+1698787071: Client local.pi_broker.test closed its connection.
+1698787078: Connecting bridge test (93.41.220.38:1883)
+1698787391: Client local.pi_broker.test disconnected: No error information.
+1698814996: Connecting bridge test (93.41.220.38:1883)
+1698817114: Client auto-3C0349C8-1210-5F97-DF1C-F96F6D36A615 closed its connection.
+1698817115: mosquitto version 2.0.15 terminating
+1698817130: mosquitto version 2.0.15 starting
+1698817130: Config loaded from /mosquitto/config/mosquitto.conf.
+1698817130: Opening ipv4 listen socket on port 1883.
+1698817130: Opening ipv6 listen socket on port 1883.
+1698817130: Connecting bridge test (93.41.220.38:1883)
+1698817130: mosquitto version 2.0.15 running
+1698817144: New connection from 192.168.35.10:46709 on port 1883.
+1698817144: New client connected from 192.168.35.10:46709 as manager_22040350 (p2, c1, k60, u'22040350').
+1698817144: New connection from 192.168.35.10:34119 on port 1883.
+1698817144: New client connected from 192.168.35.10:34119 as auto-B8E758A9-8DF7-F672-E554-77D0E821182B (p2, c1, k60).
+1698817146: New connection from 192.168.35.15:58079 on port 1883.
+1698817146: New client connected from 192.168.35.15:58079 as auto-E601ABD8-B215-8038-FF3C-1E7B9B497633 (p2, c1, k60, u'22040350').
+1698817174: Client auto-B8E758A9-8DF7-F672-E554-77D0E821182B closed its connection.
+1698817174: Client manager_22040350 closed its connection.
+1698826327: Client local.pi_broker.test closed its connection.
+1698826332: Connecting bridge test (93.41.220.38:1883)
+1698831739: Client local.pi_broker.test closed its connection.
+1698831745: Connecting bridge test (93.41.220.38:1883)
+1698831745: Client local.pi_broker.test disconnected: Broken pipe.
+1698831757: Connecting bridge test (93.41.220.38:1883)
+1698831759: Client local.pi_broker.test disconnected: Connection refused.
+1698831790: Connecting bridge test (93.41.220.38:1883)
+1698833296: Client auto-E601ABD8-B215-8038-FF3C-1E7B9B497633 closed its connection.
+1698833296: mosquitto version 2.0.15 terminating
+1698847917: mosquitto version 2.0.15 starting
+1698847917: Config loaded from /mosquitto/config/mosquitto.conf.
+1698847917: Opening ipv4 listen socket on port 1883.
+1698847917: Opening ipv6 listen socket on port 1883.
+1698847917: Connecting bridge test (93.41.220.38:1883)
+1698847917: mosquitto version 2.0.15 running
+1698847929: New connection from 192.168.35.10:45337 on port 1883.
+1698847929: New client connected from 192.168.35.10:45337 as manager_22040350 (p2, c1, k60, u'22040350').
+1698847929: New connection from 192.168.35.10:33531 on port 1883.
+1698847929: New client connected from 192.168.35.10:33531 as auto-7F9A25DF-DE77-8197-C922-DB8F01D8DCE5 (p2, c1, k60).
+1698847931: New connection from 192.168.35.15:38143 on port 1883.
+1698847931: New client connected from 192.168.35.15:38143 as auto-A10FB186-5616-A036-DED9-C9E2C87187BF (p2, c1, k60, u'22040350').
+1698847959: Client auto-7F9A25DF-DE77-8197-C922-DB8F01D8DCE5 closed its connection.
+1698847960: Client manager_22040350 closed its connection.
+1698849753: Client auto-A10FB186-5616-A036-DED9-C9E2C87187BF closed its connection.
+1698849754: mosquitto version 2.0.15 terminating
+1698853086: mosquitto version 2.0.15 starting
+1698853086: Config loaded from /mosquitto/config/mosquitto.conf.
+1698853086: Opening ipv4 listen socket on port 1883.
+1698853086: Opening ipv6 listen socket on port 1883.
+1698853086: Connecting bridge test (93.41.220.38:1883)
+1698853086: mosquitto version 2.0.15 running
+1698853092: mosquitto version 2.0.15 terminating
+1698853109: mosquitto version 2.0.15 starting
+1698853109: Config loaded from /mosquitto/config/mosquitto.conf.
+1698853109: Opening ipv4 listen socket on port 1883.
+1698853109: Opening ipv6 listen socket on port 1883.
+1698853109: Connecting bridge test (93.41.220.38:1883)
+1698853109: mosquitto version 2.0.15 running
+1698853121: New connection from 192.168.35.10:32875 on port 1883.
+1698853121: New client connected from 192.168.35.10:32875 as manager_22040350 (p2, c1, k60, u'22040350').
+1698853121: New connection from 192.168.35.10:46869 on port 1883.
+1698853121: New client connected from 192.168.35.10:46869 as auto-C31BABAF-768A-2169-F434-121F36DF8938 (p2, c1, k60).
+1698853122: New connection from 192.168.35.15:47835 on port 1883.
+1698853122: New client connected from 192.168.35.15:47835 as auto-9DC12A98-A8A4-2EE7-1695-81EFF556F339 (p2, c1, k60, u'22040350').
+1698853151: Client auto-C31BABAF-768A-2169-F434-121F36DF8938 closed its connection.
+1698853151: Client manager_22040350 closed its connection.
+1698860658: Client auto-9DC12A98-A8A4-2EE7-1695-81EFF556F339 closed its connection.
+1698860658: mosquitto version 2.0.15 terminating
+1698904985: mosquitto version 2.0.15 starting
+1698904985: Config loaded from /mosquitto/config/mosquitto.conf.
+1698904985: Opening ipv4 listen socket on port 1883.
+1698904985: Opening ipv6 listen socket on port 1883.
+1698904985: Connecting bridge test (93.41.220.38:1883)
+1698904985: mosquitto version 2.0.15 running
+1698904997: New connection from 192.168.35.10:51465 on port 1883.
+1698904997: New client connected from 192.168.35.10:51465 as manager_22040350 (p2, c1, k60, u'22040350').
+1698904997: New connection from 192.168.35.10:51451 on port 1883.
+1698904997: New client connected from 192.168.35.10:51451 as auto-5CBD1ED5-EB0C-E071-11F5-2F9704DBD17A (p2, c1, k60).
+1698904999: New connection from 192.168.35.15:51731 on port 1883.
+1698904999: New client connected from 192.168.35.15:51731 as auto-5C60B769-BE41-656A-5734-9F9136C38F4E (p2, c1, k60, u'22040350').
+1698905027: Client auto-5CBD1ED5-EB0C-E071-11F5-2F9704DBD17A closed its connection.
+1698905027: Client manager_22040350 closed its connection.
+1698907919: Client auto-5C60B769-BE41-656A-5734-9F9136C38F4E closed its connection.
+1698907920: mosquitto version 2.0.15 terminating
+1698990553: mosquitto version 2.0.15 starting
+1698990553: Config loaded from /mosquitto/config/mosquitto.conf.
+1698990553: Opening ipv4 listen socket on port 1883.
+1698990553: Opening ipv6 listen socket on port 1883.
+1698990553: Connecting bridge test (93.41.220.38:1883)
+1698990553: mosquitto version 2.0.15 running
+1698990565: New connection from 192.168.35.10:45817 on port 1883.
+1698990565: New client connected from 192.168.35.10:45817 as manager_22040350 (p2, c1, k60, u'22040350').
+1698990565: New connection from 192.168.35.10:37083 on port 1883.
+1698990565: New client connected from 192.168.35.10:37083 as auto-AB4F972A-D832-2AA3-CEC2-AEDCC2DC0A78 (p2, c1, k60).
+1698990567: New connection from 192.168.35.15:34521 on port 1883.
+1698990567: New client connected from 192.168.35.15:34521 as auto-86B23A12-B10B-EE31-66ED-CE6B0D937205 (p2, c1, k60, u'22040350').
+1698990595: Client auto-AB4F972A-D832-2AA3-CEC2-AEDCC2DC0A78 closed its connection.
+1698990595: Client manager_22040350 closed its connection.
+1699004000: Client local.pi_broker.test closed its connection.
+1699004006: Connecting bridge test (93.41.220.38:1883)
+1699004006: Client local.pi_broker.test disconnected: Connection refused.
+1699004013: Connecting bridge test (93.41.220.38:1883)
+1699004013: Client local.pi_broker.test disconnected: Broken pipe.
+1699004030: Connecting bridge test (93.41.220.38:1883)
+1699035662: Client local.pi_broker.test closed its connection.
+1699035667: Connecting bridge test (93.41.220.38:1883)
+1699035668: Client local.pi_broker.test disconnected: Connection refused.
+1699035681: Connecting bridge test (93.41.220.38:1883)
+1699035682: Client local.pi_broker.test disconnected: Connection refused.
+1699035688: Connecting bridge test (93.41.220.38:1883)
+1699064444: Client local.pi_broker.test closed its connection.
+1699064449: Connecting bridge test (93.41.220.38:1883)
+1699064449: Client local.pi_broker.test disconnected: Broken pipe.
+1699064464: Connecting bridge test (93.41.220.38:1883)
+1699110276: Client local.pi_broker.test closed its connection.
+1699110282: Connecting bridge test (93.41.220.38:1883)
+1699110282: Client local.pi_broker.test disconnected: Connection refused.
+1699110292: Connecting bridge test (93.41.220.38:1883)
+1699110292: Client local.pi_broker.test disconnected: Broken pipe.
+1699110310: Connecting bridge test (93.41.220.38:1883)
+1699115225: Client local.pi_broker.test closed its connection.
+1699129578: Connecting bridge test (93.41.220.38:1883)
+1699129584: Client local.pi_broker.test disconnected: Connection refused.
+1699129592: Connecting bridge test (93.41.220.38:1883)
+1699129812: Client local.pi_broker.test closed its connection.
+1699161421: Connecting bridge test (93.41.220.38:1883)
+1699161421: Client local.pi_broker.test disconnected: Connection refused.
+1699161430: Connecting bridge test (93.41.220.38:1883)
+1699172704: Client auto-86B23A12-B10B-EE31-66ED-CE6B0D937205 closed its connection.
+1699172704: mosquitto version 2.0.15 terminating
+1699172709: mosquitto version 2.0.15 starting
+1699172709: Config loaded from /mosquitto/config/mosquitto.conf.
+1699172709: Opening ipv4 listen socket on port 1883.
+1699172709: Opening ipv6 listen socket on port 1883.
+1699172709: Connecting bridge test (93.41.220.38:1883)
+1699172709: mosquitto version 2.0.15 running
+1699172720: New connection from 192.168.35.10:59451 on port 1883.
+1699172720: New client connected from 192.168.35.10:59451 as manager_22040350 (p2, c1, k60, u'22040350').
+1699172720: New connection from 192.168.35.10:45935 on port 1883.
+1699172720: New client connected from 192.168.35.10:45935 as auto-8F88A90E-3E20-330A-2440-7BE834DC9AFA (p2, c1, k60).
+1699172722: New connection from 192.168.35.15:54547 on port 1883.
+1699172722: New client connected from 192.168.35.15:54547 as auto-A8BA737F-3273-0AD6-27F2-1B7FE42EBCA1 (p2, c1, k60, u'22040350').
+1699172750: Client auto-8F88A90E-3E20-330A-2440-7BE834DC9AFA closed its connection.
+1699172750: Client manager_22040350 closed its connection.
+1699245912: Client local.pi_broker.test closed its connection.
+1699245918: Connecting bridge test (93.41.220.38:1883)
+1699245919: Client local.pi_broker.test disconnected: Connection refused.
+1699245932: Connecting bridge test (93.41.220.38:1883)
+1699279891: Client local.pi_broker.test closed its connection.
+1699279897: Connecting bridge test (93.41.220.38:1883)
+1699279897: Client local.pi_broker.test closed its connection.
+1699279908: Connecting bridge test (93.41.220.38:1883)
+1699279908: Client local.pi_broker.test closed its connection.
+1699279919: Connecting bridge test (93.41.220.38:1883)
+1699279919: Client local.pi_broker.test closed its connection.
+1699279926: Connecting bridge test (93.41.220.38:1883)
+1699279926: Client local.pi_broker.test closed its connection.
+1699279942: Connecting bridge test (93.41.220.38:1883)
+1699279942: Client local.pi_broker.test closed its connection.
+1699279948: Connecting bridge test (93.41.220.38:1883)
+1699279948: Client local.pi_broker.test closed its connection.
+1699279958: Connecting bridge test (93.41.220.38:1883)
+1699279958: Client local.pi_broker.test closed its connection.
+1699279977: Connecting bridge test (93.41.220.38:1883)
+1699279977: Client local.pi_broker.test closed its connection.
+1699279989: Connecting bridge test (93.41.220.38:1883)
+1699279989: Client local.pi_broker.test closed its connection.
+1699280001: Connecting bridge test (93.41.220.38:1883)
+1699280001: Client local.pi_broker.test closed its connection.
+1699280026: Connecting bridge test (93.41.220.38:1883)
+1699280683: Client local.pi_broker.test closed its connection.
+1699280688: Connecting bridge test (93.41.220.38:1883)
+1699280688: Client local.pi_broker.test disconnected: Broken pipe.
+1699280701: Connecting bridge test (93.41.220.38:1883)
+1699280701: Client local.pi_broker.test disconnected: Broken pipe.
+1699280732: Connecting bridge test (93.41.220.38:1883)
+1699281619: Client local.pi_broker.test closed its connection.
+1699281624: Connecting bridge test (93.41.220.38:1883)
+1699281710: Client local.pi_broker.test closed its connection.
+1699281715: Connecting bridge test (93.41.220.38:1883)
+1699281715: Client local.pi_broker.test disconnected: Broken pipe.
+1699281721: Connecting bridge test (93.41.220.38:1883)
+1699281721: Client local.pi_broker.test disconnected: Broken pipe.
+1699281727: Connecting bridge test (93.41.220.38:1883)
+1699281727: Client local.pi_broker.test disconnected: Broken pipe.
+1699281742: Connecting bridge test (93.41.220.38:1883)
+1699281826: Client local.pi_broker.test disconnected: No error information.
+1699281831: Connecting bridge test (93.41.220.38:1883)
+1699281831: Client local.pi_broker.test disconnected: Broken pipe.
+1699281844: Connecting bridge test (93.41.220.38:1883)
+1699281844: Client local.pi_broker.test disconnected: Broken pipe.
+1699281873: Connecting bridge test (93.41.220.38:1883)
+1699281873: Client local.pi_broker.test disconnected: Broken pipe.
+1699281904: Connecting bridge test (93.41.220.38:1883)
+1699281904: Client local.pi_broker.test disconnected: Broken pipe.
+1699281935: Connecting bridge test (93.41.220.38:1883)
+1699282147: Client local.pi_broker.test disconnected: No error information.
+1699282152: Connecting bridge test (93.41.220.38:1883)
+1699290459: Client local.pi_broker.test closed its connection.
+1699290465: Connecting bridge test (93.41.220.38:1883)
+1699300312: Client auto-A8BA737F-3273-0AD6-27F2-1B7FE42EBCA1 closed its connection.
+1699300313: mosquitto version 2.0.15 terminating
+1699329814: mosquitto version 2.0.15 starting
+1699329814: Config loaded from /mosquitto/config/mosquitto.conf.
+1699329814: Opening ipv4 listen socket on port 1883.
+1699329814: Opening ipv6 listen socket on port 1883.
+1699329814: Connecting bridge test (93.41.220.38:1883)
+1699329814: mosquitto version 2.0.15 running
+1699329821: Client local.pi_broker.test closed its connection.
+1699329827: New connection from 192.168.35.10:46741 on port 1883.
+1699329827: New client connected from 192.168.35.10:46741 as manager_22040350 (p2, c1, k60, u'22040350').
+1699329827: New connection from 192.168.35.10:50039 on port 1883.
+1699329827: New client connected from 192.168.35.10:50039 as auto-C577FA3B-948D-F100-DFDB-B9570AE75233 (p2, c1, k60).
+1699329828: Connecting bridge test (93.41.220.38:1883)
+1699329828: New connection from 192.168.35.15:36717 on port 1883.
+1699329828: New client connected from 192.168.35.15:36717 as auto-93502215-5D7F-953C-BBC9-B927A01BE208 (p2, c1, k60, u'22040350').
+1699329836: Client local.pi_broker.test closed its connection.
+1699329849: Connecting bridge test (93.41.220.38:1883)
+1699329856: Client local.pi_broker.test closed its connection.
+1699329857: Client auto-C577FA3B-948D-F100-DFDB-B9570AE75233 closed its connection.
+1699329857: Client manager_22040350 closed its connection.
+1699329884: Connecting bridge test (93.41.220.38:1883)
+1699329892: Client local.pi_broker.test closed its connection.
+1699329900: Connecting bridge test (93.41.220.38:1883)
+1699329907: Client local.pi_broker.test closed its connection.
+1699329918: Connecting bridge test (93.41.220.38:1883)
+1699329925: Client local.pi_broker.test closed its connection.
+1699329948: Connecting bridge test (93.41.220.38:1883)
+1699329955: Client local.pi_broker.test closed its connection.
+1699329986: Connecting bridge test (93.41.220.38:1883)
+1699332273: Client local.pi_broker.test closed its connection.
+1699332279: Connecting bridge test (93.41.220.38:1883)
+1699338815: Client local.pi_broker.test closed its connection.
+1699338821: Connecting bridge test (93.41.220.38:1883)
+1699341149: Client local.pi_broker.test closed its connection.
+1699341154: Connecting bridge test (93.41.220.38:1883)
+1699341175: Client local.pi_broker.test disconnected: Connection refused.
+1699341184: Connecting bridge test (93.41.220.38:1883)
+1699341192: Client local.pi_broker.test closed its connection.
+1699341213: Connecting bridge test (93.41.220.38:1883)
+1699352559: Connecting bridge test (93.41.220.38:1883)
+1699352586: Client local.pi_broker.test closed its connection.
+1699352592: Connecting bridge test (93.41.220.38:1883)
+1699355497: Client local.pi_broker.test closed its connection.
+1699355502: Connecting bridge test (93.41.220.38:1883)
+1699358107: Client local.pi_broker.test closed its connection.
+1699358112: Connecting bridge test (93.41.220.38:1883)
+1699358145: Client local.pi_broker.test closed its connection.
+1699358150: Connecting bridge test (93.41.220.38:1883)
+1699358150: Client local.pi_broker.test disconnected: Broken pipe.
+1699358158: Connecting bridge test (93.41.220.38:1883)
+1699361000: Client local.pi_broker.test closed its connection.
+1699361005: Connecting bridge test (93.41.220.38:1883)
+1699369179: Client local.pi_broker.test closed its connection.
+1699369300: Connecting bridge test (93.41.220.38:1883)
+1699391062: Client local.pi_broker.test closed its connection.
+1699391067: Connecting bridge test (93.41.220.38:1883)
+1699391067: Client local.pi_broker.test disconnected: Connection refused.
+1699391077: Connecting bridge test (93.41.220.38:1883)
+1699391078: Client local.pi_broker.test disconnected: Connection refused.
+1699391106: Connecting bridge test (93.41.220.38:1883)
+1699391239: Client local.pi_broker.test disconnected: Connection refused.
+1699391270: Connecting bridge test (93.41.220.38:1883)
+1699396331: Client local.pi_broker.test closed its connection.
+1699396337: Connecting bridge test (93.41.220.38:1883)
+1699396338: Client local.pi_broker.test disconnected: Connection refused.
+1699396352: Connecting bridge test (93.41.220.38:1883)
+1699426422: Client local.pi_broker.test closed its connection.
+1699426428: Connecting bridge test (93.41.220.38:1883)
+1699426428: Client local.pi_broker.test disconnected: Broken pipe.
+1699426440: Connecting bridge test (93.41.220.38:1883)
+1699426465: Client local.pi_broker.test closed its connection.
+1699426471: Connecting bridge test (93.41.220.38:1883)
+1699426471: Client local.pi_broker.test disconnected: Broken pipe.
+1699426483: Connecting bridge test (93.41.220.38:1883)
+1699461935: Client local.pi_broker.test closed its connection.
+1699461940: Connecting bridge test (93.41.220.38:1883)
+1699515683: Client local.pi_broker.test closed its connection.
+1699515688: Connecting bridge test (93.41.220.38:1883)
+1699515688: Client local.pi_broker.test disconnected: Broken pipe.
+1699515695: Connecting bridge test (93.41.220.38:1883)
+1699515695: Client local.pi_broker.test closed its connection.
+1699515701: Connecting bridge test (93.41.220.38:1883)
+1699518375: Client local.pi_broker.test closed its connection.
+1699518381: Connecting bridge test (93.41.220.38:1883)
+1699518488: Client local.pi_broker.test closed its connection.
+1699518493: Connecting bridge test (93.41.220.38:1883)
+1699518606: Client local.pi_broker.test closed its connection.
+1699518612: Connecting bridge test (93.41.220.38:1883)
+1699530452: Client local.pi_broker.test closed its connection.
+1699530458: Connecting bridge test (93.41.220.38:1883)
+1699530474: Client local.pi_broker.test closed its connection.
+1699530480: Connecting bridge test (93.41.220.38:1883)
+1699530480: Client local.pi_broker.test disconnected: Broken pipe.
+1699530486: Connecting bridge test (93.41.220.38:1883)
+1699533898: Client local.pi_broker.test closed its connection.
+1699533903: Connecting bridge test (93.41.220.38:1883)
+1699533903: Client local.pi_broker.test disconnected: Broken pipe.
+1699533909: Connecting bridge test (93.41.220.38:1883)
+1699533909: Client local.pi_broker.test disconnected: Broken pipe.
+1699533920: Connecting bridge test (93.41.220.38:1883)
+1699533920: Client local.pi_broker.test disconnected: Broken pipe.
+1699533927: Connecting bridge test (93.41.220.38:1883)
+1699533927: Client local.pi_broker.test disconnected: Broken pipe.
+1699533943: Connecting bridge test (93.41.220.38:1883)
+1699533943: Client local.pi_broker.test disconnected: Broken pipe.
+1699533964: Connecting bridge test (93.41.220.38:1883)
+1699533971: Client local.pi_broker.test closed its connection.
+1699533976: Connecting bridge test (93.41.220.38:1883)
+1699538824: Client local.pi_broker.test closed its connection.
+1699538830: Connecting bridge test (93.41.220.38:1883)
+1699538830: Client local.pi_broker.test disconnected: Broken pipe.
+1699538841: Connecting bridge test (93.41.220.38:1883)
+1699544491: Client local.pi_broker.test closed its connection.
+1699544497: Connecting bridge test (93.41.220.38:1883)
+1699554523: Connecting bridge test (93.41.220.38:1883)
+1699556876: Connecting bridge test (93.41.220.38:1883)
+1699561602: Client local.pi_broker.test closed its connection.
+1699561608: Connecting bridge test (93.41.220.38:1883)
+1699561608: Client local.pi_broker.test disconnected: Broken pipe.
+1699561622: Connecting bridge test (93.41.220.38:1883)
+1699561622: Client local.pi_broker.test disconnected: Broken pipe.
+1699561653: Connecting bridge test (93.41.220.38:1883)
+1699561777: Client local.pi_broker.test closed its connection.
+1699561783: Connecting bridge test (93.41.220.38:1883)
+1699561783: Client local.pi_broker.test disconnected: Broken pipe.
+1699561797: Connecting bridge test (93.41.220.38:1883)
+1699561862: Client local.pi_broker.test disconnected: No error information.
+1699561868: Connecting bridge test (93.41.220.38:1883)
+1699561890: Client local.pi_broker.test closed its connection.
+1699561896: Connecting bridge test (93.41.220.38:1883)
+1699562992: Client local.pi_broker.test closed its connection.
+1699593670: Connecting bridge test (93.41.220.38:1883)
+1699593671: Client local.pi_broker.test disconnected: Connection refused.
+1699593680: Connecting bridge test (93.41.220.38:1883)
+1699593690: Client local.pi_broker.test closed its connection.
+1699593695: Connecting bridge test (93.41.220.38:1883)
+1699593695: Client local.pi_broker.test disconnected: Connection refused.
+1699593706: Connecting bridge test (93.41.220.38:1883)
+1699593706: Client local.pi_broker.test disconnected: Broken pipe.
+1699593730: Connecting bridge test (93.41.220.38:1883)
+1699648734: Client local.pi_broker.test closed its connection.
+1699648739: Connecting bridge test (93.41.220.38:1883)
+1699693426: Client local.pi_broker.test closed its connection.
+1699693431: Connecting bridge test (93.41.220.38:1883)
+1699679336: Client local.pi_broker.test closed its connection.
+1699679342: Connecting bridge test (93.41.220.38:1883)
+1699692660: Client local.pi_broker.test closed its connection.
+1699692666: Connecting bridge test (93.41.220.38:1883)
+1699692666: Client local.pi_broker.test disconnected: Broken pipe.
+1699692674: Connecting bridge test (93.41.220.38:1883)
+1699692720: Client local.pi_broker.test closed its connection.
+1699692726: Connecting bridge test (93.41.220.38:1883)
+1699692726: Client local.pi_broker.test disconnected: Broken pipe.
+1699692741: Connecting bridge test (93.41.220.38:1883)
+1699692849: Client local.pi_broker.test closed its connection.
+1699692855: Connecting bridge test (93.41.220.38:1883)
+1699715142: Client local.pi_broker.test closed its connection.
+1699715148: Connecting bridge test (93.41.220.38:1883)
+1699719360: Client local.pi_broker.test closed its connection.
+1699719366: Connecting bridge test (93.41.220.38:1883)
+1699719366: Client local.pi_broker.test disconnected: Broken pipe.
+1699719374: Connecting bridge test (93.41.220.38:1883)
+1699719374: Client local.pi_broker.test disconnected: Broken pipe.
+1699719383: Connecting bridge test (93.41.220.38:1883)
+1699719383: Client local.pi_broker.test disconnected: Broken pipe.
+1699719404: Connecting bridge test (93.41.220.38:1883)
+1699719404: Client local.pi_broker.test disconnected: Broken pipe.
+1699719428: Connecting bridge test (93.41.220.38:1883)
+1699719485: Client local.pi_broker.test disconnected: No error information.
+1699719491: Connecting bridge test (93.41.220.38:1883)
+1699719491: Client local.pi_broker.test disconnected: Broken pipe.
+1699719502: Connecting bridge test (93.41.220.38:1883)
+1699725175: Client local.pi_broker.test closed its connection.
+1699725180: Connecting bridge test (93.41.220.38:1883)
+1699767783: Client local.pi_broker.test closed its connection.
+1699767788: Connecting bridge test (93.41.220.38:1883)
+1699767788: Client local.pi_broker.test disconnected: Broken pipe.
+1699767798: Connecting bridge test (93.41.220.38:1883)
+1699774889: Client local.pi_broker.test closed its connection.
+1699774894: Connecting bridge test (93.41.220.38:1883)
+1699774894: Client local.pi_broker.test disconnected: Broken pipe.
+1699774904: Connecting bridge test (93.41.220.38:1883)
+1699774904: Client local.pi_broker.test disconnected: Broken pipe.
+1699774931: Connecting bridge test (93.41.220.38:1883)
+1699774931: Client local.pi_broker.test disconnected: Broken pipe.
+1699774956: Connecting bridge test (93.41.220.38:1883)
+1699774956: Client local.pi_broker.test disconnected: Broken pipe.
+1699774987: Connecting bridge test (93.41.220.38:1883)
+1699774987: Client local.pi_broker.test disconnected: Broken pipe.
+1699775010: Connecting bridge test (93.41.220.38:1883)
+1699775010: Client local.pi_broker.test disconnected: Broken pipe.
+1699775031: Connecting bridge test (93.41.220.38:1883)
+1699790089: Client local.pi_broker.test closed its connection.
+1699800845: mosquitto version 2.0.15 starting
+1699800845: Config loaded from /mosquitto/config/mosquitto.conf.
+1699800845: Opening ipv4 listen socket on port 1883.
+1699800845: Opening ipv6 listen socket on port 1883.
+1699800845: Connecting bridge test (93.41.220.38:1883)
+1699800845: mosquitto version 2.0.15 running
+1699800847: New connection from 192.168.35.15:49537 on port 1883.
+1699800847: New client connected from 192.168.35.15:49537 as auto-285287E2-0C73-FF00-D0EB-A62B58DFB56D (p2, c1, k60, u'22040350').
+1699800848: New connection from 192.168.35.10:57833 on port 1883.
+1699800848: New client connected from 192.168.35.10:57833 as manager_22040350 (p2, c1, k60, u'22040350').
+1699800849: New connection from 192.168.35.10:40809 on port 1883.
+1699800849: New client connected from 192.168.35.10:40809 as auto-BD398301-CD1E-E850-CA6C-C302DEE76B89 (p2, c1, k60).
+1699800879: Client auto-BD398301-CD1E-E850-CA6C-C302DEE76B89 closed its connection.
+1699800879: Client manager_22040350 closed its connection.
+1699811222: Client local.pi_broker.test closed its connection.
+1699811227: Connecting bridge test (93.41.220.38:1883)
+1699811227: Client local.pi_broker.test disconnected: Broken pipe.
+1699811234: Connecting bridge test (93.41.220.38:1883)
+1699811262: Client local.pi_broker.test closed its connection.
+1699811268: Connecting bridge test (93.41.220.38:1883)
+1699811268: Client local.pi_broker.test disconnected: Broken pipe.
+1699811278: Connecting bridge test (93.41.220.38:1883)
+1699814000: Client local.pi_broker.test closed its connection.
+1699814006: Connecting bridge test (93.41.220.38:1883)
+1699814531: Client local.pi_broker.test closed its connection.
+1699814537: Connecting bridge test (93.41.220.38:1883)
+1699814537: Client local.pi_broker.test disconnected: Broken pipe.
+1699814546: Connecting bridge test (93.41.220.38:1883)
+1699814834: Client local.pi_broker.test closed its connection.
+1699814850: Connecting bridge test (93.41.220.38:1883)
+1699814850: Client local.pi_broker.test disconnected: Connection refused.
+1699815081: Connecting bridge test (93.41.220.38:1883)
+1699815081: Client local.pi_broker.test disconnected: Broken pipe.
+1699815088: Connecting bridge test (93.41.220.38:1883)
+1699815098: Client local.pi_broker.test disconnected: Connection refused.
+1699815103: Connecting bridge test (93.41.220.38:1883)
+1699815229: Connecting bridge test (93.41.220.38:1883)
+1699815355: Connecting bridge test (93.41.220.38:1883)
+1699815465: Client local.pi_broker.test closed its connection.
+1699815482: Connecting bridge test (93.41.220.38:1883)
+1699815482: Client local.pi_broker.test disconnected: Broken pipe.
+1699850931: Connecting bridge test (93.41.220.38:1883)
+1699850931: Client local.pi_broker.test disconnected: Broken pipe.
+1699850939: Connecting bridge test (93.41.220.38:1883)
+1699856303: Client auto-285287E2-0C73-FF00-D0EB-A62B58DFB56D closed its connection.
+1699856304: mosquitto version 2.0.15 terminating
+1699863116: mosquitto version 2.0.15 starting
+1699863116: Config loaded from /mosquitto/config/mosquitto.conf.
+1699863116: Opening ipv4 listen socket on port 1883.
+1699863116: Opening ipv6 listen socket on port 1883.
+1699863116: Connecting bridge test (93.41.220.38:1883)
+1699863116: mosquitto version 2.0.15 running
+1699863127: New connection from 192.168.35.10:60089 on port 1883.
+1699863127: New client connected from 192.168.35.10:60089 as manager_22040350 (p2, c1, k60, u'22040350').
+1699863127: New connection from 192.168.35.10:46729 on port 1883.
+1699863127: New client connected from 192.168.35.10:46729 as auto-767B7C4F-3B22-EBD2-2F54-749F8D3B9FF6 (p2, c1, k60).
+1699863129: New connection from 192.168.35.15:41833 on port 1883.
+1699863129: New client connected from 192.168.35.15:41833 as auto-DE2C7968-EDE0-AD10-78DC-750A063B0DE8 (p2, c1, k60, u'22040350').
+1699863158: Client auto-767B7C4F-3B22-EBD2-2F54-749F8D3B9FF6 closed its connection.
+1699863158: Client manager_22040350 closed its connection.
+1699864193: New connection from 192.168.35.1:51734 on port 1883.
+1699864193: Client <unknown> disconnected due to malformed packet.
+1699864193: New connection from 192.168.35.1:51748 on port 1883.
+1699864193: Client <unknown> disconnected due to malformed packet.
+1699864194: New connection from 192.168.35.1:51754 on port 1883.
+1699864194: New connection from 192.168.35.1:51756 on port 1883.
+1699864194: Client <unknown> disconnected due to malformed packet.
+1699864194: Client <unknown> disconnected due to malformed packet.
+1699864194: New connection from 192.168.35.1:51764 on port 1883.
+1699864194: Client <unknown> disconnected due to malformed packet.
+1699864328: Client local.pi_broker.test closed its connection.
+1699864334: Connecting bridge test (93.41.220.38:1883)
+1699898649: Client local.pi_broker.test closed its connection.
+1699898654: Connecting bridge test (93.41.220.38:1883)
+1699898655: Client local.pi_broker.test disconnected: Connection refused.
+1699898662: Connecting bridge test (93.41.220.38:1883)
+1699898662: Client local.pi_broker.test disconnected: Broken pipe.
+1699898676: Connecting bridge test (93.41.220.38:1883)
+1699898909: Client local.pi_broker.test closed its connection.
+1699898914: Connecting bridge test (93.41.220.38:1883)
+1699898914: Client local.pi_broker.test disconnected: Broken pipe.
+1699898933: Connecting bridge test (93.41.220.38:1883)
+1699898934: Client local.pi_broker.test disconnected: Broken pipe.
+1699939848: Connecting bridge test (93.41.220.38:1883)
+1699939848: Client local.pi_broker.test disconnected: Broken pipe.
+1699939872: Connecting bridge test (93.41.220.38:1883)
+1699951732: Client auto-DE2C7968-EDE0-AD10-78DC-750A063B0DE8 closed its connection.
+1699951733: mosquitto version 2.0.15 terminating
+1699951751: mosquitto version 2.0.15 starting
+1699951751: Config loaded from /mosquitto/config/mosquitto.conf.
+1699951751: Opening ipv4 listen socket on port 1883.
+1699951751: Opening ipv6 listen socket on port 1883.
+1699951751: Connecting bridge test (93.41.220.38:1883)
+1699951751: mosquitto version 2.0.15 running
+1699951763: New connection from 192.168.35.10:35389 on port 1883.
+1699951763: New client connected from 192.168.35.10:35389 as manager_22040350 (p2, c1, k60, u'22040350').
+1699951763: New connection from 192.168.35.10:59553 on port 1883.
+1699951763: New client connected from 192.168.35.10:59553 as auto-72EF450A-2912-1283-EB49-A06533076953 (p2, c1, k60).
+1699951764: New connection from 192.168.35.15:55527 on port 1883.
+1699951764: New client connected from 192.168.35.15:55527 as auto-8FDD52A0-4003-2E6D-B328-59F2DEAD884D (p2, c1, k60, u'22040350').
+1699951793: Client auto-72EF450A-2912-1283-EB49-A06533076953 closed its connection.
+1699951793: Client manager_22040350 closed its connection.
+1699959032: Client local.pi_broker.test closed its connection.
+1699959038: Connecting bridge test (93.41.220.38:1883)
+1699973323: Client local.pi_broker.test closed its connection.
+1699973328: Connecting bridge test (93.41.220.38:1883)
+1699973329: Client local.pi_broker.test disconnected: Broken pipe.
+1699973334: Connecting bridge test (93.41.220.38:1883)
+1699973334: Client local.pi_broker.test disconnected: Broken pipe.
+1699973345: Connecting bridge test (93.41.220.38:1883)
+1699970814: Client auto-8FDD52A0-4003-2E6D-B328-59F2DEAD884D closed its connection.
+1699970815: mosquitto version 2.0.15 terminating
+1699970830: mosquitto version 2.0.15 starting
+1699970830: Config loaded from /mosquitto/config/mosquitto.conf.
+1699970830: Opening ipv4 listen socket on port 1883.
+1699970830: Opening ipv6 listen socket on port 1883.
+1699970830: Connecting bridge test (93.41.220.38:1883)
+1699970830: mosquitto version 2.0.15 running
+1699970844: New connection from 192.168.35.10:50161 on port 1883.
+1699970844: New client connected from 192.168.35.10:50161 as manager_22040350 (p2, c1, k60, u'22040350').
+1699970844: New connection from 192.168.35.10:51913 on port 1883.
+1699970844: New client connected from 192.168.35.10:51913 as auto-C49A39F5-AFEB-C2DE-2D6F-D8E1593EA653 (p2, c1, k60).
+1699970846: New connection from 192.168.35.15:43011 on port 1883.
+1699970846: New client connected from 192.168.35.15:43011 as auto-9686C688-2A82-705E-0047-712650B2BD84 (p2, c1, k60, u'22040350').
+1699970874: Client auto-C49A39F5-AFEB-C2DE-2D6F-D8E1593EA653 closed its connection.
+1699970874: Client manager_22040350 closed its connection.
+1699972317: Client local.pi_broker.test closed its connection.
+1699983039: Connecting bridge test (93.41.220.38:1883)
+1699983039: Client local.pi_broker.test disconnected: Connection refused.
+1699983048: Connecting bridge test (93.41.220.38:1883)
+1699983601: Client local.pi_broker.test closed its connection.
+1699983607: Connecting bridge test (93.41.220.38:1883)
+1699983607: Client local.pi_broker.test disconnected: Broken pipe.
+1699983616: Connecting bridge test (93.41.220.38:1883)
+1699986093: Client local.pi_broker.test closed its connection.
+1699986099: Connecting bridge test (93.41.220.38:1883)
+1699986990: Client local.pi_broker.test closed its connection.
+1699986995: Connecting bridge test (93.41.220.38:1883)
+1699986995: Client local.pi_broker.test disconnected: Broken pipe.
+1699987003: Connecting bridge test (93.41.220.38:1883)
+1699989835: Client local.pi_broker.test closed its connection.
+1699989840: Connecting bridge test (93.41.220.38:1883)
+1699989868: Client local.pi_broker.test closed its connection.
+1699989881: Connecting bridge test (93.41.220.38:1883)
+1699990613: Client local.pi_broker.test closed its connection.
+1700023348: Connecting bridge test (93.41.220.38:1883)
+1700023348: Client local.pi_broker.test disconnected: Broken pipe.
+1700023361: Connecting bridge test (93.41.220.38:1883)
+1700034939: Client local.pi_broker.test closed its connection.
+1700034944: Connecting bridge test (93.41.220.38:1883)
+1700035988: Client local.pi_broker.test closed its connection.
+1700035994: Connecting bridge test (93.41.220.38:1883)
+1700035994: Client local.pi_broker.test disconnected: Broken pipe.
+1700036008: Connecting bridge test (93.41.220.38:1883)
+1700036029: Client local.pi_broker.test disconnected: Connection refused.
+1700036060: Connecting bridge test (93.41.220.38:1883)
+1700036060: Client local.pi_broker.test disconnected: Broken pipe.
+1700036091: Connecting bridge test (93.41.220.38:1883)
+1700036091: Client local.pi_broker.test disconnected: Broken pipe.
+1700036122: Connecting bridge test (93.41.220.38:1883)
+1700036122: Client local.pi_broker.test disconnected: Broken pipe.
+1700036128: Connecting bridge test (93.41.220.38:1883)
+1700036128: Client local.pi_broker.test disconnected: Broken pipe.
+1700036135: Connecting bridge test (93.41.220.38:1883)
+1700036135: Client local.pi_broker.test disconnected: Broken pipe.
+1700036142: Connecting bridge test (93.41.220.38:1883)
+1700036142: Client local.pi_broker.test disconnected: Broken pipe.
+1700036149: Connecting bridge test (93.41.220.38:1883)
+1700036149: Client local.pi_broker.test disconnected: Broken pipe.
+1700036159: Connecting bridge test (93.41.220.38:1883)
+1700036159: Client local.pi_broker.test disconnected: Broken pipe.
+1700036181: Connecting bridge test (93.41.220.38:1883)
+1700036181: Client local.pi_broker.test disconnected: Broken pipe.
+1700036198: Connecting bridge test (93.41.220.38:1883)
+1700036198: Client local.pi_broker.test disconnected: Broken pipe.
+1700036228: Connecting bridge test (93.41.220.38:1883)
+1700036228: Client local.pi_broker.test disconnected: Broken pipe.
+1700036259: Connecting bridge test (93.41.220.38:1883)
+1700036259: Client local.pi_broker.test disconnected: Broken pipe.
+1700036290: Connecting bridge test (93.41.220.38:1883)
+1700036290: Client local.pi_broker.test disconnected: Broken pipe.
+1700036321: Connecting bridge test (93.41.220.38:1883)
+1700036321: Client local.pi_broker.test disconnected: Broken pipe.
+1700036340: Connecting bridge test (93.41.220.38:1883)
+1700036340: Client local.pi_broker.test disconnected: Broken pipe.
+1700036358: Connecting bridge test (93.41.220.38:1883)
+1700036358: Client local.pi_broker.test disconnected: Broken pipe.
+1700036389: Connecting bridge test (93.41.220.38:1883)
+1700036389: Client local.pi_broker.test disconnected: Broken pipe.
+1700036420: Connecting bridge test (93.41.220.38:1883)
+1700036420: Client local.pi_broker.test disconnected: Broken pipe.
+1700036451: Connecting bridge test (93.41.220.38:1883)
+1700036451: Client local.pi_broker.test disconnected: Broken pipe.
+1700036482: Connecting bridge test (93.41.220.38:1883)
+1700036482: Client local.pi_broker.test disconnected: Broken pipe.
+1700036513: Connecting bridge test (93.41.220.38:1883)
+1700036513: Client local.pi_broker.test disconnected: Broken pipe.
+1700036544: Connecting bridge test (93.41.220.38:1883)
+1700036544: Client local.pi_broker.test disconnected: Broken pipe.
+1700036570: Connecting bridge test (93.41.220.38:1883)
+1700036570: Client local.pi_broker.test disconnected: Broken pipe.
+1700036601: Connecting bridge test (93.41.220.38:1883)
+1700036601: Client local.pi_broker.test disconnected: Broken pipe.
+1700036632: Connecting bridge test (93.41.220.38:1883)
+1700036632: Client local.pi_broker.test disconnected: Broken pipe.
+1700036642: Connecting bridge test (93.41.220.38:1883)
+1700036642: Client local.pi_broker.test disconnected: Broken pipe.
+1700036654: Connecting bridge test (93.41.220.38:1883)
+1700036654: Client local.pi_broker.test disconnected: Broken pipe.
+1700036670: Connecting bridge test (93.41.220.38:1883)
+1700036670: Client local.pi_broker.test disconnected: Broken pipe.
+1700036680: Connecting bridge test (93.41.220.38:1883)
+1700036680: Client local.pi_broker.test disconnected: Broken pipe.
+1700036703: Connecting bridge test (93.41.220.38:1883)
+1700036703: Client local.pi_broker.test disconnected: Broken pipe.
+1700036734: Connecting bridge test (93.41.220.38:1883)
+1700036734: Client local.pi_broker.test disconnected: Broken pipe.
+1700036762: Connecting bridge test (93.41.220.38:1883)
+1700036762: Client local.pi_broker.test disconnected: Broken pipe.
+1700036793: Connecting bridge test (93.41.220.38:1883)
+1700036793: Client local.pi_broker.test disconnected: Broken pipe.
+1700036812: Connecting bridge test (93.41.220.38:1883)
+1700036812: Client local.pi_broker.test disconnected: Broken pipe.
+1700036834: Connecting bridge test (93.41.220.38:1883)
+1700036834: Client local.pi_broker.test disconnected: Broken pipe.
+1700036863: Connecting bridge test (93.41.220.38:1883)
+1700036863: Client local.pi_broker.test disconnected: Broken pipe.
+1700036894: Connecting bridge test (93.41.220.38:1883)
+1700036894: Client local.pi_broker.test disconnected: Broken pipe.
+1700036923: Connecting bridge test (93.41.220.38:1883)
+1700036923: Client local.pi_broker.test disconnected: Broken pipe.
+1700036954: Connecting bridge test (93.41.220.38:1883)
+1700036954: Client local.pi_broker.test disconnected: Broken pipe.
+1700036970: Connecting bridge test (93.41.220.38:1883)
+1700036970: Client local.pi_broker.test disconnected: Broken pipe.
+1700037001: Connecting bridge test (93.41.220.38:1883)
+1700037001: Client local.pi_broker.test disconnected: Broken pipe.
+1700037032: Connecting bridge test (93.41.220.38:1883)
+1700037032: Client local.pi_broker.test disconnected: Broken pipe.
+1700037043: Connecting bridge test (93.41.220.38:1883)
+1700037043: Client local.pi_broker.test disconnected: Broken pipe.
+1700037056: Connecting bridge test (93.41.220.38:1883)
+1700037056: Client local.pi_broker.test disconnected: Broken pipe.
+1700037078: Connecting bridge test (93.41.220.38:1883)
+1700037078: Client local.pi_broker.test disconnected: Broken pipe.
+1700037109: Connecting bridge test (93.41.220.38:1883)
+1700037109: Client local.pi_broker.test disconnected: Broken pipe.
+1700037140: Connecting bridge test (93.41.220.38:1883)
+1700037140: Client local.pi_broker.test disconnected: Broken pipe.
+1700037171: Connecting bridge test (93.41.220.38:1883)
+1700037171: Client local.pi_broker.test disconnected: Broken pipe.
+1700037202: Connecting bridge test (93.41.220.38:1883)
+1700037202: Client local.pi_broker.test disconnected: Broken pipe.
+1700037233: Connecting bridge test (93.41.220.38:1883)
+1700037233: Client local.pi_broker.test disconnected: Broken pipe.
+1700037264: Connecting bridge test (93.41.220.38:1883)
+1700037264: Client local.pi_broker.test disconnected: Broken pipe.
+1700037285: Connecting bridge test (93.41.220.38:1883)
+1700037285: Client local.pi_broker.test disconnected: Broken pipe.
+1700037316: Connecting bridge test (93.41.220.38:1883)
+1700037316: Client local.pi_broker.test disconnected: Broken pipe.
+1700037347: Connecting bridge test (93.41.220.38:1883)
+1700037347: Client local.pi_broker.test disconnected: Broken pipe.
+1700037378: Connecting bridge test (93.41.220.38:1883)
+1700037378: Client local.pi_broker.test disconnected: Broken pipe.
+1700037390: Connecting bridge test (93.41.220.38:1883)
+1700037390: Client local.pi_broker.test disconnected: Broken pipe.
+1700037421: Connecting bridge test (93.41.220.38:1883)
+1700037421: Client local.pi_broker.test disconnected: Broken pipe.
+1700037448: Connecting bridge test (93.41.220.38:1883)
+1700037598: Client local.pi_broker.test closed its connection.
+1700037604: Connecting bridge test (93.41.220.38:1883)
+1700037681: Client local.pi_broker.test closed its connection.
+1700037686: Connecting bridge test (93.41.220.38:1883)
+1700042437: Client local.pi_broker.test closed its connection.
+1700042442: Connecting bridge test (93.41.220.38:1883)
+1700046365: Client local.pi_broker.test closed its connection.
+1700046371: Connecting bridge test (93.41.220.38:1883)
+1700046371: Client local.pi_broker.test disconnected: Broken pipe.
+1700046380: Connecting bridge test (93.41.220.38:1883)
+1700054752: Client local.pi_broker.test closed its connection.
+1700054758: Connecting bridge test (93.41.220.38:1883)
+1700059624: Connecting bridge test (93.41.220.38:1883)
+1700059645: Client local.pi_broker.test disconnected: Connection refused.
+1700059654: Connecting bridge test (93.41.220.38:1883)
+1700059753: Client local.pi_broker.test disconnected: No error information.
+1700059759: Connecting bridge test (93.41.220.38:1883)
+1700059780: Client local.pi_broker.test disconnected: Connection refused.
+1700059786: Connecting bridge test (93.41.220.38:1883)
+1700059793: Client local.pi_broker.test closed its connection.
+1700059800: Connecting bridge test (93.41.220.38:1883)
+1700077740: Client local.pi_broker.test disconnected: No error information.
+1700077745: Connecting bridge test (93.41.220.38:1883)
+1700077745: Client local.pi_broker.test disconnected: Broken pipe.
+1700077756: Connecting bridge test (93.41.220.38:1883)
+1700077756: Client local.pi_broker.test disconnected: Broken pipe.
+1700077774: Connecting bridge test (93.41.220.38:1883)
+1700077774: Client local.pi_broker.test disconnected: Broken pipe.
+1700077805: Connecting bridge test (93.41.220.38:1883)
+1700077805: Client local.pi_broker.test disconnected: Broken pipe.
+1700077836: Connecting bridge test (93.41.220.38:1883)
+1700077836: Client local.pi_broker.test disconnected: Broken pipe.
+1700077867: Connecting bridge test (93.41.220.38:1883)
+1700077867: Client local.pi_broker.test disconnected: Broken pipe.
+1700077898: Connecting bridge test (93.41.220.38:1883)
+1700077898: Client local.pi_broker.test disconnected: Broken pipe.
+1700077929: Connecting bridge test (93.41.220.38:1883)
+1700077929: Client local.pi_broker.test disconnected: Broken pipe.
+1700077950: Connecting bridge test (93.41.220.38:1883)
+1700077950: Client local.pi_broker.test disconnected: Broken pipe.
+1700077981: Connecting bridge test (93.41.220.38:1883)
+1700077999: Client local.pi_broker.test closed its connection.
+1700078004: Connecting bridge test (93.41.220.38:1883)
+1700078004: Client local.pi_broker.test disconnected: Broken pipe.
+1700078016: Connecting bridge test (93.41.220.38:1883)
+1700110712: Client local.pi_broker.test disconnected: No error information.
+1700110718: Connecting bridge test (93.41.220.38:1883)
+1700145220: Client local.pi_broker.test closed its connection.
+1700145226: Connecting bridge test (93.41.220.38:1883)
+1700145226: Client local.pi_broker.test disconnected: Connection refused.
+1700145238: Connecting bridge test (93.41.220.38:1883)
+1700145509: Client local.pi_broker.test closed its connection.
+1700145515: Connecting bridge test (93.41.220.38:1883)
+1700145515: Client local.pi_broker.test disconnected: Broken pipe.
+1700145524: Connecting bridge test (93.41.220.38:1883)
+1700145524: Client local.pi_broker.test disconnected: Broken pipe.
+1700145541: Connecting bridge test (93.41.220.38:1883)
+1700160349: Client local.pi_broker.test closed its connection.
+1700160355: Connecting bridge test (93.41.220.38:1883)
+1700160356: Client local.pi_broker.test disconnected: Connection refused.
+1700160367: Connecting bridge test (93.41.220.38:1883)
+1700197504: Client local.pi_broker.test closed its connection.
+1700197509: Connecting bridge test (93.41.220.38:1883)
+1700197509: Client local.pi_broker.test disconnected: Broken pipe.
+1700197517: Connecting bridge test (93.41.220.38:1883)
+1700197517: Client local.pi_broker.test disconnected: Broken pipe.
+1700197528: Connecting bridge test (93.41.220.38:1883)
+1700197528: Client local.pi_broker.test disconnected: Broken pipe.
+1700197553: Connecting bridge test (93.41.220.38:1883)
+1700197553: Client local.pi_broker.test disconnected: Broken pipe.
+1700197584: Connecting bridge test (93.41.220.38:1883)
+1700197584: Client local.pi_broker.test disconnected: Broken pipe.
+1700197615: Connecting bridge test (93.41.220.38:1883)
+1700197615: Client local.pi_broker.test disconnected: Broken pipe.
+1700197646: Connecting bridge test (93.41.220.38:1883)
+1700197646: Client local.pi_broker.test disconnected: Broken pipe.
+1700197677: Connecting bridge test (93.41.220.38:1883)
+1700201720: Client auto-9686C688-2A82-705E-0047-712650B2BD84 closed its connection.
+1700201720: mosquitto version 2.0.15 terminating
+1700201768: mosquitto version 2.0.15 starting
+1700201768: Config loaded from /mosquitto/config/mosquitto.conf.
+1700201768: Opening ipv4 listen socket on port 1883.
+1700201768: Opening ipv6 listen socket on port 1883.
+1700201768: Connecting bridge test (93.41.220.38:1883)
+1700201768: mosquitto version 2.0.15 running
+1700201780: New connection from 192.168.35.10:54173 on port 1883.
+1700201780: Client <unknown> disconnected due to protocol error.
+1700201832: mosquitto version 2.0.15 terminating
+1700202496: mosquitto version 2.0.15 starting
+1700202496: Config loaded from /mosquitto/config/mosquitto.conf.
+1700202496: Opening ipv4 listen socket on port 1883.
+1700202496: Opening ipv6 listen socket on port 1883.
+1700202496: Connecting bridge test (93.41.220.38:1883)
+1700202496: mosquitto version 2.0.15 running
+1700202508: New connection from 192.168.35.10:40245 on port 1883.
+1700202508: Client <unknown> disconnected due to protocol error.
+1700203785: mosquitto version 2.0.15 terminating
+1700203929: mosquitto version 2.0.15 starting
+1700203929: Config loaded from /mosquitto/config/mosquitto.conf.
+1700203929: Opening ipv4 listen socket on port 1883.
+1700203929: Opening ipv6 listen socket on port 1883.
+1700203929: Connecting bridge test (93.41.220.38:1883)
+1700203929: mosquitto version 2.0.15 running
+1700203940: New connection from 192.168.35.10:55729 on port 1883.
+1700203940: New client connected from 192.168.35.10:55729 as manager_22040368 (p2, c1, k60, u'22040368').
+1700203940: New connection from 192.168.35.10:35091 on port 1883.
+1700203940: New client connected from 192.168.35.10:35091 as auto-F6B5BA6B-71FF-4D35-010F-240CA88B2E4D (p2, c1, k60).
+1700203941: New connection from 192.168.35.15:48355 on port 1883.
+1700203941: New client connected from 192.168.35.15:48355 as auto-22DA6035-0CFF-442E-2BAF-E9006702373A (p2, c1, k60, u'22040368').
+1700203970: Client auto-F6B5BA6B-71FF-4D35-010F-240CA88B2E4D closed its connection.
+1700203970: Client manager_22040368 closed its connection.
+1700207748: Client local.pi_broker.test closed its connection.
+1700207753: Connecting bridge test (93.41.220.38:1883)
+1700209655: Client auto-22DA6035-0CFF-442E-2BAF-E9006702373A closed its connection.
+1700209656: mosquitto version 2.0.15 terminating
+1700209797: mosquitto version 2.0.15 starting
+1700209797: Config loaded from /mosquitto/config/mosquitto.conf.
+1700209797: Opening ipv4 listen socket on port 1883.
+1700209797: Opening ipv6 listen socket on port 1883.
+1700209797: Connecting bridge test (93.41.220.38:1883)
+1700209797: mosquitto version 2.0.15 running
+1700209808: New connection from 192.168.35.10:44743 on port 1883.
+1700209808: New client connected from 192.168.35.10:44743 as manager_22040368 (p2, c1, k60, u'22040368').
+1700209808: New connection from 192.168.35.10:44987 on port 1883.
+1700209808: New client connected from 192.168.35.10:44987 as auto-6663426C-F152-9313-608B-580D617F4FE1 (p2, c1, k60).
+1700209809: New connection from 192.168.35.15:35825 on port 1883.
+1700209809: New client connected from 192.168.35.15:35825 as auto-381BFD4A-3ACE-13F7-7243-768FBA760FCE (p2, c1, k60, u'22040368').
+1700209838: Client auto-6663426C-F152-9313-608B-580D617F4FE1 closed its connection.
+1700209838: Client manager_22040368 closed its connection.
+1700209953: Client auto-381BFD4A-3ACE-13F7-7243-768FBA760FCE closed its connection.
+1700209954: mosquitto version 2.0.15 terminating
+1700209966: mosquitto version 2.0.15 starting
+1700209966: Config loaded from /mosquitto/config/mosquitto.conf.
+1700209966: Opening ipv4 listen socket on port 1883.
+1700209966: Opening ipv6 listen socket on port 1883.
+1700209966: Connecting bridge test (93.41.220.38:1883)
+1700209966: mosquitto version 2.0.15 running
+1700209977: New connection from 192.168.35.10:33505 on port 1883.
+1700209977: New client connected from 192.168.35.10:33505 as manager_22040368 (p2, c1, k60, u'22040368').
+1700209977: New connection from 192.168.35.10:33045 on port 1883.
+1700209977: New client connected from 192.168.35.10:33045 as auto-D27FE362-8B68-16FA-1189-C27F0A41593B (p2, c1, k60).
+1700209979: New connection from 192.168.35.15:34409 on port 1883.
+1700209979: New client connected from 192.168.35.15:34409 as auto-B8461CFA-8A5D-4DBE-8EAB-5EBE6C151BA7 (p2, c1, k60, u'22040368').
+1700210007: Client auto-D27FE362-8B68-16FA-1189-C27F0A41593B closed its connection.
+1700210007: Client manager_22040368 closed its connection.
+1700210060: Client local.pi_broker.test disconnected: No error information.
+1700210065: Connecting bridge test (93.41.220.38:1883)
+1700228849: Client local.pi_broker.test closed its connection.
+1700228854: Connecting bridge test (93.41.220.38:1883)
+1700228854: Client local.pi_broker.test disconnected: Broken pipe.
+1700228864: Connecting bridge test (93.41.220.38:1883)
+1700228864: Client local.pi_broker.test disconnected: Broken pipe.
+1700228874: Connecting bridge test (93.41.220.38:1883)
+1700228874: Client local.pi_broker.test disconnected: Broken pipe.
+1700228898: Connecting bridge test (93.41.220.38:1883)
+1700228898: Client local.pi_broker.test disconnected: Broken pipe.
+1700228906: Connecting bridge test (93.41.220.38:1883)
+1700228906: Client local.pi_broker.test disconnected: Broken pipe.
+1700228917: Connecting bridge test (93.41.220.38:1883)
+1700228917: Client local.pi_broker.test disconnected: Broken pipe.
+1700228923: Connecting bridge test (93.41.220.38:1883)
+1700228923: Client local.pi_broker.test disconnected: Broken pipe.
+1700228931: Connecting bridge test (93.41.220.38:1883)
+1700228931: Client local.pi_broker.test disconnected: Broken pipe.
+1700228940: Connecting bridge test (93.41.220.38:1883)
+1700228940: Client local.pi_broker.test disconnected: Broken pipe.
+1700228964: Connecting bridge test (93.41.220.38:1883)
+1700228964: Client local.pi_broker.test disconnected: Broken pipe.
+1700228995: Connecting bridge test (93.41.220.38:1883)
+1700228995: Client local.pi_broker.test disconnected: Broken pipe.
+1700229026: Connecting bridge test (93.41.220.38:1883)
+1700229026: Client local.pi_broker.test disconnected: Broken pipe.
+1700229035: Connecting bridge test (93.41.220.38:1883)
+1700229035: Client local.pi_broker.test disconnected: Broken pipe.
+1700229059: Connecting bridge test (93.41.220.38:1883)
+1700229059: Client local.pi_broker.test disconnected: Broken pipe.
+1700229090: Connecting bridge test (93.41.220.38:1883)
+1700229090: Client local.pi_broker.test disconnected: Broken pipe.
+1700229121: Connecting bridge test (93.41.220.38:1883)
+1700229121: Client local.pi_broker.test disconnected: Broken pipe.
+1700229152: Connecting bridge test (93.41.220.38:1883)
+1700229152: Client local.pi_broker.test disconnected: Broken pipe.
+1700229167: Connecting bridge test (93.41.220.38:1883)
+1700229167: Client local.pi_broker.test disconnected: Broken pipe.
+1700229176: Connecting bridge test (93.41.220.38:1883)
+1700229176: Client local.pi_broker.test disconnected: Broken pipe.
+1700229200: Connecting bridge test (93.41.220.38:1883)
+1700229200: Client local.pi_broker.test disconnected: Broken pipe.
+1700229231: Connecting bridge test (93.41.220.38:1883)
+1700229231: Client local.pi_broker.test disconnected: Broken pipe.
+1700229262: Connecting bridge test (93.41.220.38:1883)
+1700229262: Client local.pi_broker.test disconnected: Broken pipe.
+1700229293: Connecting bridge test (93.41.220.38:1883)
+1700229293: Client local.pi_broker.test disconnected: Broken pipe.
+1700229324: Connecting bridge test (93.41.220.38:1883)
+1700229324: Client local.pi_broker.test disconnected: Broken pipe.
+1700229345: Connecting bridge test (93.41.220.38:1883)
+1700229345: Client local.pi_broker.test disconnected: Broken pipe.
+1700229362: Connecting bridge test (93.41.220.38:1883)
+1700229362: Client local.pi_broker.test disconnected: Broken pipe.
+1700229390: Connecting bridge test (93.41.220.38:1883)
+1700229390: Client local.pi_broker.test disconnected: Broken pipe.
+1700229400: Connecting bridge test (93.41.220.38:1883)
+1700229400: Client local.pi_broker.test disconnected: Broken pipe.
+1700229410: Connecting bridge test (93.41.220.38:1883)
+1700229410: Client local.pi_broker.test disconnected: Broken pipe.
+1700229429: Connecting bridge test (93.41.220.38:1883)
+1700229429: Client local.pi_broker.test disconnected: Broken pipe.
+1700229458: Connecting bridge test (93.41.220.38:1883)
+1700229458: Client local.pi_broker.test disconnected: Broken pipe.
+1700229489: Connecting bridge test (93.41.220.38:1883)
+1700229489: Client local.pi_broker.test disconnected: Broken pipe.
+1700229520: Connecting bridge test (93.41.220.38:1883)
+1700229520: Client local.pi_broker.test disconnected: Broken pipe.
+1700229551: Connecting bridge test (93.41.220.38:1883)
+1700229631: Client local.pi_broker.test closed its connection.
+1700229636: Connecting bridge test (93.41.220.38:1883)
+1700231758: Client local.pi_broker.test closed its connection.
+1700231763: Connecting bridge test (93.41.220.38:1883)
+1700231771: Client local.pi_broker.test closed its connection.
+1700231784: Connecting bridge test (93.41.220.38:1883)
+1700231791: Client local.pi_broker.test closed its connection.
+1700231810: Connecting bridge test (93.41.220.38:1883)
+1700231831: Client local.pi_broker.test disconnected: Connection refused.
+1700231862: Connecting bridge test (93.41.220.38:1883)
+1700234102: Client local.pi_broker.test closed its connection.
+1700234107: Connecting bridge test (93.41.220.38:1883)
+1700234178: Connecting bridge test (93.41.220.38:1883)
+1700234199: Client local.pi_broker.test disconnected: Connection refused.
+1700234229: Connecting bridge test (93.41.220.38:1883)
+1700281834: Client local.pi_broker.test disconnected: No error information.
+1700281839: Connecting bridge test (93.41.220.38:1883)
+1700281840: Client local.pi_broker.test disconnected: Connection refused.
+1700281850: Connecting bridge test (93.41.220.38:1883)
+1700306964: Client local.pi_broker.test closed its connection.
+1700306969: Connecting bridge test (93.41.220.38:1883)
+1700308309: Client local.pi_broker.test closed its connection.
+1700308314: Connecting bridge test (93.41.220.38:1883)
+1700308314: Client local.pi_broker.test disconnected: Broken pipe.
+1700308327: Connecting bridge test (93.41.220.38:1883)
+1700308327: Client local.pi_broker.test disconnected: Broken pipe.
+1700308358: Connecting bridge test (93.41.220.38:1883)
+1700308358: Client local.pi_broker.test disconnected: Broken pipe.
+1700308379: Connecting bridge test (93.41.220.38:1883)
+1700308379: Client local.pi_broker.test disconnected: Broken pipe.
+1700308410: Connecting bridge test (93.41.220.38:1883)
+1700308410: Client local.pi_broker.test disconnected: Broken pipe.
+1700308441: Connecting bridge test (93.41.220.38:1883)
+1700308441: Client local.pi_broker.test disconnected: Broken pipe.
+1700308456: Connecting bridge test (93.41.220.38:1883)
+1700308456: Client local.pi_broker.test disconnected: Broken pipe.
+1700308472: Connecting bridge test (93.41.220.38:1883)
+1700308472: Client local.pi_broker.test disconnected: Broken pipe.
+1700308493: Connecting bridge test (93.41.220.38:1883)
+1700308493: Client local.pi_broker.test disconnected: Broken pipe.
+1700308500: Connecting bridge test (93.41.220.38:1883)
+1700308500: Client local.pi_broker.test disconnected: Broken pipe.
+1700308516: Connecting bridge test (93.41.220.38:1883)
+1700308516: Client local.pi_broker.test disconnected: Broken pipe.
+1700308547: Connecting bridge test (93.41.220.38:1883)
+1700308547: Client local.pi_broker.test disconnected: Broken pipe.
+1700308578: Connecting bridge test (93.41.220.38:1883)
+1700308578: Client local.pi_broker.test disconnected: Broken pipe.
+1700308595: Connecting bridge test (93.41.220.38:1883)
+1700308595: Client local.pi_broker.test disconnected: Broken pipe.
+1700308626: Connecting bridge test (93.41.220.38:1883)
+1700308626: Client local.pi_broker.test disconnected: Broken pipe.
+1700308657: Connecting bridge test (93.41.220.38:1883)
+1700308736: Client local.pi_broker.test closed its connection.
+1700308742: Connecting bridge test (93.41.220.38:1883)
+1700334007: Client local.pi_broker.test closed its connection.
+1700334012: Connecting bridge test (93.41.220.38:1883)
+1700334012: Client local.pi_broker.test disconnected: Broken pipe.
+1700334020: Connecting bridge test (93.41.220.38:1883)
+1700334020: Client local.pi_broker.test disconnected: Broken pipe.
+1700334031: Connecting bridge test (93.41.220.38:1883)
+1700334031: Client local.pi_broker.test disconnected: Broken pipe.
+1700334045: Connecting bridge test (93.41.220.38:1883)
+1700334045: Client local.pi_broker.test disconnected: Broken pipe.
+1700334076: Connecting bridge test (93.41.220.38:1883)
+1700369391: Client local.pi_broker.test closed its connection.
+1700369397: Connecting bridge test (93.41.220.38:1883)
+1700369397: Client local.pi_broker.test disconnected: Broken pipe.
+1700369404: Connecting bridge test (93.41.220.38:1883)
+1700389271: Client local.pi_broker.test closed its connection.
+1700389276: Connecting bridge test (93.41.220.38:1883)
+1700389553: Client local.pi_broker.test closed its connection.
+1700389559: Connecting bridge test (93.41.220.38:1883)
+1700392699: Client local.pi_broker.test closed its connection.
+1700392705: Connecting bridge test (93.41.220.38:1883)
+1700392705: Client local.pi_broker.test disconnected: Broken pipe.
+1700392716: Connecting bridge test (93.41.220.38:1883)
+1700392716: Client local.pi_broker.test disconnected: Broken pipe.
+1700392734: Connecting bridge test (93.41.220.38:1883)
+1700392734: Client local.pi_broker.test disconnected: Broken pipe.
+1700392741: Connecting bridge test (93.41.220.38:1883)
+1700402005: Client local.pi_broker.test closed its connection.
+1700402011: Connecting bridge test (93.41.220.38:1883)
+1700402011: Client local.pi_broker.test disconnected: Broken pipe.
+1700402020: Connecting bridge test (93.41.220.38:1883)
+1700402020: Client local.pi_broker.test disconnected: Broken pipe.
+1700402039: Connecting bridge test (93.41.220.38:1883)
+1700402039: Client local.pi_broker.test disconnected: Broken pipe.
+1700402070: Connecting bridge test (93.41.220.38:1883)
+1700402070: Client local.pi_broker.test disconnected: Broken pipe.
+1700402101: Connecting bridge test (93.41.220.38:1883)
+1700402101: Client local.pi_broker.test disconnected: Broken pipe.
+1700402132: Connecting bridge test (93.41.220.38:1883)
+1700402132: Client local.pi_broker.test disconnected: Broken pipe.
+1700402154: Connecting bridge test (93.41.220.38:1883)
+1700402154: Client local.pi_broker.test disconnected: Broken pipe.
+1700402182: Connecting bridge test (93.41.220.38:1883)
+1700402182: Client local.pi_broker.test disconnected: Broken pipe.
+1700402211: Connecting bridge test (93.41.220.38:1883)
+1700402211: Client local.pi_broker.test disconnected: Broken pipe.
+1700402241: Connecting bridge test (93.41.220.38:1883)
+1700402241: Client local.pi_broker.test disconnected: Broken pipe.
+1700402272: Connecting bridge test (93.41.220.38:1883)
+1700402272: Client local.pi_broker.test disconnected: Broken pipe.
+1700402303: Connecting bridge test (93.41.220.38:1883)
+1700402303: Client local.pi_broker.test disconnected: Broken pipe.
+1700402314: Connecting bridge test (93.41.220.38:1883)
+1700402314: Client local.pi_broker.test disconnected: Broken pipe.
+1700402329: Connecting bridge test (93.41.220.38:1883)
+1700402355: Client local.pi_broker.test closed its connection.
+1700402361: Connecting bridge test (93.41.220.38:1883)
+1700402361: Client local.pi_broker.test disconnected: Broken pipe.
+1700402367: Connecting bridge test (93.41.220.38:1883)
+1700402367: Client local.pi_broker.test disconnected: Broken pipe.
+1700402381: Connecting bridge test (93.41.220.38:1883)
+1700418514: Client local.pi_broker.test disconnected: No error information.
+1700418520: Connecting bridge test (93.41.220.38:1883)
+1700418640: Client local.pi_broker.test closed its connection.
+1700418646: Connecting bridge test (93.41.220.38:1883)
+1700418662: Client local.pi_broker.test closed its connection.
+1700418668: Connecting bridge test (93.41.220.38:1883)
+1700455186: Client local.pi_broker.test closed its connection.
+1700455191: Connecting bridge test (93.41.220.38:1883)
+1700455191: Client local.pi_broker.test disconnected: Broken pipe.
+1700455204: Connecting bridge test (93.41.220.38:1883)
+1700455709: Client local.pi_broker.test closed its connection.
+1700455715: Connecting bridge test (93.41.220.38:1883)
+1700465996: Client local.pi_broker.test closed its connection.
+1700466002: Connecting bridge test (93.41.220.38:1883)
+1700466010: Client local.pi_broker.test closed its connection.
+1700466022: Connecting bridge test (93.41.220.38:1883)
+1700466043: Client local.pi_broker.test disconnected: Connection refused.
+1700466067: Connecting bridge test (93.41.220.38:1883)
+1700466074: Client local.pi_broker.test closed its connection.
+1700466105: Connecting bridge test (93.41.220.38:1883)
+1700466112: Client local.pi_broker.test closed its connection.
+1700466133: Connecting bridge test (93.41.220.38:1883)
+1700466140: Client local.pi_broker.test closed its connection.
+1700466171: Connecting bridge test (93.41.220.38:1883)
+1700466178: Client local.pi_broker.test closed its connection.
+1700466209: Connecting bridge test (93.41.220.38:1883)
+1700466230: Client local.pi_broker.test disconnected: Connection refused.
+1700466252: Connecting bridge test (93.41.220.38:1883)
+1700466259: Client local.pi_broker.test closed its connection.
+1700466290: Connecting bridge test (93.41.220.38:1883)
+1700466297: Client local.pi_broker.test closed its connection.
+1700466320: Connecting bridge test (93.41.220.38:1883)
+1700466341: Client local.pi_broker.test disconnected: Connection refused.
+1700466372: Connecting bridge test (93.41.220.38:1883)
+1700466393: Client local.pi_broker.test disconnected: Connection refused.
+1700466418: Connecting bridge test (93.41.220.38:1883)
+1700466439: Client local.pi_broker.test disconnected: Connection refused.
+1700466458: Connecting bridge test (93.41.220.38:1883)
+1700468397: Client local.pi_broker.test closed its connection.
+1700468403: Connecting bridge test (93.41.220.38:1883)
+1700468403: Client local.pi_broker.test disconnected: Broken pipe.
+1700468418: Connecting bridge test (93.41.220.38:1883)
+1700468418: Client local.pi_broker.test disconnected: Broken pipe.
+1700468428: Connecting bridge test (93.41.220.38:1883)
+1700468428: Client local.pi_broker.test disconnected: Broken pipe.
+1700468449: Connecting bridge test (93.41.220.38:1883)
+1700468449: Client local.pi_broker.test disconnected: Broken pipe.
+1700468480: Connecting bridge test (93.41.220.38:1883)
+1700468480: Client local.pi_broker.test disconnected: Broken pipe.
+1700468511: Connecting bridge test (93.41.220.38:1883)
+1700468511: Client local.pi_broker.test disconnected: Broken pipe.
+1700468542: Connecting bridge test (93.41.220.38:1883)
+1700468542: Client local.pi_broker.test disconnected: Broken pipe.
+1700468573: Connecting bridge test (93.41.220.38:1883)
+1700468573: Client local.pi_broker.test disconnected: Broken pipe.
+1700468604: Connecting bridge test (93.41.220.38:1883)
+1700468604: Client local.pi_broker.test disconnected: Broken pipe.
+1700468635: Connecting bridge test (93.41.220.38:1883)
+1700468635: Client local.pi_broker.test disconnected: Broken pipe.
+1700468649: Connecting bridge test (93.41.220.38:1883)
+1700468649: Client local.pi_broker.test disconnected: Broken pipe.
+1700468676: Connecting bridge test (93.41.220.38:1883)
+1700468676: Client local.pi_broker.test disconnected: Broken pipe.
+1700468707: Connecting bridge test (93.41.220.38:1883)
+1700468707: Client local.pi_broker.test disconnected: Broken pipe.
+1700468738: Connecting bridge test (93.41.220.38:1883)
+1700468759: Client local.pi_broker.test disconnected: Connection refused.
+1700468790: Connecting bridge test (93.41.220.38:1883)
+1700483104: Client auto-B8461CFA-8A5D-4DBE-8EAB-5EBE6C151BA7 closed its connection.
+1700483105: mosquitto version 2.0.15 terminating
+1700483109: mosquitto version 2.0.15 starting
+1700483109: Config loaded from /mosquitto/config/mosquitto.conf.
+1700483109: Opening ipv4 listen socket on port 1883.
+1700483109: Opening ipv6 listen socket on port 1883.
+1700483109: Connecting bridge test (93.41.220.38:1883)
+1700483109: mosquitto version 2.0.15 running
+1700483121: New connection from 192.168.35.10:53185 on port 1883.
+1700483121: New client connected from 192.168.35.10:53185 as manager_22040368 (p2, c1, k60, u'22040368').
+1700483121: New connection from 192.168.35.10:58059 on port 1883.
+1700483121: New client connected from 192.168.35.10:58059 as auto-CC162653-477A-FCD3-B0B2-E96A0E5A74AE (p2, c1, k60).
+1700483122: New connection from 192.168.35.15:51039 on port 1883.
+1700483122: New client connected from 192.168.35.15:51039 as auto-3BEFD2A7-329F-7C44-21DB-B7CB684DC561 (p2, c1, k60, u'22040368').
+1700483151: Client auto-CC162653-477A-FCD3-B0B2-E96A0E5A74AE closed its connection.
+1700483151: Client manager_22040368 closed its connection.
+1700506201: Client local.pi_broker.test closed its connection.
+1700506206: Connecting bridge test (93.41.220.38:1883)
+1700542108: Client local.pi_broker.test closed its connection.
+1700542114: Connecting bridge test (93.41.220.38:1883)
+1700542114: Client local.pi_broker.test disconnected: Broken pipe.
+1700542120: Connecting bridge test (93.41.220.38:1883)
+1700542120: Client local.pi_broker.test disconnected: Broken pipe.
+1700542133: Connecting bridge test (93.41.220.38:1883)
+1700584148: Client local.pi_broker.test closed its connection.
+1700584154: Connecting bridge test (93.41.220.38:1883)
+1700584155: Client local.pi_broker.test disconnected: Connection refused.
+1700584170: Connecting bridge test (93.41.220.38:1883)
+1700599211: Client local.pi_broker.test closed its connection.
+1700599218: Connecting bridge test (93.41.220.38:1883)
+1700599218: Client local.pi_broker.test disconnected: Broken pipe.
+1700599230: Connecting bridge test (93.41.220.38:1883)
+1700599252: Client local.pi_broker.test disconnected: Connection refused.
+1700599268: Connecting bridge test (93.41.220.38:1883)
+1700599712: Client local.pi_broker.test closed its connection.
+1700599718: Connecting bridge test (93.41.220.38:1883)
+1700599718: Client local.pi_broker.test disconnected: Broken pipe.
+1700599728: Connecting bridge test (93.41.220.38:1883)
+1700599728: Client local.pi_broker.test disconnected: Broken pipe.
+1700599745: Connecting bridge test (93.41.220.38:1883)
+1700599745: Client local.pi_broker.test disconnected: Broken pipe.
+1700599769: Connecting bridge test (93.41.220.38:1883)
+1700599769: Client local.pi_broker.test disconnected: Broken pipe.
+1700628379: Connecting bridge test (93.41.220.38:1883)
+1700628412: Client local.pi_broker.test closed its connection.
+1700628417: Connecting bridge test (93.41.220.38:1883)
+1700628417: Client local.pi_broker.test disconnected: Broken pipe.
+1700628431: Connecting bridge test (93.41.220.38:1883)
+1700633072: Client local.pi_broker.test closed its connection.
+1700633077: Connecting bridge test (93.41.220.38:1883)
+1700633077: Client local.pi_broker.test disconnected: Broken pipe.
+1700633089: Connecting bridge test (93.41.220.38:1883)
+1700633089: Client local.pi_broker.test disconnected: Broken pipe.
+1700633114: Connecting bridge test (93.41.220.38:1883)
+1700633114: Client local.pi_broker.test disconnected: Broken pipe.
+1700633142: Connecting bridge test (93.41.220.38:1883)
+1700633142: Client local.pi_broker.test disconnected: Broken pipe.
+1700633173: Connecting bridge test (93.41.220.38:1883)
+1700633173: Client local.pi_broker.test disconnected: Broken pipe.
+1700633198: Connecting bridge test (93.41.220.38:1883)
+1700633198: Client local.pi_broker.test disconnected: Broken pipe.
+1700633208: Connecting bridge test (93.41.220.38:1883)
+1700633208: Client local.pi_broker.test disconnected: Broken pipe.
+1700633223: Connecting bridge test (93.41.220.38:1883)
+1700633223: Client local.pi_broker.test disconnected: Broken pipe.
+1700633245: Connecting bridge test (93.41.220.38:1883)
+1700633245: Client local.pi_broker.test disconnected: Broken pipe.
+1700633276: Connecting bridge test (93.41.220.38:1883)
+1700633276: Client local.pi_broker.test disconnected: Broken pipe.
+1700633307: Connecting bridge test (93.41.220.38:1883)
+1700633307: Client local.pi_broker.test disconnected: Broken pipe.
+1700633318: Connecting bridge test (93.41.220.38:1883)
+1700633318: Client local.pi_broker.test disconnected: Broken pipe.
+1700633346: Connecting bridge test (93.41.220.38:1883)
+1700633346: Client local.pi_broker.test disconnected: Broken pipe.
+1700633377: Connecting bridge test (93.41.220.38:1883)
+1700633377: Client local.pi_broker.test disconnected: Broken pipe.
+1700633408: Connecting bridge test (93.41.220.38:1883)
+1700633408: Client local.pi_broker.test disconnected: Broken pipe.
+1700633425: Connecting bridge test (93.41.220.38:1883)
+1700633425: Client local.pi_broker.test disconnected: Broken pipe.
+1700633453: Connecting bridge test (93.41.220.38:1883)
+1700633453: Client local.pi_broker.test disconnected: Broken pipe.
+1700633482: Connecting bridge test (93.41.220.38:1883)
+1700633482: Client local.pi_broker.test disconnected: Broken pipe.
+1700633513: Connecting bridge test (93.41.220.38:1883)
+1700633513: Client local.pi_broker.test disconnected: Broken pipe.
+1700633544: Connecting bridge test (93.41.220.38:1883)
+1700667149: Client local.pi_broker.test closed its connection.
+1700667154: Connecting bridge test (93.41.220.38:1883)
+1700667155: Client local.pi_broker.test disconnected: Connection refused.
+1700667163: Connecting bridge test (93.41.220.38:1883)
+1700667164: Client local.pi_broker.test disconnected: Connection refused.
+1700667185: Connecting bridge test (93.41.220.38:1883)
+1700667203: Client local.pi_broker.test closed its connection.
+1700667208: Connecting bridge test (93.41.220.38:1883)
+1700667208: Client local.pi_broker.test disconnected: Broken pipe.
+1700667218: Connecting bridge test (93.41.220.38:1883)
+1700667219: Client local.pi_broker.test disconnected: Connection refused.
+1700667230: Connecting bridge test (93.41.220.38:1883)
+1700679920: Client local.pi_broker.test closed its connection.
+1700679926: Connecting bridge test (93.41.220.38:1883)
+1700715568: Client local.pi_broker.test closed its connection.
+1700715573: Connecting bridge test (93.41.220.38:1883)
+1700715573: Client local.pi_broker.test disconnected: Broken pipe.
+1700715590: Connecting bridge test (93.41.220.38:1883)
+1700715591: Client local.pi_broker.test disconnected: Connection refused.
+1700715681: Connecting bridge test (93.41.220.38:1883)
+1700715681: Client local.pi_broker.test disconnected: Broken pipe.
+1700715710: Connecting bridge test (93.41.220.38:1883)
+1700715710: Client local.pi_broker.test disconnected: Broken pipe.
+1700715728: Connecting bridge test (93.41.220.38:1883)
+1700715728: Client local.pi_broker.test disconnected: Broken pipe.
+1700715755: Connecting bridge test (93.41.220.38:1883)
+1700725956: Client local.pi_broker.test closed its connection.
+1700725962: Connecting bridge test (93.41.220.38:1883)
+1700727768: Connecting bridge test (93.41.220.38:1883)
+1700729569: Client auto-3BEFD2A7-329F-7C44-21DB-B7CB684DC561 closed its connection.
+1700729570: mosquitto version 2.0.15 terminating
+1700816922: mosquitto version 2.0.15 starting
+1700816922: Config loaded from /mosquitto/config/mosquitto.conf.
+1700816922: Opening ipv4 listen socket on port 1883.
+1700816922: Opening ipv6 listen socket on port 1883.
+1700816922: Connecting bridge test (93.41.220.38:1883)
+1700816922: mosquitto version 2.0.15 running
+1700816933: New connection from 192.168.35.10:57611 on port 1883.
+1700816933: New client connected from 192.168.35.10:57611 as manager_22040368 (p2, c1, k60, u'22040368').
+1700816934: New connection from 192.168.35.10:48797 on port 1883.
+1700816934: New client connected from 192.168.35.10:48797 as auto-8302DC0A-C9EB-7061-3214-C6CC92D348EF (p2, c1, k60).
+1700816935: New connection from 192.168.35.15:60605 on port 1883.
+1700816935: New client connected from 192.168.35.15:60605 as auto-CA669D6C-224D-0051-99C8-5E322666317D (p2, c1, k60, u'22040368').
+1700816964: Client auto-8302DC0A-C9EB-7061-3214-C6CC92D348EF closed its connection.
+1700816964: Client manager_22040368 closed its connection.
+1700817381: Client auto-CA669D6C-224D-0051-99C8-5E322666317D closed its connection.
+1700817382: mosquitto version 2.0.15 terminating
+1700819273: mosquitto version 2.0.15 starting
+1700819273: Config loaded from /mosquitto/config/mosquitto.conf.
+1700819273: Opening ipv4 listen socket on port 1883.
+1700819273: Opening ipv6 listen socket on port 1883.
+1700819273: Connecting bridge test (93.41.220.38:1883)
+1700819273: mosquitto version 2.0.15 running
+1700819297: New connection from 192.168.35.10:56213 on port 1883.
+1700819297: New client connected from 192.168.35.10:56213 as manager_22040368 (p2, c1, k60, u'22040368').
+1700819298: New connection from 192.168.35.10:34985 on port 1883.
+1700819298: New client connected from 192.168.35.10:34985 as auto-BB03300F-D209-B0D9-DE94-40E2971548B2 (p2, c1, k60).
+1700819302: New connection from 192.168.35.15:37413 on port 1883.
+1700819302: New client connected from 192.168.35.15:37413 as auto-68187F9C-DE7D-3844-53E2-DC76C434932A (p2, c1, k60, u'22040368').
+1700819328: Client auto-BB03300F-D209-B0D9-DE94-40E2971548B2 closed its connection.
+1700819328: Client manager_22040368 closed its connection.
+1700822399: Connecting bridge test (93.41.220.38:1883)
+1700822906: Connecting bridge test (93.41.220.38:1883)
+1700822927: Client local.pi_broker.test disconnected: Connection refused.
+1700822936: Connecting bridge test (93.41.220.38:1883)
+1700824775: Client local.pi_broker.test closed its connection.
+1700824780: Connecting bridge test (93.41.220.38:1883)
+1700837121: Client local.pi_broker.test closed its connection.
+1700837127: Connecting bridge test (93.41.220.38:1883)
+1700891584: mosquitto version 2.0.15 starting
+1700891584: Config loaded from /mosquitto/config/mosquitto.conf.
+1700891584: Opening ipv4 listen socket on port 1883.
+1700891584: Opening ipv6 listen socket on port 1883.
+1700891584: Connecting bridge test (93.41.220.38:1883)
+1700891584: mosquitto version 2.0.15 running
+1700891585: New connection from 192.168.35.15:43335 on port 1883.
+1700891585: New client connected from 192.168.35.15:43335 as auto-8A68BAEA-3C6C-EF58-0162-9B3EC4C9A393 (p2, c1, k60, u'22040368').
+1700891615: Client auto-8A68BAEA-3C6C-EF58-0162-9B3EC4C9A393 closed its connection.
+1700891616: mosquitto version 2.0.15 terminating
+1700891634: mosquitto version 2.0.15 starting
+1700891634: Config loaded from /mosquitto/config/mosquitto.conf.
+1700891634: Opening ipv4 listen socket on port 1883.
+1700891634: Opening ipv6 listen socket on port 1883.
+1700891634: Connecting bridge test (93.41.220.38:1883)
+1700891634: mosquitto version 2.0.15 running
+1700891645: New connection from 192.168.35.10:56943 on port 1883.
+1700891645: New client connected from 192.168.35.10:56943 as manager_22040368 (p2, c1, k60, u'22040368').
+1700891645: New connection from 192.168.35.10:53265 on port 1883.
+1700891645: New client connected from 192.168.35.10:53265 as auto-0DF7D0B1-4A44-5FD7-9E6D-5D10FCC7D14F (p2, c1, k60).
+1700891647: New connection from 192.168.35.15:36191 on port 1883.
+1700891647: New client connected from 192.168.35.15:36191 as auto-B90A1DB5-5959-605B-F40D-26090676FD4D (p2, c1, k60, u'22040368').
+1700891675: Client auto-0DF7D0B1-4A44-5FD7-9E6D-5D10FCC7D14F closed its connection.
+1700891675: Client manager_22040368 closed its connection.
+1700920491: Client auto-B90A1DB5-5959-605B-F40D-26090676FD4D closed its connection.
+1700920492: mosquitto version 2.0.15 terminating
+1700920511: mosquitto version 2.0.15 starting
+1700920511: Config loaded from /mosquitto/config/mosquitto.conf.
+1700920511: Opening ipv4 listen socket on port 1883.
+1700920511: Opening ipv6 listen socket on port 1883.
+1700920511: Connecting bridge test (93.41.220.38:1883)
+1700920511: mosquitto version 2.0.15 running
+1700920523: New connection from 192.168.35.10:46367 on port 1883.
+1700920523: New client connected from 192.168.35.10:46367 as manager_22040368 (p2, c1, k60, u'22040368').
+1700920523: New connection from 192.168.35.10:49243 on port 1883.
+1700920523: New client connected from 192.168.35.10:49243 as auto-E90C6D96-09F9-2CBB-B809-4044A32A0DD4 (p2, c1, k60).
+1700920524: New connection from 192.168.35.15:59977 on port 1883.
+1700920524: New client connected from 192.168.35.15:59977 as auto-DE8D4305-3344-C136-A40C-8160C841860A (p2, c1, k60, u'22040368').
+1700920553: Client auto-E90C6D96-09F9-2CBB-B809-4044A32A0DD4 closed its connection.
+1700920553: Client manager_22040368 closed its connection.
+1700921233: Client local.pi_broker.test closed its connection.
+1700921239: Connecting bridge test (93.41.220.38:1883)
+1700977374: Client local.pi_broker.test disconnected: No error information.
+1700977379: Connecting bridge test (93.41.220.38:1883)
+1700977379: Client local.pi_broker.test disconnected: Broken pipe.
+1700977386: Connecting bridge test (93.41.220.38:1883)
+1701016151: Client auto-DE8D4305-3344-C136-A40C-8160C841860A closed its connection.
+1701016152: mosquitto version 2.0.15 terminating
+1701017955: mosquitto version 2.0.15 starting
+1701017955: Config loaded from /mosquitto/config/mosquitto.conf.
+1701017955: Opening ipv4 listen socket on port 1883.
+1701017955: Opening ipv6 listen socket on port 1883.
+1701017955: Connecting bridge test (93.41.220.38:1883)
+1701017955: mosquitto version 2.0.15 running
+1701017966: New connection from 192.168.35.10:36749 on port 1883.
+1701017966: New client connected from 192.168.35.10:36749 as manager_22040368 (p2, c1, k60, u'22040368').
+1701017966: New connection from 192.168.35.10:59603 on port 1883.
+1701017966: New client connected from 192.168.35.10:59603 as auto-D7B56CEC-AFED-AACD-8301-5B0328F106B8 (p2, c1, k60).
+1701017967: New connection from 192.168.35.15:36231 on port 1883.
+1701017967: New client connected from 192.168.35.15:36231 as auto-A6602BEF-EC74-7F6C-1F3C-5D8DEF13085B (p2, c1, k60, u'22040368').
+1701017996: Client auto-D7B56CEC-AFED-AACD-8301-5B0328F106B8 closed its connection.
+1701017996: Client manager_22040368 closed its connection.
+1701029531: Client local.pi_broker.test closed its connection.
+1701029537: Connecting bridge test (93.41.220.38:1883)
+1701076829: Client local.pi_broker.test closed its connection.
+1701076835: Connecting bridge test (93.41.220.38:1883)
+1701076835: Client local.pi_broker.test disconnected: Broken pipe.
+1701076843: Connecting bridge test (93.41.220.38:1883)
+1701062367: Client local.pi_broker.test closed its connection.
+1701062372: Connecting bridge test (93.41.220.38:1883)
+1701067539: Client auto-A6602BEF-EC74-7F6C-1F3C-5D8DEF13085B closed its connection.
+1701067540: mosquitto version 2.0.15 terminating
+1701067558: mosquitto version 2.0.15 starting
+1701067558: Config loaded from /mosquitto/config/mosquitto.conf.
+1701067558: Opening ipv4 listen socket on port 1883.
+1701067558: Opening ipv6 listen socket on port 1883.
+1701067558: Connecting bridge test (93.41.220.38:1883)
+1701067558: mosquitto version 2.0.15 running
+1701067570: New connection from 192.168.35.10:39773 on port 1883.
+1701067570: New client connected from 192.168.35.10:39773 as manager_22040368 (p2, c1, k60, u'22040368').
+1701067570: New connection from 192.168.35.10:56625 on port 1883.
+1701067570: New client connected from 192.168.35.10:56625 as auto-CFBB8C19-D98B-0AD8-AAA1-648FBF7C0E29 (p2, c1, k60).
+1701067571: New connection from 192.168.35.15:59725 on port 1883.
+1701067571: New client connected from 192.168.35.15:59725 as auto-6B810DD1-401A-E569-12B3-781AE29CD461 (p2, c1, k60, u'22040368').
+1701067600: Client auto-CFBB8C19-D98B-0AD8-AAA1-648FBF7C0E29 closed its connection.
+1701067600: Client manager_22040368 closed its connection.
+1701072344: Client local.pi_broker.test closed its connection.
+1701072350: Connecting bridge test (93.41.220.38:1883)
+1701073633: Client local.pi_broker.test closed its connection.
+1701073639: Connecting bridge test (93.41.220.38:1883)
+1701077573: Client local.pi_broker.test disconnected: No error information.
+1701077579: Connecting bridge test (93.41.220.38:1883)
+1701077597: Client local.pi_broker.test closed its connection.
+1701077602: Connecting bridge test (93.41.220.38:1883)
+1701078150: Client local.pi_broker.test closed its connection.
+1701078156: Connecting bridge test (93.41.220.38:1883)
+1701081338: Client local.pi_broker.test closed its connection.
+1701081344: Connecting bridge test (93.41.220.38:1883)
+1701145757: Client local.pi_broker.test closed its connection.
+1701145762: Connecting bridge test (93.41.220.38:1883)
+1701145762: Client local.pi_broker.test disconnected: Broken pipe.
+1701145768: Connecting bridge test (93.41.220.38:1883)
+1701155673: Client auto-6B810DD1-401A-E569-12B3-781AE29CD461 closed its connection.
+1701155675: mosquitto version 2.0.15 terminating
+1701155698: mosquitto version 2.0.15 starting
+1701155698: Config loaded from /mosquitto/config/mosquitto.conf.
+1701155698: Opening ipv4 listen socket on port 1883.
+1701155698: Opening ipv6 listen socket on port 1883.
+1701155698: Connecting bridge test (93.41.220.38:1883)
+1701155698: mosquitto version 2.0.15 running
+1701155710: New connection from 192.168.35.10:57213 on port 1883.
+1701155710: New client connected from 192.168.35.10:57213 as manager_22040368 (p2, c1, k60, u'22040368').
+1701155710: New connection from 192.168.35.10:55403 on port 1883.
+1701155710: New client connected from 192.168.35.10:55403 as auto-857C1F28-FDF4-528D-09CF-4F967528736A (p2, c1, k60).
+1701155711: New connection from 192.168.35.15:59713 on port 1883.
+1701155711: New client connected from 192.168.35.15:59713 as auto-554E35EB-2003-9067-521D-880A0A15D2F5 (p2, c1, k60, u'22040368').
+1701155740: Client auto-857C1F28-FDF4-528D-09CF-4F967528736A closed its connection.
+1701155740: Client manager_22040368 closed its connection.
+1701164047: Client local.pi_broker.test closed its connection.
+1701164053: Connecting bridge test (93.41.220.38:1883)
+1701164083: Client local.pi_broker.test closed its connection.
+1701164089: Connecting bridge test (93.41.220.38:1883)
+1701164089: Client local.pi_broker.test disconnected: Broken pipe.
+1701164099: Connecting bridge test (93.41.220.38:1883)
+1701164117: Client local.pi_broker.test closed its connection.
+1701164122: Connecting bridge test (93.41.220.38:1883)
+1701164201: Client local.pi_broker.test closed its connection.
+1701174704: Connecting bridge test (93.41.220.38:1883)
+1701174704: Client local.pi_broker.test disconnected: Connection refused.
+1701174719: Connecting bridge test (93.41.220.38:1883)
+1701185848: Client local.pi_broker.test closed its connection.
+1701185853: Connecting bridge test (93.41.220.38:1883)
+1701195522: Client local.pi_broker.test closed its connection.
+1701195527: Connecting bridge test (93.41.220.38:1883)
+1701195528: Client local.pi_broker.test disconnected: Connection refused.
+1701195539: Connecting bridge test (93.41.220.38:1883)
+1701196338: Client local.pi_broker.test closed its connection.
+1701196344: Connecting bridge test (93.41.220.38:1883)
+1701234673: Client local.pi_broker.test closed its connection.
+1701234678: Connecting bridge test (93.41.220.38:1883)
+1701234678: Client local.pi_broker.test disconnected: Broken pipe.
+1701234684: Connecting bridge test (93.41.220.38:1883)
+1701234684: Client local.pi_broker.test disconnected: Broken pipe.
+1701234699: Connecting bridge test (93.41.220.38:1883)
+1701234703: Client local.pi_broker.test disconnected: Connection refused.
+1701234733: Connecting bridge test (93.41.220.38:1883)
+1701235155: Client local.pi_broker.test closed its connection.
+1701235160: Connecting bridge test (93.41.220.38:1883)
+1701235342: Client local.pi_broker.test closed its connection.
+1701235347: Connecting bridge test (93.41.220.38:1883)
+1701235347: Client local.pi_broker.test disconnected: Broken pipe.
+1701235353: Connecting bridge test (93.41.220.38:1883)
+1701235397: Client local.pi_broker.test closed its connection.
+1701235402: Connecting bridge test (93.41.220.38:1883)
+1701257585: Client local.pi_broker.test closed its connection.
+1701257590: Connecting bridge test (93.41.220.38:1883)
+1701263969: Client local.pi_broker.test closed its connection.
+1701263974: Connecting bridge test (93.41.220.38:1883)
+1701270070: Client local.pi_broker.test closed its connection.
+1701270076: Connecting bridge test (93.41.220.38:1883)
+1701322897: Client local.pi_broker.test disconnected: No error information.
+1701322902: Connecting bridge test (93.41.220.38:1883)
+1701322902: Client local.pi_broker.test disconnected: Broken pipe.
+1701322908: Connecting bridge test (93.41.220.38:1883)
+1701322922: Client local.pi_broker.test disconnected: Connection refused.
+1701322930: Connecting bridge test (93.41.220.38:1883)
+1701333764: Client local.pi_broker.test closed its connection.
+1701333769: Connecting bridge test (93.41.220.38:1883)
+1701334491: Client local.pi_broker.test closed its connection.
+1701334496: Connecting bridge test (93.41.220.38:1883)
+1701337106: Client local.pi_broker.test closed its connection.
+1701337111: Connecting bridge test (93.41.220.38:1883)
+1701337132: Client local.pi_broker.test disconnected: Connection refused.
+1701337144: Connecting bridge test (93.41.220.38:1883)
+1701339990: Client local.pi_broker.test closed its connection.
+1701339996: Connecting bridge test (93.41.220.38:1883)
+1701343365: Client local.pi_broker.test closed its connection.
+1701343371: Connecting bridge test (93.41.220.38:1883)
+1701349758: Client local.pi_broker.test closed its connection.
+1701349763: Connecting bridge test (93.41.220.38:1883)
+1701349770: Client local.pi_broker.test disconnected: Connection refused.
+1701349783: Connecting bridge test (93.41.220.38:1883)
+1701410274: Client local.pi_broker.test closed its connection.
+1701410280: Connecting bridge test (93.41.220.38:1883)
+1701424971: Client local.pi_broker.test closed its connection.
+1701424977: Connecting bridge test (93.41.220.38:1883)
+1701424977: Client local.pi_broker.test disconnected: Broken pipe.
+1701424985: Connecting bridge test (93.41.220.38:1883)
+1701425013: Client local.pi_broker.test closed its connection.
+1701425018: Connecting bridge test (93.41.220.38:1883)
+1701425018: Client local.pi_broker.test disconnected: Broken pipe.
+1701425026: Connecting bridge test (93.41.220.38:1883)
+1701428651: Client local.pi_broker.test closed its connection.
+1701428656: Connecting bridge test (93.41.220.38:1883)
+1701437827: Client local.pi_broker.test closed its connection.
+1701437832: Connecting bridge test (93.41.220.38:1883)
+1701521927: Client local.pi_broker.test closed its connection.
+1701521932: Connecting bridge test (93.41.220.38:1883)
+1701497220: Client local.pi_broker.test closed its connection.
+1701497225: Connecting bridge test (93.41.220.38:1883)
+1701515728: Client auto-554E35EB-2003-9067-521D-880A0A15D2F5 closed its connection.
+1701515730: mosquitto version 2.0.15 terminating
+1701515758: mosquitto version 2.0.15 starting
+1701515758: Config loaded from /mosquitto/config/mosquitto.conf.
+1701515758: Opening ipv4 listen socket on port 1883.
+1701515758: Opening ipv6 listen socket on port 1883.
+1701515758: Connecting bridge test (93.41.220.38:1883)
+1701515758: mosquitto version 2.0.15 running
+1701515771: New connection from 192.168.35.10:40585 on port 1883.
+1701515771: New client connected from 192.168.35.10:40585 as manager_22040368 (p2, c1, k60, u'22040368').
+1701515771: New connection from 192.168.35.10:40311 on port 1883.
+1701515771: New client connected from 192.168.35.10:40311 as auto-A7A473D1-F39E-2DCD-251D-EA32F73059C9 (p2, c1, k60).
+1701515772: New connection from 192.168.35.15:59401 on port 1883.
+1701515772: New client connected from 192.168.35.15:59401 as auto-B78EF533-9C21-6E58-8C16-218B489EBA9B (p2, c1, k60, u'22040368').
+1701515801: Client auto-A7A473D1-F39E-2DCD-251D-EA32F73059C9 closed its connection.
+1701515801: Client manager_22040368 closed its connection.
+1701579941: Client local.pi_broker.test closed its connection.
+1701579947: Connecting bridge test (93.41.220.38:1883)
+1701579970: Client local.pi_broker.test closed its connection.
+1701579976: Connecting bridge test (93.41.220.38:1883)
+1701579976: Client local.pi_broker.test disconnected: Connection refused.
+1701579986: Connecting bridge test (93.41.220.38:1883)
+1701623561: Client local.pi_broker.test closed its connection.
+1701667181: Connecting bridge test (93.41.220.38:1883)
+1701667181: Client local.pi_broker.test disconnected: Broken pipe.
+1701667194: Connecting bridge test (93.41.220.38:1883)
+1701681335: Client local.pi_broker.test closed its connection.
+1701681341: Connecting bridge test (93.41.220.38:1883)
+1701682398: Client local.pi_broker.test disconnected: No error information.
+1701682404: Connecting bridge test (93.41.220.38:1883)
+1701682436: Client local.pi_broker.test closed its connection.
+1701682442: Connecting bridge test (93.41.220.38:1883)
+1701682442: Client local.pi_broker.test disconnected: Broken pipe.
+1701682449: Connecting bridge test (93.41.220.38:1883)
+1701682491: Client local.pi_broker.test closed its connection.
+1701682497: Connecting bridge test (93.41.220.38:1883)
+1701753857: Client local.pi_broker.test closed its connection.
+1701753863: Connecting bridge test (93.41.220.38:1883)
+1701770223: Client auto-B78EF533-9C21-6E58-8C16-218B489EBA9B closed its connection.
+1701770224: mosquitto version 2.0.15 terminating
+1701770240: mosquitto version 2.0.15 starting
+1701770240: Config loaded from /mosquitto/config/mosquitto.conf.
+1701770240: Opening ipv4 listen socket on port 1883.
+1701770240: Opening ipv6 listen socket on port 1883.
+1701770240: Connecting bridge test (93.41.220.38:1883)
+1701770240: mosquitto version 2.0.15 running
+1701770252: New connection from 192.168.35.10:47197 on port 1883.
+1701770252: New client connected from 192.168.35.10:47197 as manager_22040368 (p2, c1, k60, u'22040368').
+1701770252: New connection from 192.168.35.10:57281 on port 1883.
+1701770252: New client connected from 192.168.35.10:57281 as auto-7FD2C818-8312-DBD8-CD9A-5AADBB65630F (p2, c1, k60).
+1701770253: New connection from 192.168.35.15:46609 on port 1883.
+1701770253: New client connected from 192.168.35.15:46609 as auto-DA89D481-687E-D145-F4A8-C9530E184759 (p2, c1, k60, u'22040368').
+1701770282: Client auto-7FD2C818-8312-DBD8-CD9A-5AADBB65630F closed its connection.
+1701770282: Client manager_22040368 closed its connection.

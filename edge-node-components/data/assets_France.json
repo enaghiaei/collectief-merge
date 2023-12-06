@@ -1,0 +1,630 @@
+{
+  "22040367": {
+    "_comment": "the organization of the json is by rooms to ease the sensor data, the ID will be the one of the BRIG for most purposes",
+    "brigId": "22040367",
+    "building_name": "G2ELab",
+    "buildingId": 8,
+    "coordinates": [45.20292627829685, 5.703188015627642],
+    "zones": {
+      "B08Z01": {
+        "zoneName": "4a015",
+        "zoneType": "Shared office",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22040312": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a015_heating_energy",
+              "4a015_cooling_energy",
+              "4a015_inlet_water_temperature",
+              "4a015_outlet_water_temperature",
+              "4a015_water_flow"
+            ]
+          }
+        },
+        "actuators": {
+          "sginterop": {
+            "sginterop": {
+              "4a015_thot": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "4a015_tcold": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 25.0,
+                    "min": 23,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "4a015_co2": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 600.0,
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "indicators": {
+          "optTemp": "sph_p/22040312/t_rh_0",
+          "energy": {
+            "energy_method": "calculate_energy",
+            "args": {
+              "water_flow": "sginterop/sginterop/4a015_water_flow",
+              "inlet_water_temperature": "sginterop/sginterop/4a015_inlet_water_temperature",
+              "outlet_water_temperature": "sginterop/sginterop/4a015_outlet_water_temperature",
+              "hvac_power": "sginterop/sginterop/4a015_hvac_power"
+            }
+          },
+          "ALD": {
+            "method": "calculate_ALD",
+            "args": {
+              "current_internaL_temp": "indicator"
+            }
+          }
+        }
+      },
+      "B08Z02": {
+        "zoneName": "4a016",
+        "zoneType": "Shared office",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22040313": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a016_heating_energy",
+              "4a016_cooling_energy",
+              "4a016_inlet_water_temperature",
+              "4a016_outlet_water_temperature",
+              "4a016_water_flow"
+            ]
+          }
+        },
+        "actuators": {
+          "sginterop": {
+            "sginterop": {
+              "4a016_thot": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "4a016_tcold": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 26.0,
+                    "min": 23,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "4a016_co2": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 600.0,
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "indicators": {
+          "optTemp": "sph_p/22040313/t_rh_0",
+          "energy":{
+            "method": "calculate_energy",
+            "args": {
+              "water_flow": "sginterop/sginterop/4a016_water_flow",
+              "inlet_water_temperature": "sginterop/sginterop/4a016_inlet_water_temperature",
+              "outlet_water_temperature": "sginterop/sginterop/4a016_outlet_water_temperature",
+              "hvac_power": "sginterop/sginterop/4a016_hvac_power"
+            }
+          }
+        }
+      },
+      "B08Z03": {
+        "zoneName": "4a017",
+        "zoneType": "Shared office",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22040314": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a017_hvac_power",
+              "4a017_inlet_water_temperature",
+              "4a017_outlet_water_temperature",
+              "4a017_water_flow"
+            ]
+          }
+        },
+        "actuators": {},
+        "indicators": {
+          "optTemp": "sph_p/22040314/t_rh_0",
+          "energy":{
+            "energy_method": "calculate_energy",
+            "args": {
+              "water_flow": "sginterop/sginterop/4a017_water_flow",
+              "inlet_water_temperature": "sginterop/sginterop/4a017_inlet_water_temperature",
+              "outlet_water_temperatur": "sginterop/sginterop/4a017_outlet_water_temperature",
+              "hvac_power": "sginterop/sginterop/4a017_hvac_power"
+            }
+          }
+        }
+      },
+      "B08Z04": {
+        "zoneName": "4a018",
+        "zoneType": "Shared office",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22040315": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a018_heating_energy",
+              "4a018_cooling_energy",
+              "4a018_inlet_water_temperature",
+              "4a018_outlet_water_temperature",
+              "4a018_water_flow"
+            ]
+          }
+        },
+        "actuators": {
+          "sginterop": {
+            "sginterop": {
+              "4a018_thot": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "4a018_tcold": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 26.0,
+                    "min": 23,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "4a018_co2": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 600.0,
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "indicators": {
+          "optTemp": "sph_p/22040315/t_rh_0",
+          "energy":{
+            "energy_method": "calculate_energy",
+            "args": {
+              "water_flow": "sginterop/sginterop/4a018_water_flow",
+              "inlet_water_temperature": "sginterop/sginterop/4a018_inlet_water_temperature",
+              "outlet_water_temperature": "sginterop/sginterop/4a018_outlet_water_temperature",
+              "hvac_power": "sginterop/sginterop/4a018_hvac_power"
+            }
+          }
+        }
+      },
+      "B08Z05": {
+        "zoneName": "4a019",
+        "zoneType": "Shared office",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22040283": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a019_water_flow",
+              "4a019_inlet_water_temperature",
+              "4a019_outlet_water_temperature",
+              "4a019_hvac_power"
+            ]
+          }
+  },
+        "actuators": {
+          "sginterop": {
+            "sginterop": {
+              "4a019_thot": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "4a019_tcold": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "min": 23,
+                    "default": 26.0,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "4a019_co2": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 600.0,
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "indicators": {
+          "optTemp": "sph_p/22040283/t_rh_0",
+          "energy":{
+            "energy_method": "calculate_energy",
+            "args": {
+              "water_flow": "sginterop/sginterop/4a019_water_flow",
+              "inlet_water_temperature": "sginterop/sginterop/4a019_inlet_water_temperature",
+              "outlet_water_temperature": "sginterop/sginterop/4a019_outlet_water_temperature",
+              "hvac_power": "sginterop/sginterop/4a019_hvac_power"
+            }
+          }
+        }
+      },
+      "B08Z06": {
+        "zoneName": "4a014",
+        "zoneType": "Student Hall",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22040316": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a014_heating_energy",
+              "4a014_cooling_energy",
+              "4a014_inlet_water_temperature",
+              "4a014_outlet_water_temperature",
+              "4a014_water_flow"
+            ]
+          }
+        },
+        "actuators": {
+          "sginterop": {
+            "sginterop": {
+              "4a014_thot": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+                "4a014_tcold": {
+                  "actuatorType": "HVAC_setpoint",
+                  "settings": {
+                    "values": {
+                      "default": 26.0,
+                      "min": 23,
+                      "max": 28
+                    },
+                    "features": {
+                      "changeStep": 0.5,
+                      "changePerTimestep": 2,
+                      "biDirectional": false,
+                      "engagementSignal": 1,
+                      "operationMode": "Cooling"
+                    }
+                  }
+                },
+                "4a014_co2": {
+                  "actuatorType": "HVAC_setpoint",
+                  "settings": {
+                    "values": {
+                      "default": 600.0,
+                      "min": 200,
+                      "max": 900
+                    },
+                    "features": {
+                      "changeStep": 100,
+                      "changePerTimestep": 2,
+                      "biDirectional": true,
+                      "engagementSignal": 3,
+                      "operationMode": "Both"
+                    }
+                  }
+                }
+              }
+            }
+          },
+        "indicators": {
+          "energy":{
+            "energy_method": "calculate_energy",
+            "args": {
+              "water_flow":"sginterop/sginterop/4a014_water_flow",
+              "inlet_water_temperature":"sginterop/sginterop/4a014_inlet_water_temperature",
+              "outlet_water_temperature":"sginterop/sginterop/4a014_outlet_water_temperature",
+              "hvac_power":"sginterop/sginterop/4a014_hvac_power"
+            }
+          },
+          "optTemp": "sph_p/22040316/t_rh_0"
+        }
+        },
+      "B08Z07": {
+        "zoneName": "4a020",
+        "zoneType": "Classroom",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22050331": [
+              "co2_1"
+            ],
+            "22040317": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a020_heating_energy",
+              "4a020_cooling_energy",
+              "4a020_inlet_water_temperature",
+              "4a020_outlet_water_temperature",
+              "4a020_water_flow"
+            ]
+          }
+        },
+        "actuators": {
+          "sginterop": {
+            "sginterop": {
+              "4a016_thot": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "4a016_tcold": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 26.0,
+                    "min": 23,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "4a016_co2": {
+                "actuatorType": "HVAC_setpoint",
+                "settings": {
+                  "values": {
+                    "default": 600.0,
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "indicators": {
+          "energy":{
+            "energy_method": "calculate_energy",
+            "args": {
+              "water_flow": "sginterop/sginterop/4a020_water_flow",
+              "inlet_water_temperature": "sginterop/sginterop/4a020_inlet_water_temperature",
+              "outlet_water_temperature": "sginterop/sginterop/4a020_outlet_water_temperature",
+              "hvac_power": "sginterop/sginterop/4a020_hvac_power"
+            }
+          },
+          "optTemp": "sph_p/22040317/t_rh_0"
+        }
+      },
+      "B08Z08": {
+        "zoneName": "4a013",
+        "zoneType": "Laboratory",
+        "zoneCategory": 2,
+        "sensors": {
+          "sph_p": {
+            "22050332": [
+              "co2_1"
+            ],
+            "22040318": [
+              "t_rh_0"
+            ]
+          },
+          "sginterop": {
+            "sginterop": [
+              "4a013_indoor_temperature",
+              "4a013_heating_energy",
+              "4a013_cooling_energy",
+              "4a013_water_flow",
+              "4a013_hvac_power"
+            ]
+          }
+        },
+        "actuators": {},
+        "indicators": {
+          "energy": {
+            "method": "calculate_energy",
+            "tags": {
+              "hvac_power": "sginterop/sginterop/4a013_hvac_power"
+            }
+          },
+          "optTemp": "sph_p/22040318/t_rh_0"
+        }
+      }
+    },
+    "indicators": {
+      "_comment": "general indicators are used for algorithms that do not count on the expectation of dealing with a single room, and instead deal with general descriptions"
+    }
+  }
+}
+

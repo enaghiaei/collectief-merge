@@ -1,0 +1,11 @@
+driver,field_id,cfg,zone_id,name
+sph_p,22040236,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B04Z01,sph_p2204023622040236
+sph_p,22050240,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B04Z03,sph_p2205024022050240
+sph_p,22050330,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",,sph_p2205033022050330
+sph_p,22040281,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""lux5_0""}, {""tag"": ""lux4_0""}, {""tag"": ""lux3_0""}, {""tag"": ""lux2_0""}, {""tag"": ""lux1_0""}]}",B04Z05,sph_p2204028122040281
+sph_p,22050242,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B04Z05,sph_p2205024222050242
+sph_p,22050239,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B04Z02,sph_p2205023922050239
+sph_p,22040239,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B04Z03,sph_p2204023922040239
+sph_p,22050190,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B04Z01,sph_p2205019022050190
+sph_p,22040238,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B04Z02,sph_p2204023822040238
+sph_p,22040244,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B04Z04,sph_p2204024422040244

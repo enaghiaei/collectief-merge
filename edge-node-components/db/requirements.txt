@@ -1,0 +1,4 @@
+sqlalchemy
+mariadb
+alembic
+paho-mqtt

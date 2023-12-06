@@ -1,0 +1,211 @@
+{
+  "22040349": {
+    "building_name": "Eidet Omsorgsenter",
+    "brigId": "22040349",
+    "coordinates": [62.5438997744559,6.5905094146728525],
+    "buildingId": 1,
+    "zones": {
+      "B01Z01": {
+        "sensors": { "sph_p": {"22050177": ["co2"], "22040204": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B01Z02": {
+        "sensors": { "sph_p": {"22050178": ["co2"], "22040205": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B01Z03": {
+        "sensors": { "sph_p": {"22050179": ["co2"], "22040214": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B01Z04": {
+        "sensors": { "sph_p": {"22050180": ["co2"], "22040215": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B01Z05": {
+        "sensors": { "sph_p": {"22050181": ["co2"], "22040278": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  },
+  "22040350": {
+    "building_name": "Ellings\u00f8y Idrettshall",
+    "brigId": "22040350",
+    "coordinates": [62.495756397755834,6.326268911361695],
+    "buildingId": 2,
+    "zones": {
+      "B02Z01": {
+        "sensors": {
+          "sph_p": {
+          "22050183": ["co2"],
+          "22040216": ["t_rh_0"],
+          "22050184": ["co2"],
+          "22040219": ["t_rh_0"],
+          "22050185": ["co2"],
+          "22040220": ["t_rh_0"]
+          }
+        },
+        "actuators": {}
+      },
+      "B02Z02": {
+        "sensors": {
+          "sph_p": {
+            "22050186": ["co2"],
+            "22040225": ["t_rh_0"],
+            "22050187": ["co2"],
+            "22040230": ["t_rh_0"]
+          }
+        },
+        "actuators": {}
+      }
+    }
+  },
+  "22040351": {
+    "building_name": "Flisnes Barneskole",
+    "brigId": "22040351",
+    "coordinates": [62.4300921,6.4160873],
+    "buildingId": 3,
+    "zones": {
+      "B03Z01": {
+        "sensors": { "sph_p": {"22050188": ["co2"], "22040279": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B03Z02": {
+        "sensors": { "sph_p": {"22050189": ["co2"], "22040280": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  },
+  "22040353": {
+    "building_name": "Hatlane Omsorgsenter",
+    "brigId": "22040353",
+    "coordinates": [62.4613403,6.2762307],
+    "buildingId": 4,
+    "zones": {
+      "B04Z01": {
+        "sensors": { "sph_p": {"22050190": ["co2"], "22040236": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B04Z02": {
+        "sensors": { "sph_p": {"22050239": ["co2"], "22040238": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B04Z03": {
+        "sensors": { "sph_p": {"22050240": ["co2"], "22040239": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B04Z04": {
+        "sensors": { "sph_p": {"22050241": ["co2"], "22040244": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B04Z05": {
+        "sensors": { "sph_p": {"22050242": ["co2"], "22040281": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  },
+  "22040361": {
+    "building_name": "Moa Helsehus",
+    "brigId": "22040361",
+    "coordinates": [62.4664324,6.3477534],
+    "buildingId": 5,
+    "zones": {
+      "B05Z01": {
+        "sensors": { "sph_p": {"22050243": ["co2"], "22040282": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B05Z02": {
+        "sensors": { "sph_p": {"22050254": ["co2"], "22040327": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B05Z03": {
+        "sensors": { "sph_p": {"22050255": ["co2"], "22040284": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B05Z04": {
+        "sensors": { "sph_p": {"22050256": ["co2"], "22040247": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B05Z05": { "sensors": { "sph_p": {
+        "22040285": [
+          "t_rh_0"
+        ]
+      } }, "actuators": {}
+      },
+      "B05Z06": { "sensors": { "sph_p": {
+        "22040286": [
+          "t_rh_0"
+        ]
+      } }, "actuators": {}
+      }
+    }
+  },
+  "22040362": {
+    "building_name": "Spjelkavik Ungdomsskole",
+    "brigId": "22040362",
+    "coordinates": [62.4617691, 6.3685876],
+    "buildingId": 6,
+    "zones": {
+      "B06Z01": {
+        "sensors": { "sph_p": {"22050257": ["co2"], "22040287": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B06Z02": {
+        "sensors": { "sph_p": {"22050259": ["co2"], "22040288": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B06Z03": {
+        "sensors": { "sph_p": {"22050260": ["co2"], "22040289": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B06Z04": {
+        "sensors": { "sph_p": {"22050261": ["co2"], "22040331": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B06Z05": {
+        "sensors": { "sph_p": {"22050262": ["co2"], "22040291": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  },
+  "22040363": {
+    "building_name": "Tennfjord Barneskole",
+    "brigId": "22040363",
+    "coordinates": [62.5361118, 6.5870721],
+    "buildingId": 7,
+    "zones": {
+      "B07Z01": {
+        "sensors": { "sph_p": {"22050263": ["co2"], "22040298": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B07Z02": {
+        "sensors": { "sph_p": {"22050264": ["co2"], "22040299": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B07Z03": {
+        "sensors": { "sph_p": {"22050265": ["co2"], "22040300": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B07Z04": {
+        "sensors": { "sph_p": {"22050266": ["co2"], "22040301": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B07Z05": {
+        "sensors": { "sph_p": {"22050326": ["co2"], "22040308": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B07Z06": {
+        "sensors": { "sph_p": {"22050327": ["co2"], "22040309": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B07Z07": {
+        "sensors": {
+          "sph_p": {
+            "22050328": ["co2"], "22040310": ["t_rh_0"],
+            "22050329": ["co2"], "22040311": ["t_rh_0"]
+          }
+        },
+        "actuators": {}
+      }
+    }
+  }
+}

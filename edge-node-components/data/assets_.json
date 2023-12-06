@@ -1,0 +1,201 @@
+[
+  {
+    "_comment": "the organization of the json is by rooms to ease the sensor data, the ID will be the one of the BRIG, room data won't be needed",
+    "brigId": "XXXXXXX",
+    "building_name": "string",
+
+    "zones": {
+      "_comment": "this field describes all sensors and actuators that act within a specific room",
+      "zone1": {
+        "zoneName": "string",
+        "sensors": {
+          "_comment": "nesting in too deep is needless in most cases, this could be eventually changed to uuids",
+          "origin1": {
+            "field_serial:": [
+              "string",
+              "string"
+            ],
+            "field_serial2:": [
+              "tag1"
+            ]
+          },
+          "origin2": {
+            "field_serial1:": [
+              "tag1",
+              "tag2",
+              "tag3",
+              "tag4",
+              "tag5"
+            ]
+          }
+        },
+        "actuators": {
+          "driver1": {
+            "field2:": {
+              "thot": {
+                "_comment": "these are initial settings and are uploaded in the dsm_assets table but that could change",
+                "settings": {
+                  "type": "HVAC",
+                  "values": {
+                    "default": 20.0,
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "tcold": {
+                "settings": {
+                  "type": "HVAC",
+                  "values": {
+                    "default": 25.0,
+                    "min": 23,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "co2": {
+                "type": "HVAC",
+                "settings": {
+                  "values": {
+                    "default": 600.0,
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "zone2": {
+        "sensors": {
+          "driver1": {
+            "field4:": [
+              "tag1",
+              "tag2"
+            ]
+          },
+          "driver2": {
+            "field1:": [
+              "tag6",
+              "tag7",
+              "tag8",
+              "tag9",
+              "tag10"
+            ]
+          }
+        },
+        "zoneName": "zone",
+        "actuators": {
+          "driver1": {
+            "field2:": {
+              "thot": {
+                "default": 20.0,
+                "settings": {
+                  "values": {
+                    "min": 18,
+                    "max": 25
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Heating"
+                  }
+                }
+              },
+              "tcold": {
+                "default": 25.0,
+                "settings": {
+                  "values": {
+                    "min": 23,
+                    "max": 28
+                  },
+                  "features": {
+                    "changeStep": 0.5,
+                    "changePerTimestep": 2,
+                    "biDirectional": false,
+                    "engagementSignal": 1,
+                    "operationMode": "Cooling"
+                  }
+                }
+              },
+              "co2": {
+                "default": 600.0,
+                "settings": {
+                  "values": {
+                    "min": 200,
+                    "max": 900
+                  },
+                  "features": {
+                    "changeStep": 100,
+                    "changePerTimestep": 2,
+                    "biDirectional": true,
+                    "engagementSignal": 3,
+                    "operationMode": "Both"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sensors": {
+      "_comment": "this top level sensor deals with data that is not room specific, data is queried by field_id alone in the class, no need for anything else",
+      "driver": {
+        "field_id": ["tag"],
+        "field_id2": ["tag"]
+      }
+    },
+    "actuators": {
+      "driver": {
+        "field_id": {
+          "type": "HVAC",
+          "settings": {
+            "values": {
+              "default": 600.0,
+              "min": 200,
+              "max": 900
+            },
+            "features": {
+              "changeStep": 100,
+              "changePerTimestep": 2,
+              "biDirectional": true,
+              "engagementSignal": 3,
+              "operationMode": "Both"
+            }
+          }
+        },
+        "field_id2": {
+          "type": "bool",
+          "settings": {
+            "features": {}
+          }
+        }
+      }
+    }
+  }
+]

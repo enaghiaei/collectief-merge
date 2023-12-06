@@ -1,0 +1,12 @@
+!db/alembic_conf/alembic.ini
+data/*.csv
+data/norway
+db/data
+.env
+vevn
+venv
+__pycache__
+.vscode
+pscript
+drivers
+.idea

@@ -1,0 +1,120 @@
+{
+  "22040352": {
+    "brigId": "22040352",
+    "building_name": "C2 Tower",
+    "coordinates": [45.45379283539491, 9.095737028973046],
+    "buildingId": 12,
+    "zones": {
+      "B121AZ01": {
+        "sensors": { "sph_p" : {"22040227": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B121AZ02": {
+        "sensors": { "sph_p" : {"22040229": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B123BZ01": {
+        "sensors": { "sph_p" : {"22040226": ["t_rh_0"], "22040394": ["co2"]} },
+        "actuators": {}
+      },
+      "B123BZ02": {
+        "sensors": { "sph_p" : {"22040221": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B123CZ01": {
+        "sensors": { "sph_p" : {"22040223": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B123CZ02": {
+        "sensors": { "sph_p" : {"22040228": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B123DZ01": {
+        "sensors": { "sph_p" : {"22040177": ["t_rh_0"], "22040397": ["co2"]} },
+        "actuators": {}
+      },
+      "B123DZ02": {
+        "sensors": { "sph_p" : {"22040234": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B128AZ01": {
+        "sensors": { "sph_p" : {"22040224": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B128AZ02": {
+        "sensors": { "sph_p" : {"22040222": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  },
+  "22040369": {
+    "brigId": "22040369",
+    "building_name": "C3 Tower",
+    "coordinates": [45.45379283539491, 9.095737028973046],
+    "buildingId": 13,
+    "_comment": "the weather id is 12 for all of them, no point in making it different",
+    "zones": {
+      "B131BZ01": {
+        "sensors": { "sph_p" : {"22040217": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B131BZ02": {
+        "sensors": { "sph_p" : {"22040207": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B133BZ01": {
+        "sensors": { "sph_p" : {"22040208": ["t_rh_0"], "22040069": ["co2"]} },
+        "actuators": {}
+      },
+      "B133BZ02": {
+        "sensors": { "sph_p" : {"22040218": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B135CZ01": {
+        "sensors": { "sph_p" : {"22040203": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B135CZ02": {
+        "sensors": { "sph_p" : {"22040209": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B137AZ01": { "sensors": { "sph_p" : {"22040202": ["co2"]} }, "actuators": {} },
+      "B137AZ02": {
+        "sensors": { "sph_p" : {"22040201": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  },
+  "22040341": {
+    "brigId": "22040341",
+    "building_name": "C4 Tower",
+    "coordinates": [45.45379283539491, 9.095737028973046],
+    "buildingId": 14,
+    "zones": {
+      "B141CZ01": {
+        "sensors": { "sph_p" : {"22040242": ["t_rh_0"], "22040398": ["co2"]} },
+        "actuators": {}
+      },
+      "B141CZ02": {
+        "sensors": { "sph_p" : {"22040232": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B142BZ01": {
+        "sensors": { "sph_p" : {"22040231": ["t_rh_0"], "22040393": ["co2"]} },
+        "actuators": {}
+      },
+      "B142BZ02": {
+        "sensors": { "sph_p" : {"22040235": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B144CZ01": {
+        "sensors": { "sph_p" : {"22040240": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B144CZ02": {
+        "sensors": { "sph_p" : {"22040243": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  }
+}

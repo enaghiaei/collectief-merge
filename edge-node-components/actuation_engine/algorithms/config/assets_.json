@@ -1,0 +1,154 @@
+{
+  "_comment": "the organization of the json is by rooms to ease the sensor data, the ID will be the one of the BRIG, room data won't be needed",
+  "brigId": "76543897",
+  "building_name": "string",
+  "coordinates": [0.0, 0.0],
+  "weatherId": 8,
+  "zones": {
+    "zone1": {
+      "zoneName": "string",
+      "zoneType": "string",
+      "zoneCategory": 2,
+      "sensors": {
+//        "_comment": "nesting in too deep is needless in most cases, this could be eventually changed to uuids",
+        "origin1/field_serial": [
+          "taga",
+          "tagb"
+        ],
+        "origin1/field_serial2": [
+          "tagc"
+        ],
+        "origin2/field_serial1": [
+          "tag1",
+          "tag2",
+          "tag3",
+          "tag4",
+          "tag5"
+        ]
+      },
+      "actuators": {
+        "driver1/field2": {
+          "thot": {
+//            "_comment": "these are initial settings and are uploaded in the dsm_assets table but that could change",
+            "default": 20.0,
+            "actuatorType": "HVAC",
+            "settings": {
+              "values": {
+                "min": 18,
+                "max": 25
+              },
+              "features": {
+                "changeStep": 0.5,
+                "changePerTimestep": 2,
+                "biDirectional": false,
+                "engagementSignal": 1,
+                "operationMode": "Heating"
+              }
+            }
+          },
+          "tcold": {
+            "actuatorType": "HVAC",
+            "default": 25.0,
+            "settings": {
+              "values": {
+                "min": 23,
+                "max": 28
+              },
+              "features": {
+                "changeStep": 0.5,
+                "changePerTimestep": 2,
+                "biDirectional": false,
+                "engagementSignal": 1,
+                "operationMode": "Cooling"
+              }
+            }
+          },
+          "co2": {
+            "default": 600.0,
+            "settings": {
+              "values": {
+                "min": 200,
+                "max": 900
+              },
+              "features": {
+                "changeStep": 100,
+                "changePerTimestep": 2,
+                "biDirectional": true,
+                "engagementSignal": 3,
+                "operationMode": "Both"
+              }
+            }
+          }
+        }
+      }
+    },
+    "zone2": {
+      "sensors": {
+        "driver1/field4": [
+            "taga",
+            "tagb"
+          ],
+        "driver2/field1": [
+            "tag6",
+            "tag7",
+            "tag8",
+            "tag9",
+            "tag10"
+          ]
+      },
+      "zoneName": "zone",
+      "actuators": {
+        "driver1/field2": {
+          "tag1": {
+            "default": 20.0,
+            "settings": {
+              "values": {
+                "min": 18,
+                "max": 25
+              },
+              "features": {
+                "changeStep": 0.5,
+                "changePerTimestep": 2,
+                "biDirectional": false,
+                "engagementSignal": 1,
+                "operationMode": "Heating"
+              }
+            }
+          },
+          "tag2": {
+            "default": 25.0,
+            "settings": {
+              "values": {
+                "min": 23,
+                "max": 28
+              },
+              "features": {
+                "changeStep": 0.5,
+                "changePerTimestep": 2,
+                "biDirectional": false,
+                "engagementSignal": 1,
+                "operationMode": "Cooling"
+              }
+            }
+          },
+          "tag3": {
+            "default": 600.0,
+            "settings": {
+              "values": {
+                "min": 200,
+                "max": 900
+              },
+              "features": {
+                "changeStep": 100,
+                "changePerTimestep": 2,
+                "biDirectional": true,
+                "engagementSignal": 3,
+                "operationMode": "Both"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

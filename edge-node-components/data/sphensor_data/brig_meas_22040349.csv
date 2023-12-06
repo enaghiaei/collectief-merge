@@ -1,0 +1,11 @@
+driver,field_id,cfg,zone_id,name
+sph_p,22040278,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""lux5_0""}, {""tag"": ""lux4_0""}, {""tag"": ""lux3_0""}, {""tag"": ""lux2_0""}, {""tag"": ""lux1_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B01Z05,sph_p2204027822040278
+sph_p,22050177,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B01Z01,sph_p2205017722050177
+sph_p,22050180,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B01Z04,sph_p2205018022050180
+sph_p,22040204,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B01Z01,sph_p2204020422040204
+sph_p,22040205,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B01Z02,sph_p2204020522040205
+sph_p,22050181,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B01Z05,sph_p2205018122050181
+sph_p,22050179,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B01Z03,sph_p2205017922050179
+sph_p,22040215,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B01Z04,sph_p2204021522040215
+sph_p,22050178,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B01Z02,sph_p2205017822050178
+sph_p,22040214,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B01Z03,sph_p2204021422040214

@@ -1,0 +1,5 @@
+driver,field_id,cfg,zone_id,name
+sph_p,22040243,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B144CZ02,sph_p2204024322040243
+sph_p,22040398,"{""measures"": [{""tag"": ""tvoc_1""}, {""tag"": ""pm_0""}, {""tag"": ""pm_1""}, {""tag"": ""pm_2""}, {""tag"": ""pm_3""}, {""tag"": ""co2_1""}, {""tag"": ""battery_0""}]}",B141CZ01,sph_p2204039822040398
+sph_p,22040232,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B141CZ02,sph_p2204023222040232
+sph_p,22040242,"{""measures"": [{""tag"": ""battery_0""}, {""tag"": ""press_0""}, {""tag"": ""press_1""}, {""tag"": ""t_rh_0""}, {""tag"": ""t_rh_1""}]}",B141CZ01,sph_p2204024222040242

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+          type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+          content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    /*var triggerEl = document.querySelector('#myTab a[href="#profile"]')
+        bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+
+        var triggerFirstTabEl = document.querySelector('#myTab li:first-child a')
+        bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab*/
+        $(document).ready(function () {
+            initialize();
+
+            $(".menu-crtl").click(function () {
+                //alert($("#menu_stat").val());
+                if ($("#menu_stat").val() == "false")
+                    $(".main_panel").css("left", window.innerWidth * 0.06);
+                else
+                    $(".main_panel").css("left", window.innerWidth * 0.15);
+                if ($("#menu_stat").val() == "false") {
+                    $(".main_panel").css("width", window.innerWidth * 0.92);
+                    $(".main_content").css("width", window.innerWidth * 0.92);
+                }
+                else {
+                    $(".main_content").css("width", window.innerWidth * 0.82);
+                    $(".main_panel").css("width", window.innerWidth * 0.82);
+                }
+            });
+
+            function initialize() {
+                $("#username").click();
+                $("#password").click();
+                $(".video_comment").css("max-height", $(".video_panel").height());
+                // Register an event listener to call the resizeCanvas() function
+                // each time the window is resized.
+                window.addEventListener('resize', resizeCanvas, false);
+                if ($("#menu_stat").val() == "true")
+                    $(".main_panel").css("left", window.innerWidth * 0.15);
+                else
+                    $(".main_panel").css("left", window.innerWidth * 0.15);
+                // Draw canvas border for the first time.
+                resizeCanvas();
+            }
+
+
+
+            function resizeCanvas() {
+                $(".topleft").css("width", window.innerWidth * 0.35);
+                $(".rightbottom").css("width", window.innerWidth * 0.45);
+                //$(".rightbottom").css("right",window.innerWidth*0.1);
+                if ($("#menu_stat").val() == "true")
+                    $(".main_panel").css("left", window.innerWidth * 0.06);
+                else
+                    $(".main_panel").css("left", window.innerWidth * 0.15);
+                if ($("#menu_stat").val() == "true") {
+                    $(".main_panel").css("width", window.innerWidth * 0.92);
+                    $(".main_content").css("width", window.innerWidth * 0.92);
+                }
+                else {
+                    $(".main_content").css("width", window.innerWidth * 0.82);
+                    $(".main_panel").css("width", window.innerWidth * 0.82);
+                }
+                var page_size = { width: $(window).width(), height: $(window).height() };
+
+                console.log(page_size);
+                var p_width = 0;
+                $(".col-left").css("display", "block");
+                $(".menu").css("height", page_size.height);
+                $(".menu-open").css("width", page_size.width * 0.13);
+                $(".menu-close").css("width", page_size.width * 0.05);
+                $(".menu-h-open").css("width", page_size.width * 0.02);
+                $(".menu-h-close").css("width", page_size.width * 0.02);
+                $(".login_container").css("border-radius", "25px");
+                $("body").css("background-color", "#F5F5FD");
+                $(".topright").css("width", (0.65 * page_size.width));
+                $(".topright").css("height", (0.35 * page_size.height));
+                $(".logo").css("left", (0.12 * page_size.width));
+                $(".logo").css("width", (0.15 * page_size.width));
+                $(".logo").css("top", (0.0005 * page_size.height));
+                if (page_size.width > 1056) {
+                    $(".left_img").css("width", (0.3 * page_size.width));
+                    $(".col-right").css("width", (0.2 * page_size.width));
+                    $(".col-right").css("max-height", (0.8 * page_size.height));
+                    $(".input_text").css("width", (0.2 * page_size.width));
+                    $(".login_b").css("width", (0.2 * page_size.width));
+                    $(".login_b2").css("width", (0.2 * page_size.width));
+                    $(".left_img").css("height", (0.7 * page_size.height));
+                    $(".v_m").css("height", (0.2 * page_size.height));
+                    //$(".login_container").css("height",0.8*page_size.height);
+                    $(".login_container_l2").css("width", 0.6 * page_size.width);
+                    $(".login-top").css("margin-top", 0.1 * page_size.height);
+                    $(".login-top").css("margin-bottom", 0.1 * page_size.height);
+                    $(".login_container").css("box-shadow", "0px 36.0424px 56.909px rgb(0 0 0 / 15%)");
+                }
+                else if (page_size.width > 956) {
+                    $(".left_img").css("width", (0.3 * page_size.width));
+                    $(".col-right").css("width", (0.4 * page_size.width));
+                    $(".col-right").css("max-height", (0.8 * page_size.height));
+                    $(".input_text").css("width", (0.3 * page_size.width));
+                    $(".login_b").css("width", (0.3 * page_size.width));
+                    $(".login_b2").css("width", (0.3 * page_size.width));
+                    $(".left_img").css("height", (0.7 * page_size.height));
+                    $(".v_m").css("height", (0.2 * page_size.height));
+                    //$(".login_container").css("height",0.7*page_size.height);
+                    $(".login_container_l2").css("width", 0.8 * page_size.width);
+                    $(".login-top").css("margin-top", 0.1 * page_size.height);
+                    $(".login-top").css("margin-bottom", 0.1 * page_size.height);
+                    $(".login_container").css("box-shadow", "0px 36.0424px 56.909px rgb(0 0 0 / 15%)");
+                }
+                else if (page_size.width > 856) {
+                    $(".left_img").css("width", (0.3 * page_size.width));
+                    $(".col-right").css("width", (0.4 * page_size.width));
+                    $(".col-right").css("max-height", (0.8 * page_size.height));
+                    $(".input_text").css("width", (0.2 * page_size.width));
+                    $(".login_b").css("width", (0.2 * page_size.width));
+                    $(".login_b2").css("width", (0.2 * page_size.width));
+                    $(".left_img").css("height", (0.7 * page_size.height));
+                    $(".v_m").css("height", (0.2 * page_size.height));
+                    //$(".login_container").css("height",0.8*page_size.height);
+                    $(".login_container_l2").css("width", 0.9 * page_size.width);
+                    $(".login-top").css("margin-top", 0.1 * page_size.height);
+                    $(".login-top").css("margin-bottom", 0.1 * page_size.height);
+                    $(".login_container").css("box-shadow", "0px 36.0424px 56.909px rgb(0 0 0 / 15%)");
+                }
+                else if (page_size.width > 756) {
+                    $(".left_img").css("width", (0.3 * page_size.width));
+                    $(".col-right").css("width", (0.4 * page_size.width));
+                    $(".col-right").css("max-height", (0.8 * page_size.height));
+                    $(".input_text").css("width", (0.2 * page_size.width));
+                    $(".login_b").css("width", (0.2 * page_size.width));
+                    $(".login_b2").css("width", (0.2 * page_size.width));
+                    $(".left_img").css("height", (0.7 * page_size.height));
+                    $(".v_m").css("height", (0.2 * page_size.height));
+                    //$(".login_container").css("height",0.8*page_size.height);
+                    $(".login_container_l2").css("width", 0.9 * page_size.width);
+                    $(".login-top").css("margin-top", 0.1 * page_size.height);
+                    $(".login-top").css("margin-bottom", 0.1 * page_size.height);
+                    $(".login_container").css("box-shadow", "0px 36.0424px 56.909px rgb(0 0 0 / 15%)");
+                }
+                else if (page_size.width < 756) {
+                    $(".menu-h-open").css("width", page_size.width * 0.04);
+                    $(".menu-h-close").css("width", page_size.width * 0.04);
+                    $(".menu-open").css("width", page_size.width * 0.25);
+                    $(".menu-close").css("width", page_size.width * 0.15);
+                    $(".col-right").css("width", page_size.width);
+                    $(".col-left").css("display", "none");
+                    $(".input_text").css("width", 0.8 * page_size.width);
+                    $(".login_b").css("width", 0.8 * page_size.width);
+                    $(".login_b2").css("width", 0.8 * page_size.width);
+                    $(".col-right").css("margin-left", 0.1 * page_size.width);
+                    $(".v_m").css("height", (0.3 * page_size.height));
+                    $(".login_container").css("height", page_size.height);
+                    $(".login-top").css("margin-bottom", 0 * page_size.height);
+                    $(".login_l2").css("font-size", "20px");
+                    $(".login_container").css("box-shadow", "0px 0px 0px");
+                    $(".login_container").css("border-radius", "0px");
+                    //$("body").css("background-color","#fff");
+                }
+                else {
+
+                }
+                var he = $(".panels").height();
+
+
+
+            }
+        });</script>
+    <title>Collectief</title>
+</head>
+  <body style="background-color: #F0F1F2; ">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

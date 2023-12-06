@@ -1,0 +1,12 @@
+{
+  "sub_topics": [
+        "sphensor/%s/+/grouped_inst",
+        "sphensor/%s/+/inst",
+        "sphensor/%s/+/diagnostic",
+        "sphensor/%s/+/visibility",
+        "sphensor/%s/+/status"
+  ],
+  "send_saved_msg": true,
+  "send_unsaved_msg": true,
+  "send_msg_topic": "collectief/%s/sph_p/%s/data/event"
+}

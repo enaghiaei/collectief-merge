@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+    font-family: "font1";
+    src: local("font1"), url("./assets/fonts/font1.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "font2";
+    src: local("font2"), url("./assets/fonts/font2.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "font3";
+    src: local("font3"), url("./assets/fonts/font3.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "font4";
+    src: local("font4"), url("./assets/fonts/font4.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "font5";
+    src: local("font5"), url("./assets/fonts/font5.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "font7";
+    src: local("font7"), url("./assets/fonts/font7.ttf") format("truetype");
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+{
+  "sw_version": {
+    "major": 0,
+    "minor": 0
+  },
+  "entities":  {
+    "default_polling_period_minutes": 5,
+    "default_req_timeout_minutes": 5,
+    "default_max_retries": 5,
+    "default_retry_period_minutes": 5,
+    "default_retry_method": "incremental"
+  },
+  "polling_scheduler":  {
+    "sleep_time_sec": 1
+  },
+  "thread_pool":  {
+    "max_parallel_threads": 3,
+    "max_queue_length": 100
+  },
+  "mqtt": {
+    "sub_topics": [
+      "collectief/%s/+/+/+/req",
+      "collectief/any/+/+/+/req"
+    ],
+    "send_saved_msg": true,
+    "send_msg_topic": "collectief/%s/%s/%s/data/event"
+  },
+  "use_buid_in_event_topic": "DA IMPLEMENTARE"
+}

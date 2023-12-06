@@ -1,0 +1,40 @@
+     
+
+.spinner-container2
+{
+    background-color: #fff;
+    
+    z-index: 99;
+    
+    width: 30px;
+   
+    border-radius: 0.5rem;
+
+}
+
+.spinner-container2 p
+{
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+#upper
+
+{
+    animation: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+

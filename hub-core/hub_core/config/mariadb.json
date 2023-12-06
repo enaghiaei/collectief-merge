@@ -1,0 +1,13 @@
+{
+  "user": "root",
+  "pwd": "marco",
+  "_pwd": "collectief",
+  "test_user": "collectief",
+  "test_pwd": "collectief",
+  "host": "192.168.191.40",
+  "host_dckr": "192.168.92.11",
+  "_host": "localhost",
+  "port": 3306,
+  "db_name": "collectief_db",
+  "_db_name": "collectief_db"
+}

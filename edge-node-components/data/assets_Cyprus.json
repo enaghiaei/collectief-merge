@@ -1,0 +1,91 @@
+{
+  "22040368": {
+    "brigId": "22040368",
+    "building_name": "Guy Ourisson Building (GOB)",
+    "coordinates": [35.1414598117012, 33.37997421169489],
+    "_comment": "the buildingId is set to 9 for all pilots in Cyprus, no difference detected on the collectief API",
+    "buildingId": 9,
+    "zones": {
+      "B09Z01": {
+        "sensors": { "sph_p" : {"22050333": ["co2"], "22040319": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B09Z02": {
+        "sensors": { "sph_p" : {"22050334": ["co2"], "22040320": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B09Z03": {
+        "sensors": { "sph_p" : {"22050335": ["co2"], "22040321": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B09Z04": { "sensors": { "sph_p" : {"22040322": ["t_rh_0"]} }, "actuators": {} },
+      "B09Z05": { "sensors": { "sph_p" : {"22040324": ["t_rh_0"]} }, "actuators": {} },
+      "B09Z06": { "sensors": { "sph_p" : {"22040325": ["t_rh_0"]} }, "actuators": {} },
+      "B09Z07": { "sensors": { "sph_p" : {"22040326": ["t_rh_0"]} }, "actuators": {} }
+    }
+  },
+  "22040370": {
+    "brigId": "22040370",
+    "building_name": "Graduate School (GS)",
+    "coordinates": [35.14405557232133, 33.41075734620429],
+    "buildingId": 10,
+    "zones": {
+      "B10Z01": {
+        "sensors": { "sph_p" : {"22050336": ["co2"], "22040323": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B10Z02": {
+        "sensors": { "sph_p" : {"22050337": ["co2"], "22040328": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B10Z03": { "sensors": { "sph_p" : {"22040330": ["t_rh_0"]} }, "actuators": {} },
+      "B10Z04": {
+        "sensors": {
+          "sph_p" : {"22050338": ["co2"],
+                     "22050339": ["co2"],
+                     "22040332": ["t_rh_0"]}
+        },
+        "actuators": {}
+      },
+      "B10Z05": {
+        "sensors": {
+          "sph_p": {
+            "22050341": [
+              "co2"
+            ],
+            "22040333": [
+              "t_rh_0"
+            ]
+          }
+        },
+        "actuators": {}
+      }
+    }
+  },
+  "22040371": {
+    "brigId": "22040371",
+    "building_name": "Novel Technologies Laboratory (NTL)",
+    "coordinates": [35.14448660945746, 33.41123260447031],
+    "buildingId": 11,
+    "zones": {
+      "B11Z13": {
+        "sensors": { "sph_p" : {"22050342": ["co2"], "22040334": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B11Z14": {
+        "sensors": { "sph_p" : {"22050343": ["co2"], "22040335": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B11Z15": { "sensors": { "sph_p" : {"22040336": ["t_rh_0"]} }, "actuators": {} },
+      "B11Z16": { "sensors": { "sph_p" : {"22040337": ["t_rh_0"]} }, "actuators": {} },
+      "B11Z17": {
+        "sensors": { "sph_p" : {"22050345": ["co2"], "22040339": ["t_rh_0"]} },
+        "actuators": {}
+      },
+      "B11Z18": {
+        "sensors": { "sph_p" : {"22050346": ["co2"], "22040340": ["t_rh_0"]} },
+        "actuators": {}
+      }
+    }
+  }
+}
