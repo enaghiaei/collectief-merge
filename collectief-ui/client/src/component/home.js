@@ -7181,9 +7181,12 @@ class Home extends React.Component {
     }
 
     setFilter() {
+        console.log("*0")
         if ($("#filter_div").hasClass("d-none")) {
+            console.log("*1")
             $("#filter_div").removeClass("d-none")
         } else {
+            console.log("*2")
             $("#filter_div").addClass("d-none")
         }
     }
@@ -7448,8 +7451,8 @@ class Home extends React.Component {
                                         &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Dark/Light mode</span>
                                     </div>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }}>
-                                        <FontAwesomeIcon icon={faFilter} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" onClick={(event) => this.setFilter()} />
+                                    <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }} onClick={(event) => this.setFilter()}>
+                                        <FontAwesomeIcon icon={faFilter} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" />
                                         &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Filter Date</span>
                                     </div>
                                 </div>
@@ -7738,8 +7741,8 @@ class Home extends React.Component {
                                         &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Dark/Light mode</span>
                                     </div>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }}>
-                                        <FontAwesomeIcon icon={faFilter} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" onClick={(event) => this.setFilter()} />
+                                    <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }} onClick={(event) => this.setFilter()}>
+                                        <FontAwesomeIcon icon={faFilter} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" />
                                         &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Filter Date</span>
                                     </div>
                                 </div>
