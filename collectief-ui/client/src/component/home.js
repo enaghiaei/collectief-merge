@@ -28,7 +28,7 @@ import Modal from 'react-modal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon,faClock, faCalendarAlt, faCalendarWeek, faLightbulb, faCalendar, faCalendarTimes, faAdd, faMinus, faGear, faTemperature0, faPowerOff, faArrowRight, faArrowLeft, faInfo, faCircleInfo, faInfoCircle, faPlusSquare, faClose, faCheck, faTrashAlt, faPlusCircle, faPlus, faEdit, faPenClip, faPen, faWindowClose, faSun, faWind, faLocation, faLocationPin, faMapLocationDot, faBuilding, faHome, faTemperature, faTemperatureHigh, faTint, faCloud, faCompressAlt, faSmog, faBatteryFull } from '@fortawesome/free-solid-svg-icons';
+import { faFilter, faMoon, faClock, faCalendarAlt, faCalendarWeek, faLightbulb, faCalendar, faCalendarTimes, faAdd, faMinus, faGear, faTemperature0, faPowerOff, faArrowRight, faArrowLeft, faInfo, faCircleInfo, faInfoCircle, faPlusSquare, faClose, faCheck, faTrashAlt, faPlusCircle, faPlus, faEdit, faPenClip, faPen, faWindowClose, faSun, faWind, faLocation, faLocationPin, faMapLocationDot, faBuilding, faHome, faTemperature, faTemperatureHigh, faTint, faCloud, faCompressAlt, faSmog, faBatteryFull } from '@fortawesome/free-solid-svg-icons';
 import Spinner2 from "./Spinner2"
 import ReactWeather, { useOpenWeather } from 'react-open-weather';
 import GoogleMapReact from 'google-map-react';
@@ -76,7 +76,7 @@ var building_str = {
     "buildingId": 9,
     "zones": {
         "B09Z01": {
-            "title":"B09Z01",
+            "title": "B09Z01",
             "sensors": {
                 "sph_p": {
                     "22050333": [
@@ -181,6 +181,7 @@ class Home extends React.Component {
             data5_sensor_7d: [],
             data5_sensor_30d: [],
             data5_sensor_365d: [],
+            data5_sensor_custom: [],
             sensor_location: [],
             loading: "text-center",
             modalIsOpen: false,
@@ -198,7 +199,7 @@ class Home extends React.Component {
             box_chart: 0,
             box_other: 0,
             box_parametr: 0,
-            dark:"dark",
+            dark: "dark",
             box_value_type: [0, 1],
             box_title: "",
             data5: [{ "year": "1300", "value": "100", "category": "0x" }],
@@ -318,23 +319,32 @@ class Home extends React.Component {
             this.temperature_per_hour_7d();
             this.temperature_per_hour_30d();
             this.temperature_per_hour_365d();
-            this.temperature_per_hour_sensor();
-            this.temperature_per_hour_sensor_48h();
-            this.temperature_per_hour_sensor_7d();
-            this.temperature_per_hour_sensor_30d();
-            this.temperature_per_hour_sensor_365d();
-            this.humidity_per_hour();
-            this.humidity_per_hour_sensor();
-            this.pm_per_hour();
-            this.pm_per_hour_sensor();
-            this.pressure_per_hour();
-            this.pressure_per_hour_sensor();
+            this.temperature_per_hour_custom();
+            /* this.temperature_per_hour_sensor();
+             this.temperature_per_hour_sensor_48h();
+             this.temperature_per_hour_sensor_7d();
+             this.temperature_per_hour_sensor_30d();
+             this.temperature_per_hour_sensor_365d();
+             this.humidity_per_hour();
+             this.humidity_per_hour_sensor();
+             this.pm_per_hour();
+             this.pm_per_hour_sensor();
+             this.pressure_per_hour();
+             this.pressure_per_hour_sensor();*/
 
             this.get_boxes();
 
             this.get_location();
             ;
-        }, 100);
+            const endDate = new Date();
+            const startDate = new Date(endDate.getTime() - 18 * 60 * 60 * 1000);
+
+            const startDateString = startDate.toISOString().slice(0, -8);
+            const endDateString = endDate.toISOString().slice(0, -8);
+            console.log("startDateString", startDateString)
+            $("#date_from").val(startDateString);
+            $("#date_to").val(endDateString);
+        }, 1000);
         setInterval(() => {
             //this.sensors();
             //this.sensors_type();
@@ -345,6 +355,7 @@ class Home extends React.Component {
             this.temperature_per_hour_7d();
             this.temperature_per_hour_30d();
             this.temperature_per_hour_365d();
+            this.temperature_per_hour_custom();
             this.temperature_per_hour_sensor();
             this.humidity_per_hour();
             this.humidity_per_hour_sensor();
@@ -359,6 +370,14 @@ class Home extends React.Component {
             this.sensors_detail()
         }, 30000);
 
+        /*const startDateInput = $("#date_from");
+        const endDateInput = $("#date_to");
+        startDateInput.addEventListener("change", function () {
+            if (startDateInput.value > endDateInput.value) {
+                endDateInput.value = startDateInput.value;
+                //$.notify("","danger")
+            }
+        });*/
         //this.xxxx()
     }
 
@@ -451,9 +470,9 @@ class Home extends React.Component {
         var context = this;
 
         return this.state.buildings.map(function (o, i) {
-           ////console.log(context.state.buildings[i])
+            ////console.log(context.state.buildings[i])
             if (context.state.buildings[i].location.localeCompare("{}") < 0) {
-               ////console.log(context.state.buildings[i].location)
+                ////console.log(context.state.buildings[i].location)
                 var x = JSON.parse(context.state.buildings[i].location)
                 if (context.state.current_location_id == i)
                     return (
@@ -475,7 +494,7 @@ class Home extends React.Component {
     getBuildings() {
         const cookies = new Cookies();
         //cookies.set('token', result.token, { path: '/' });
-       ////console.log("cookies=" + cookies.get('token'));
+        ////console.log("cookies=" + cookies.get('token'));
         return fetch('http://' + global.config.vals.root.ip + ':3002/get_location_', {
             method: 'POST',
             headers: {
@@ -490,7 +509,7 @@ class Home extends React.Component {
                       isLoaded: true,
                       items: result.items
                     });*/
-                   ////console.log(result.result)
+                    ////console.log(result.result)
                     var nt_tmp = [];
                     for (var key in result.result) {
                         nt_tmp[key] = {};
@@ -505,13 +524,13 @@ class Home extends React.Component {
 
                     }
                     var x = JSON.parse(nt_tmp[0].location)
-                   ////console.log("xxxxxxxxxxxxxxxxxxxxxxxxx", x)
+                    ////console.log("xxxxxxxxxxxxxxxxxxxxxxxxx", x)
                     this.get_weather2(x.lat, x.lng, 0, nt_tmp[0].title)
                     this.setState({
                         buildings: nt_tmp
                     }
                     );
-                   ////console.log(result);
+                    ////console.log(result);
                     //this.renderRows();
                     //this.renderRows();
 
@@ -532,7 +551,7 @@ class Home extends React.Component {
     get_sri() {
         const cookies = new Cookies();
         //cookies.set('token', result.token, { path: '/' });
-       ////console.log("cookies=" + cookies.get('token'));
+        ////console.log("cookies=" + cookies.get('token'));
         return fetch('http://' + global.config.vals.root.ip + ':3002/get_sri', {
             method: 'POST',
             headers: {
@@ -548,7 +567,7 @@ class Home extends React.Component {
                       items: result.items
                     });*/
                     try {
-                       ////console.log(result.result)
+                        ////console.log(result.result)
                         var nt_tmp = [];
                         var yyy = JSON.parse(result.result);
                         var total_building = 0;
@@ -561,7 +580,7 @@ class Home extends React.Component {
                                 var xxx = zzz.chart;
                                 total_sri += parseInt(zzz.total_sri);
                                 class_sri = zzz.class_sri
-                               ////console.log("xxx", xxx)
+                                ////console.log("xxx", xxx)
                                 var i = 0;
                                 total_building++;
                                 for (var key in xxx) {
@@ -585,15 +604,15 @@ class Home extends React.Component {
 
                             }
                         }
-                       ////console.log("nt_tmp", nt_tmp)
-                       ////console.log("total_building", total_building)
+                        ////console.log("nt_tmp", nt_tmp)
+                        ////console.log("total_building", total_building)
                         for (var key in nt_tmp) {
                             nt_tmp[key].value = parseInt((nt_tmp[key].value / total_building).toFixed(0));
                         }
                         //sri_title: "SRI",
                         //    sri_val: 0
                         var total_sri_mid = total_sri / total_building
-                       ////console.log("nt_tmp", nt_tmp)
+                        ////console.log("nt_tmp", nt_tmp)
                         this.setState({
                             get_sri: nt_tmp,
                             total_building: total_building,
@@ -601,7 +620,7 @@ class Home extends React.Component {
                             sri_title: "CLASS " + class_sri
                         }
                         );
-                       ////console.log(result);
+                        ////console.log(result);
                     } catch (error) {
 
                     }
@@ -642,7 +661,7 @@ class Home extends React.Component {
 
         const cookies = new Cookies();
         //cookies.set('token', result.token, { path: '/' });
-       ////console.log("cookies=" + cookies.get('token'));
+        ////console.log("cookies=" + cookies.get('token'));
         return fetch('http://' + global.config.vals.root.ip + ':3002/get_sensors_info', {
             method: 'POST',
             headers: {
@@ -658,11 +677,11 @@ class Home extends React.Component {
                       items: result.items
                     });*/
                     this.setState({
-                       
+
                         sensor_detail: result.result
                     }
                     );
-                    
+
                     //this.renderRows();
                     //this.renderRows();
 
@@ -1165,7 +1184,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_max"]);
-                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Max";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1193,7 +1212,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av"]);
-                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Average";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1218,7 +1237,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_min"]);
-                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Min";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1294,7 +1313,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_max"]);
-                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Max";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1322,7 +1341,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av"]);
-                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Average";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1347,7 +1366,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_min"]);
-                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Min";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1369,6 +1388,140 @@ class Home extends React.Component {
                     this.setState({
 
                         data5_48h: data5,
+                        loading4: "d-none"
+                    }
+                    );
+                    ////console.log(result);
+                    //this.renderRows();
+                    //this.renderRows();
+
+                },
+                // Note: it's important to handle errors here
+                // instead of a catch() block so that we don't swallow
+                // exceptions from actual bugs in components.
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    });
+                }
+            )
+    }
+
+    set_range() {
+        this.temperature_per_hour_custom();
+        $(".date_pic").removeClass("date_pic_selected");
+
+        $(".custom_date").addClass("date_pic_selected");
+    }
+
+    temperature_per_hour_custom() {
+        const cookies = new Cookies();
+        //cookies.set('token', result.token, { path: '/' });
+        ////console.log("cookies=" + cookies.get('token'));
+        return fetch('http://' + global.config.vals.root.ip + ':3002/temperature_per_hour_custom', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ token: cookies.get('token'), "from": $("#date_from").val(), "to": $("#date_to").val() })
+        })
+            .then(data => data.json())
+            .then(
+                (result) => {
+                    /*this.setState({
+                      isLoaded: true,
+                      items: result.items
+                    });*/
+                    // Temperature (℃) per 10 minutes
+                    ////console.log(result.result);
+                    var data5 = [];
+                    var i = 0;
+
+                    for (var key in result.result) {
+                        for (var key2 in result.result[key]) {
+                            ////console.log(key)
+                            ////console.log(result.result[key])
+                            ////console.log(result.result[key][key2])
+                            if (result.result[key][key2]["av_max"] != "null") {
+                                data5[i] = {};
+                                data5[i].year = result.result[key][key2]["range_title"];
+                                data5[i].value = parseFloat(result.result[key][key2]["av_max"]);
+                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] + " per 10 minutes";
+                                data5[i].category2 = "Max";
+                                data5[i].category3 = result.result[key][key2]["cl_id"];
+                                data5[i].measure_name = result.result[key][key2]["measure_name"];
+                                data5[i].measure_kind = result.result[key][key2]["measure_kind"];
+                            } else {
+                                data5[i] = {};
+                                data5[i].year = key;
+                                data5[i].value = key;
+                                data5[i].category = "1x";
+                            }
+                            i++
+                        }
+
+                    }
+
+
+
+
+                    for (var key in result.result) {
+                        for (var key2 in result.result[key]) {
+                            ////console.log(key)
+                            ////console.log(result.result[key])
+                            ////console.log(result.result[key][key2])
+                            if (result.result[key][key2]["av"] != "null") {
+                                data5[i] = {};
+                                data5[i].year = result.result[key][key2]["range_title"];
+                                data5[i].value = parseFloat(result.result[key][key2]["av"]);
+                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] + " per 10 minutes";
+                                data5[i].category2 = "Average";
+                                data5[i].category3 = result.result[key][key2]["cl_id"];
+                                data5[i].measure_name = result.result[key][key2]["measure_name"];
+                                data5[i].measure_kind = result.result[key][key2]["measure_kind"];
+                            } else {
+                                data5[i] = {};
+                                data5[i].year = key;
+                                data5[i].value = key;
+                                data5[i].category = "0x";
+                            }
+                            i++
+                        }
+
+                    }
+
+                    for (var key in result.result) {
+                        for (var key2 in result.result[key]) {
+                            ////console.log(key)
+                            ////console.log(result.result[key])
+                            ////console.log(result.result[key][key2])
+                            if (result.result[key][key2]["av_min"] != "null") {
+                                data5[i] = {};
+                                data5[i].year = result.result[key][key2]["range_title"];
+                                data5[i].value = parseFloat(result.result[key][key2]["av_min"]);
+                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] + " per 10 minutes";
+                                data5[i].category2 = "Min";
+                                data5[i].category3 = result.result[key][key2]["cl_id"];
+                                data5[i].measure_name = result.result[key][key2]["measure_name"];
+                                data5[i].measure_kind = result.result[key][key2]["measure_kind"];
+                            } else {
+                                data5[i] = {};
+                                data5[i].year = key;
+                                data5[i].value = key;
+                                data5[i].category = "2x";
+                            }
+                            i++
+                        }
+
+                    }
+
+
+
+                    ////console.log("data5",data5)
+                    this.setState({
+
+                        data5_custom: data5,
                         loading4: "d-none"
                     }
                     );
@@ -1422,7 +1575,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_max"]);
-                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Max";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1450,7 +1603,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av"]);
-                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Average";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1475,7 +1628,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_min"]);
-                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Min";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1550,7 +1703,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_max"]);
-                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Max";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1578,7 +1731,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av"]);
-                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Average";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1603,7 +1756,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_min"]);
-                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Min";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1678,7 +1831,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_max"]);
-                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Max " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Max";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1706,7 +1859,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av"]);
-                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Average " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Average";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1731,7 +1884,7 @@ class Home extends React.Component {
                                 data5[i] = {};
                                 data5[i].year = result.result[key][key2]["range_title"];
                                 data5[i].value = parseFloat(result.result[key][key2]["av_min"]);
-                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] +" per 10 minutes";
+                                data5[i].category = "Min " + result.result[key][key2]["measure_name"] + " per 10 minutes";
                                 data5[i].category2 = "Min";
                                 data5[i].category3 = result.result[key][key2]["cl_id"];
                                 data5[i].measure_name = result.result[key][key2]["measure_name"];
@@ -1874,7 +2027,7 @@ class Home extends React.Component {
 
                     ////console.log("data5", data5)
                     this.setState({
-                        
+
                         data5_sensor_12h: data5,
                         loading4: "d-none"
                     }
@@ -3468,8 +3621,8 @@ class Home extends React.Component {
             .then(data => data.json())
             .then(
                 (result) => {
-                   // var result = {}
-                   // result.result = JSON.parse('[{"row":0,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"3","sensor":"","source_type":0},"column":0,"title":"B09Z01 Temprature Over Time","title_short":"B09Z01"},{"row":1,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"4","sensor":"","source_type":0},"column":0,"title":"B09Z02 Temprature Over Time","title_short":"B09Z02"},{"row":2,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"5","sensor":"","source_type":0},"column":0,"title":"B09Z03 Temprature Over Time","title_short":"B09Z03"},{"row":3,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"6","sensor":"","source_type":0},"column":0,"title":"B09Z04 Temprature Over Time","title_short":"B09Z04"},{"row":4,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"7","sensor":"","source_type":0},"column":0,"title":"B09Z05 Temprature Over Time","title_short":"B09Z05"},{"row":5,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"8","sensor":"","source_type":0},"column":0,"title":"B09Z06 Temprature Over Time","title_short":"B09Z06"},{"row":6,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"9","sensor":"","source_type":0},"column":0,"title":"B09Z07 Temprature Over Time","title_short":"B09Z07"}]');
+                    // var result = {}
+                    // result.result = JSON.parse('[{"row":0,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"3","sensor":"","source_type":0},"column":0,"title":"B09Z01 Temprature Over Time","title_short":"B09Z01"},{"row":1,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"4","sensor":"","source_type":0},"column":0,"title":"B09Z02 Temprature Over Time","title_short":"B09Z02"},{"row":2,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"5","sensor":"","source_type":0},"column":0,"title":"B09Z03 Temprature Over Time","title_short":"B09Z03"},{"row":3,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"6","sensor":"","source_type":0},"column":0,"title":"B09Z04 Temprature Over Time","title_short":"B09Z04"},{"row":4,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"7","sensor":"","source_type":0},"column":0,"title":"B09Z05 Temprature Over Time","title_short":"B09Z05"},{"row":5,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"8","sensor":"","source_type":0},"column":0,"title":"B09Z06 Temprature Over Time","title_short":"B09Z06"},{"row":6,"type":{"function":0,"chart":1,"parametr":0,"value_type":["Average","Max","Min"],"other":0,"location":"9","sensor":"","source_type":0},"column":0,"title":"B09Z07 Temprature Over Time","title_short":"B09Z07"}]');
                     /*this.setState({
                       isLoaded: true,
                       items: result.items
@@ -4141,7 +4294,7 @@ class Home extends React.Component {
                     }
                 }
             }
-           ////console.log("x", x)
+            ////console.log("x", x)
             this.setState({
                 top_boxes: x,
                 top_boxes_stat: "remove-part p-0 pt-0 pr-1"
@@ -4458,7 +4611,7 @@ class Home extends React.Component {
             .then(data => data.json())
             .then(
                 (result) => {
-                   ////console.log("result", result);
+                    ////console.log("result", result);
                     if (result.forecast) {
                         this.setState({
                             weather: result,
@@ -4524,13 +4677,13 @@ class Home extends React.Component {
             .then(data => data.json())
             .then(
                 (result) => {
-                   ////console.log("result", result);
+                    ////console.log("result", result);
                     if (result.forecast) {
                         this.setState({
                             weather: result,
                             forecastday: result.forecast.forecastday,
                             forecastnow: result.current
-                           
+
                         }
                         );
                     }
@@ -4586,7 +4739,7 @@ class Home extends React.Component {
             .then(data => data.json())
             .then(
                 (result) => {
-                   ////console.log("result", result);
+                    ////console.log("result", result);
                     this.setState({
                         weather: result,
                         forecastday: result.forecast.forecastday,
@@ -4665,7 +4818,7 @@ class Home extends React.Component {
         if (context.state.forecastnow.condition)
             return (
                 <div>
-                   
+
                     <div className="newline"></div>
 
                     <div className="weather_day_title">
@@ -4798,7 +4951,7 @@ class Home extends React.Component {
     renderWeather() {
         var context = this;
         return this.state.forecastday.map(function (o, i) {
-           ////console.log("forcast", context.state.forecastday[i])
+            ////console.log("forcast", context.state.forecastday[i])
             var date = context.state.forecastday[i].date.split("-")
             var mstr = context.getStrMonth(date[1]);
             return (
@@ -4932,10 +5085,10 @@ class Home extends React.Component {
         // <div id={title_short + "_t0"} className="date_pic date_pic_selected m-2" onClick={(event) => this.set_data_for_chart(0, title_short)}>
         console.log("set_measure_type")
         for (var i = 0; i <= 4; i++) {
-            console.log("i",i)
+            console.log("i", i)
             if ($("#" + zone + "_t" + i).hasClass("date_pic_selected")) {
-                console.log("zone in",zone)
-                this.set_data_for_chart(i,zone)
+                console.log("zone in", zone)
+                this.set_data_for_chart(i, zone)
             }
         }
     }
@@ -5205,27 +5358,50 @@ class Home extends React.Component {
                     if (context1.state.boxes_new[key].type.parametr == 0) {
                         if (context1.state.boxes_new[key].type.chart == 1) {
                             if (context1.state.location_list.includes(context1.state.boxes_new[key].title_short) || context1.state.user_type === 3) {
-                                return (
-                                    <div className={container} style={{ "background-color": context1.state.color }}>
+                                if (key === 0)
+                                    return (
+                                        <div className={container} style={{ "background-color": context1.state.color, "margin-top": "10px" }}>
 
-                                        <div className="pb-2 mb-4" style={{ "font-weight": "bold", color: "rgb(130, 97, 16)", width: "100%", display: "inline-block", "border-bottom": "2px solid #eee", "padding": "5px", "letter-spacing": "2px" }}>
-                                            {context1.state.boxes_new[key].title_short}
-                                            &nbsp;<select id={"id_" + context1.state.boxes_new[key].title_short} style={{ "border-radius": "10px", "border": "0px solid rgb(130, 97, 16)", "width": "200px", "background-color": "rgb(255, 191, 31)", "padding": "5px" }} onClick={(event) => context1.set_measure_type(context1.state.boxes_new[key].title_short)}>
-                                                {context1.render_measure_types()}
-                                            </select> Over Time
-                                        </div>
-                                        <div style={{ "text-align": "right", "position": "relative", "top": "-70px", "right": "-10px" }} className="remove-part d-none p-1 pt-1 pr-1">
-                                            <FontAwesomeIcon onClick={(event) => context1.openModal2(key2, context1.state.boxes_new[key].column, 1)} style={{ "color": "#ffbf1f", "opacity": "0.7", "cursor": "pointer", "width": "25px", "height": "25px" }} icon={faEdit} className="arrow pl-2" />
-                                            <FontAwesomeIcon onClick={(event) => context1.removeModal2(key2, context1.state.boxes_new[key].column)} style={{ "color": "red", "opacity": "0.7", "cursor": "pointer", "width": "25px", "height": "25px" }} icon={faWindowClose} className="arrow pl-2" />
-                                        </div>
-                                        <div className={context1.state.loading4} style={{ "text-align": "center" }}>
-                                            <Spinner2 customText="Loading" />
-                                        </div>
-                                        {context1.renderChart(x5_new, context1.state.boxes_new[key].title_short, key)}
+                                            <div className="pb-2 mb-4" style={{ "font-weight": "bold", color: "rgb(130, 97, 16)", width: "100%", display: "inline-block", "border-bottom": "2px solid #eee", "padding": "5px", "letter-spacing": "2px" }}>
+                                                {context1.state.boxes_new[key].title_short}
+                                                &nbsp;<select id={"id_" + context1.state.boxes_new[key].title_short} style={{ "border-radius": "10px", "border": "0px solid rgb(130, 97, 16)", "width": "200px", "background-color": "rgb(255, 191, 31)", "padding": "5px" }} onClick={(event) => context1.set_measure_type(context1.state.boxes_new[key].title_short)}>
+                                                    {context1.render_measure_types()}
+                                                </select> Over Time
+                                            </div>
+                                            <div style={{ "text-align": "right", "position": "relative", "top": "-70px", "right": "-10px" }} className="remove-part d-none p-1 pt-1 pr-1">
+                                                <FontAwesomeIcon onClick={(event) => context1.openModal2(key2, context1.state.boxes_new[key].column, 1)} style={{ "color": "#ffbf1f", "opacity": "0.7", "cursor": "pointer", "width": "25px", "height": "25px" }} icon={faEdit} className="arrow pl-2" />
+                                                <FontAwesomeIcon onClick={(event) => context1.removeModal2(key2, context1.state.boxes_new[key].column)} style={{ "color": "red", "opacity": "0.7", "cursor": "pointer", "width": "25px", "height": "25px" }} icon={faWindowClose} className="arrow pl-2" />
+                                            </div>
+                                            <div className={context1.state.loading4} style={{ "text-align": "center" }}>
+                                                <Spinner2 customText="Loading" />
+                                            </div>
+                                            {context1.renderChart(x5_new, context1.state.boxes_new[key].title_short, key)}
 
-                                    </div>
+                                        </div>
 
-                                )
+                                    )
+                                else
+                                    return (
+                                        <div className={container} style={{ "background-color": context1.state.color }}>
+
+                                            <div className="pb-2 mb-4" style={{ "font-weight": "bold", color: "rgb(130, 97, 16)", width: "100%", display: "inline-block", "border-bottom": "2px solid #eee", "padding": "5px", "letter-spacing": "2px" }}>
+                                                {context1.state.boxes_new[key].title_short}
+                                                &nbsp;<select id={"id_" + context1.state.boxes_new[key].title_short} style={{ "border-radius": "10px", "border": "0px solid rgb(130, 97, 16)", "width": "200px", "background-color": "rgb(255, 191, 31)", "padding": "5px" }} onClick={(event) => context1.set_measure_type(context1.state.boxes_new[key].title_short)}>
+                                                    {context1.render_measure_types()}
+                                                </select> Over Time
+                                            </div>
+                                            <div style={{ "text-align": "right", "position": "relative", "top": "-70px", "right": "-10px" }} className="remove-part d-none p-1 pt-1 pr-1">
+                                                <FontAwesomeIcon onClick={(event) => context1.openModal2(key2, context1.state.boxes_new[key].column, 1)} style={{ "color": "#ffbf1f", "opacity": "0.7", "cursor": "pointer", "width": "25px", "height": "25px" }} icon={faEdit} className="arrow pl-2" />
+                                                <FontAwesomeIcon onClick={(event) => context1.removeModal2(key2, context1.state.boxes_new[key].column)} style={{ "color": "red", "opacity": "0.7", "cursor": "pointer", "width": "25px", "height": "25px" }} icon={faWindowClose} className="arrow pl-2" />
+                                            </div>
+                                            <div className={context1.state.loading4} style={{ "text-align": "center" }}>
+                                                <Spinner2 customText="Loading" />
+                                            </div>
+                                            {context1.renderChart(x5_new, context1.state.boxes_new[key].title_short, key)}
+
+                                        </div>
+
+                                    )
                             }
                         } else if (context1.state.boxes_new[key].type.chart == 0) {
                             return (
@@ -5673,7 +5849,7 @@ class Home extends React.Component {
 
 
 
-    renderChart(data_tmp,title_short,key) {
+    renderChart(data_tmp, title_short, key) {
         //+" ℃"
         /*
         xAxis: {
@@ -5681,7 +5857,7 @@ class Home extends React.Component {
                 tickCount: 1,
             },*/
         ////console.log(this.state.data5);
-        for (var i = 0; i <= 4; i++) {
+        for (var i = 0; i <= 5; i++) {
             if ($("#" + title_short + "_t" + i).hasClass("date_pic_selected")) {
                 if (i == 0)
                     data_tmp = this.state.data5_12h;
@@ -5693,12 +5869,14 @@ class Home extends React.Component {
                     data_tmp = this.state.data5_30d;
                 else if (i == 4)
                     data_tmp = this.state.data5_365d;
+                else if (i == 5)
+                    data_tmp = this.state.data5_custom;
             }
         }
         var data_filter = [];
         var x5_new = [];
         var context1 = this;
-       //console.log("data_tmp", data_tmp)
+        //console.log("data_tmp", data_tmp)
         for (var key3 in data_tmp) {
 
             if (context1.state.boxes_new[key].type && context1.state.boxes_new[key].type.value_type && context1.state.boxes_new[key].type.value_type.includes(data_tmp[key3].category2) && parseInt(context1.state.boxes_new[key].type.source_type) == 0 && parseInt(context1.state.boxes_new[key].type.location) === parseInt(data_tmp[key3].category3)) {
@@ -5728,7 +5906,7 @@ class Home extends React.Component {
         }
 
         const theme = G2.getTheme(this.state.dark);
-      //console.log("data_filter", data_filter)
+        //console.log("data_filter", data_filter)
         var config44 = {
             "data": data_filter,
             xField: 'year',
@@ -5781,7 +5959,7 @@ class Home extends React.Component {
                 type: 'horizontal',
             },
             annotations: [
-                
+
                 {
                     type: 'line',
                     start: ['min', 'median'],
@@ -5824,7 +6002,7 @@ class Home extends React.Component {
         if (data_tmp.length > 0)
             return (
                 <div style={{ "text-align": "left" }}>
-                    <div id={title_short + "_t0"} className="date_pic date_pic_selected m-2" onClick={(event) => this.set_data_for_chart(0, title_short)}>
+                    <div id={title_short + "_t0"} className="date_pic m-2 date_pic_selected" onClick={(event) => this.set_data_for_chart(0, title_short)}>
                         <FontAwesomeIcon icon={faClock} /> 12 hours
                     </div>
                     <div id={title_short + "_t1"} className="date_pic m-2" onClick={(event) => this.set_data_for_chart(1, title_short)} >
@@ -5834,18 +6012,21 @@ class Home extends React.Component {
                         <FontAwesomeIcon icon={faCalendarWeek} /> week
                     </div>
                     <div id={title_short + "_t3"} className="date_pic m-2" onClick={(event) => this.set_data_for_chart(3, title_short)}>
-                        <FontAwesomeIcon icon={faCalendarAlt}/> month
+                        <FontAwesomeIcon icon={faCalendarAlt} /> month
                     </div>
                     <div id={title_short + "_t4"} className="date_pic m-2" onClick={(event) => this.set_data_for_chart(4, title_short)}>
                         <FontAwesomeIcon icon={faCalendarTimes} /> year
                     </div>
-                    <div style={{ "text-align": "left", "position": "relative", "top": "38px", "float": "left", "left": "5px", "font-weight": "bold", "color": this.state.color, "z-index": "30", "display":"inline-block" }}>{x}</div>
+                    <div id={title_short + "_t5"} className="custom_date date_pic m-2" onClick={(event) => this.set_data_for_chart(5, title_short)}>
+                        <FontAwesomeIcon icon={faCalendarTimes} /> custom
+                    </div>
+                    <div style={{ "text-align": "left", "position": "relative", "top": "38px", "float": "left", "left": "5px", "font-weight": "bold", "color": this.state.color, "z-index": "30", "display": "inline-block" }}>{x}</div>
                     <Area {...config44} />
                 </div>
             );
         else {
-            return (< div  className='mt-5' ><div style={{ "text-align": "left" }}>
-                <div id={title_short + "_t0"} className="date_pic date_pic_selected m-2" onClick={(event) => this.set_data_for_chart(0, title_short)}>
+            return (< div className='mt-5' ><div style={{ "text-align": "left" }}>
+                <div id={title_short + "_t0"} className="date_pic date_pic_selected  m-2" onClick={(event) => this.set_data_for_chart(0, title_short)}>
                     <FontAwesomeIcon icon={faClock} /> 12 hours
                 </div>
                 <div id={title_short + "_t1"} className="date_pic m-2" onClick={(event) => this.set_data_for_chart(1, title_short)} >
@@ -5860,6 +6041,9 @@ class Home extends React.Component {
                 <div id={title_short + "_t4"} className="date_pic m-2" onClick={(event) => this.set_data_for_chart(4, title_short)}>
                     <FontAwesomeIcon icon={faCalendarTimes} /> year
                 </div>
+                <div id={title_short + "_t5"} className="custom_date date_pic m-2" onClick={(event) => this.set_data_for_chart(5, title_short)}>
+                    <FontAwesomeIcon icon={faCalendarTimes} /> custom
+                </div>
                 <div className="newline"></div>
                 <div style={{ "text-align": "center", "font-weight": "bold", "font-size": "25px", "letter-spacing": "4px" }}>
                     No Data
@@ -5870,12 +6054,12 @@ class Home extends React.Component {
 
     set_data_for_chart(type, title_short) {
         console.log(title_short)
-        for (var i = 0; i <= 4; i++) {
+        for (var i = 0; i <= 5; i++) {
             $("#" + title_short + "_t" + i).removeClass("date_pic_selected");
         }
-       
+
         if (type == 0) {
-           
+
             this.setState({
 
                 data5_sensor: this.state.data5_sensor_12h,
@@ -5883,11 +6067,11 @@ class Home extends React.Component {
 
             }
             );
-            $("#" + title_short +"_t" + type).addClass("date_pic_selected");
+            $("#" + title_short + "_t" + type).addClass("date_pic_selected");
             //set_data_for_chart(type, title_short)
         }
         else if (type == 1) {
-            
+
             this.setState({
 
                 data5_sensor: this.state.data5_sensor_48h,
@@ -5899,7 +6083,7 @@ class Home extends React.Component {
             //set_data_for_chart(type, title_short)
         }
         else if (type == 2) {
-            
+
             this.setState({
 
                 data5_sensor: this.state.data5_sensor_7d,
@@ -5911,7 +6095,7 @@ class Home extends React.Component {
             //set_data_for_chart(type, title_short)
         }
         else if (type == 3) {
-            
+
             this.setState({
 
                 data5_sensor: this.state.data5_sensor_30d,
@@ -5922,12 +6106,24 @@ class Home extends React.Component {
             $("#" + title_short + "_t" + type).addClass("date_pic_selected");
             //set_data_for_chart(type, title_short)
         }
-        else if (type == 4) { 
-            
+        else if (type == 4) {
+
             this.setState({
 
                 data5_sensor: this.state.data5_sensor_365d,
                 data5: this.state.data5_365d
+
+            }
+            );
+            $("#" + title_short + "_t" + type).addClass("date_pic_selected");
+            //set_data_for_chart(type, title_short)
+        }
+        else if (type == 5) {
+
+            this.setState({
+
+                data5_sensor: this.state.data5_sensor_custom,
+                data5: this.state.data5_custom
 
             }
             );
@@ -5969,7 +6165,7 @@ class Home extends React.Component {
                 return (< div style={{ "text-align": "center", "font-weight": "bold", "font-size": "25px", "letter-spacing": "4px" }} className='mt-5' > No Data</div >);
             }
         } catch (err) {
-           ////console.log(err)
+            ////console.log(err)
         }
     }
 
@@ -6040,7 +6236,7 @@ class Home extends React.Component {
                 return (< div style={{ "text-align": "center", "font-weight": "bold", "font-size": "25px", "letter-spacing": "4px" }} className='mt-5' > No Data</div >);
             }
         } catch (err) {
-           ////console.log(err)
+            ////console.log(err)
         }
     }
 
@@ -6741,53 +6937,53 @@ class Home extends React.Component {
     }
 
     renderZoneInfo(zone) {
-            /*"B02Z01": {
-                "sensors": {
-                    "sph_p": {
-                        "22050183": [
-                            "co2"
-                        ],*/
-            var zoneElements = [];
-            var sensorTypes = [];
-        
-            var sensors = [];
+        /*"B02Z01": {
+            "sensors": {
+                "sph_p": {
+                    "22050183": [
+                        "co2"
+                    ],*/
+        var zoneElements = [];
+        var sensorTypes = [];
 
-            for (var key3 in building_str.zones[zone].sensors.sph_p) {
-               ////console.log(key3)
-               ////console.log(parseInt(key3))
-                sensors[sensors.length] = parseInt(key3);
-            }
+        var sensors = [];
 
-           ////console.log(sensors)
-
-            for (var key2 in this.state.sensor_detail) {
-                if (!sensorTypes.includes(this.state.sensor_detail[key2].measure_name)) {
-                    sensorTypes[sensorTypes.length] = this.state.sensor_detail[key2].measure_name;
-                }
+        for (var key3 in building_str.zones[zone].sensors.sph_p) {
+            ////console.log(key3)
+            ////console.log(parseInt(key3))
+            sensors[sensors.length] = parseInt(key3);
         }
-       ////console.log("sensorTypes",sensorTypes)
+
+        ////console.log(sensors)
+
+        for (var key2 in this.state.sensor_detail) {
+            if (!sensorTypes.includes(this.state.sensor_detail[key2].measure_name)) {
+                sensorTypes[sensorTypes.length] = this.state.sensor_detail[key2].measure_name;
+            }
+        }
+        ////console.log("sensorTypes",sensorTypes)
         for (var key in sensorTypes) {
             var x = 0;
             var g = 0;
             var ind = 0;
-                for (var key2 in this.state.sensor_detail) {
-                   ////console.log(this.state.sensor_detail[key2].sensor_serial)
-                    if (sensors.includes(this.state.sensor_detail[key2].sensor_serial)) {
-                       ////console.log("in1")
-                        if (sensorTypes[key].localeCompare(this.state.sensor_detail[key2].measure_name) === 0) {
-                           ////console.log("in2")
-                           ////console.log("val", this.state.sensor_detail[key2].measure_value)
-                            x += parseFloat(this.state.sensor_detail[key2].measure_value);
-                           ////console.log("x",x)
-                            g++;
-                            ind = key2;
-                        }
-                           
+            for (var key2 in this.state.sensor_detail) {
+                ////console.log(this.state.sensor_detail[key2].sensor_serial)
+                if (sensors.includes(this.state.sensor_detail[key2].sensor_serial)) {
+                    ////console.log("in1")
+                    if (sensorTypes[key].localeCompare(this.state.sensor_detail[key2].measure_name) === 0) {
+                        ////console.log("in2")
+                        ////console.log("val", this.state.sensor_detail[key2].measure_value)
+                        x += parseFloat(this.state.sensor_detail[key2].measure_value);
+                        ////console.log("x",x)
+                        g++;
+                        ind = key2;
                     }
+
+                }
             }
-           ////console.log(sensorTypes[key])
-           ////console.log("g",g)  
-           ////console.log("x", x) 
+            ////console.log(sensorTypes[key])
+            ////console.log("g",g)  
+            ////console.log("x", x) 
             //faTemperatureHigh, faTint, faCloud, faCompressAlt, faSmog, faBatteryFull,faLightbulb
             var key2 = ind;
             if (g > 0) {
@@ -6796,7 +6992,7 @@ class Home extends React.Component {
                     zoneElements.push(
                         <div className="wrap1">
                             <div className="wrap2">
-                                <div style={{ display: "inline-block", "width": "75px" }}>{z.toFixed(2)} <span class="wrap2-unit">&#8451;</span></div> <FontAwesomeIcon style={{ "width": "20px", "height": "20px", "color": "#826110" , "position" : "relative" , "top" : "5px" , "margin-left" : "3px" }} icon={faTemperatureHigh} />
+                                <div style={{ display: "inline-block", "width": "75px" }}>{z.toFixed(2)} <span class="wrap2-unit">&#8451;</span></div> <FontAwesomeIcon style={{ "width": "20px", "height": "20px", "color": "#826110", "position": "relative", "top": "5px", "margin-left": "3px" }} icon={faTemperatureHigh} />
                             </div>
 
                             <div className="wrap3">
@@ -6823,7 +7019,7 @@ class Home extends React.Component {
                     zoneElements.push(
                         <div className="wrap1">
                             <div className="wrap2">
-                                <div style={{ display: "inline-block", "width":"100px" }}> {z.toFixed(2)} <span class="wrap2-unit">Lm/m²</span></div> <FontAwesomeIcon style={{ "width": "20px", "height": "20px", "color": "#826110", "position": "relative", "top": "5px", "margin-left": "3px" }} icon={faLightbulb} />
+                                <div style={{ display: "inline-block", "width": "100px" }}> {z.toFixed(2)} <span class="wrap2-unit">Lm/m²</span></div> <FontAwesomeIcon style={{ "width": "20px", "height": "20px", "color": "#826110", "position": "relative", "top": "5px", "margin-left": "3px" }} icon={faLightbulb} />
                             </div>
 
                             <div className="wrap3">
@@ -6924,20 +7120,20 @@ class Home extends React.Component {
                     );
                 }
             }
-            }
+        }
 
-           ////console.log(zoneElements)
+        ////console.log(zoneElements)
 
-        
+
 
         return zoneElements;
-        
+
     }
-    
+
     set_detail(office) {
         //alert(office)
-       ////console.log(office)
-      
+        ////console.log(office)
+
         window.location.href = "/home_detail/" + office;
     }
 
@@ -6948,34 +7144,34 @@ class Home extends React.Component {
         for (var key in building_str.zones) {
             zoneElements.push();
         }
-       // return zoneElements;
+        // return zoneElements;
         var context = this;
         let arr = Object.values(building_str);
         let arr2 = Object.values(arr[5]);
-       ////console.log(arr)
+        ////console.log(arr)
         return arr2.map(function (o, i) {
-            if (context.state.location_list.includes(arr2[i]["title"]) || context.state.user_type === 3) { 
-            return (<div key={i} id={"office_" + i} className="container_c2" style={{ "cursor": "pointer", "opacity": "0.9", "background-color": "#ffbf1f", backgroundImage: `url(${collectief_logo4})`, "background-position": "right bottom", "background-repeat": "no-repeat", "background-size": "150px 150px","border":"2px solid #000","border-radius":"15px" }}>
-                <div className="" onClick={(event) => (context.set_detail(arr2[i]["title"]))}>
-                    <div className="row-title">
-                        {arr2[i]["title"]}
-                    </div>
-                    <div style={{ "text-align": "left" }} className="p-4">
-                        {context.renderZoneInfo(arr2[i]["title"])}
-                    </div>
+            if (context.state.location_list.includes(arr2[i]["title"]) || context.state.user_type === 3) {
+                return (<div key={i} id={"office_" + i} className="container_c2" style={{ "cursor": "pointer", "opacity": "0.9", "background-color": "#ffbf1f", backgroundImage: `url(${collectief_logo4})`, "background-position": "right bottom", "background-repeat": "no-repeat", "background-size": "150px 150px", "border": "2px solid #000", "border-radius": "15px" }}>
+                    <div className="" onClick={(event) => (context.set_detail(arr2[i]["title"]))}>
+                        <div className="row-title">
+                            {arr2[i]["title"]}
+                        </div>
+                        <div style={{ "text-align": "left" }} className="p-4">
+                            {context.renderZoneInfo(arr2[i]["title"])}
+                        </div>
 
-                </div>
-            </div>);
+                    </div>
+                </div>);
             }
         });
-        
+
     }
 
     setDark(stat) {
         if (stat === 1) {
             $("#sun_mode").addClass("d-none")
             $("#dark_mode").removeClass("d-none")
-            this.setState({dark:"light","color":"white"})
+            this.setState({ dark: "light", "color": "white" })
         }
         else {
             $("#dark_mode").addClass("d-none")
@@ -6984,7 +7180,13 @@ class Home extends React.Component {
         }
     }
 
-
+    setFilter() {
+        if ($("#filter_div").hasClass("d-none")) {
+            $("#filter_div").removeClass("d-none")
+        } else {
+            $("#filter_div").addClass("d-none")
+        }
+    }
 
     render() {
 
@@ -7239,10 +7441,35 @@ class Home extends React.Component {
                             </div>
 
                             <div id="newRows" >
-                                <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px" }}>
+                                <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }}>
                                     <FontAwesomeIcon icon={faMoon} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" className="d-none" onClick={(event) => this.setDark(0)} />
                                     <FontAwesomeIcon icon={faSun} style={{ "font-size": "30px", "cursor": "pointer" }} id="sun_mode" onClick={(event) => this.setDark(1)} />
                                     &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Dark/Light mode</span>
+                                </div>
+                                <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }}>
+                                    <FontAwesomeIcon icon={faFilter} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" onClick={(event) => this.setFilter()} />
+                                    &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Filter</span>
+                                </div>
+                                <div className="d-none" id="filter_div">
+                                    <div class="date1">
+                                        <div>
+                                            <div className="date-title">
+                                                From
+                                            </div>
+                                            <div className="new-line"></div>
+                                            <input type="datetime-local" className="datetime-local" id="date_from" />
+                                        </div>
+                                    </div>
+                                    <div className="date1">
+                                        <div className="date-title">
+                                            To
+                                        </div>
+                                        <div className="new-line"></div>
+                                        <input type="datetime-local" className="datetime-local" id="date_to" />
+                                    </div>
+                                    <div className="mt-4">
+                                        <input type="button" className="main_header_button" value="APPLY" onClick={(event) => this.set_range()} />
+                                    </div>
                                 </div>
                                 {this.listBoxesNew()}
                             </div>
@@ -7477,9 +7704,9 @@ class Home extends React.Component {
                 <div className="main_panel">
                     <div className="container_main">
                         <div style={{}} dir="ltr">
-                            
 
-                            
+
+
                             <div className="container_c2" style={{ "opacity": "0.9", "background-color": "#D1A40B", backgroundImage: `url(${collectief_logo4})`, "background-position": "right bottom", "background-repeat": "no-repeat", "background-size": "150px 150px" }}>
                                 <div className="">
                                     <div className="row-title2">
@@ -7487,7 +7714,7 @@ class Home extends React.Component {
                                         <div>
                                             {building_str.building_name}
                                         </div>
-                                        
+
                                     </div>
                                     <div>
                                         {this.renderWeatherPerDay2()}
@@ -7501,10 +7728,38 @@ class Home extends React.Component {
                             </div>
 
                             <div id="newRows" >
-                                <div style={{"text-align":"left","position":"relative","left":"15px","top":"15px"}}>
-                                    <FontAwesomeIcon icon={faMoon} style={{"font-size":"30px","cursor":"pointer"}} id="dark_mode" className="d-none" onClick={(event) => this.setDark(0)} />
-                                    <FontAwesomeIcon icon={faSun} style={{ "font-size": "30px", "cursor": "pointer" }} id="sun_mode" onClick={(event) => this.setDark(1)} />
-                                    &nbsp;&nbsp;<span style={{"coloe":"gray","font-weight":"bold"} }>Dark/Light mode</span>
+                                <div style={{ "text-align": "left" }}>
+                                    <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }}>
+                                        <FontAwesomeIcon icon={faMoon} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" className="d-none" onClick={(event) => this.setDark(0)} />
+                                        <FontAwesomeIcon icon={faSun} style={{ "font-size": "30px", "cursor": "pointer" }} id="sun_mode" onClick={(event) => this.setDark(1)} />
+                                        &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Dark/Light mode</span>
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <div style={{ "text-align": "left", "position": "relative", "left": "15px", "top": "15px", "display": "inline-block" }}>
+                                        <FontAwesomeIcon icon={faFilter} style={{ "font-size": "30px", "cursor": "pointer" }} id="dark_mode" onClick={(event) => this.setFilter()} />
+                                        &nbsp;&nbsp;<span style={{ "coloe": "gray", "font-weight": "bold" }}>Filter Date</span>
+                                    </div>
+                                </div>
+                                <div id="filter_div" className="container_c0_filter d-none">
+                                    <div class="date1">
+                                        <div>
+                                            <div className="date-title">
+                                                From
+                                            </div>
+                                            <div className="new-line"></div>
+                                            <input type="datetime-local" className="datetime-local" id="date_from" />
+                                        </div>
+                                    </div>
+                                    <div className="date1">
+                                        <div className="date-title">
+                                            To
+                                        </div>
+                                        <div className="new-line"></div>
+                                        <input type="datetime-local" className="datetime-local" id="date_to" />
+                                    </div>
+                                    <div className="mt-4">
+                                        <input type="button" className="main_header_button" value="APPLY" onClick={(event) => this.set_range()} />
+                                    </div>
                                 </div>
                                 {this.listBoxesNew()}
                             </div>
@@ -7517,218 +7772,218 @@ class Home extends React.Component {
                                 </div>
                             </div>
 
-                                <div>
+                            <div>
 
-                                    <Modal
-                                        isOpen={this.state.setIsOpen}
-                                        onAfterOpen={this.afterOpenModal}
-                                        onRequestClose={this.closeModal}
-                                        style={customStyles}
-                                        contentLabel="Example Modal"
-                                    >
-                                        <div style={{ "text-align": "right", "min-width": "300px" }} className="mb-4">
-                                            <button onClick={(event) => this.closeModal()} style={{ "text-align": "right", "border": "0px", "width": "25px", "height": "25px", "background-color": "white" }}> <FontAwesomeIcon alt="Close" title="Close" onClick={(event) => this.show_sensors1()} style={{ "width": "30px", "height": "30px" }} icon={faClose} /></button>
+                                <Modal
+                                    isOpen={this.state.setIsOpen}
+                                    onAfterOpen={this.afterOpenModal}
+                                    onRequestClose={this.closeModal}
+                                    style={customStyles}
+                                    contentLabel="Example Modal"
+                                >
+                                    <div style={{ "text-align": "right", "min-width": "300px" }} className="mb-4">
+                                        <button onClick={(event) => this.closeModal()} style={{ "text-align": "right", "border": "0px", "width": "25px", "height": "25px", "background-color": "white" }}> <FontAwesomeIcon alt="Close" title="Close" onClick={(event) => this.show_sensors1()} style={{ "width": "30px", "height": "30px" }} icon={faClose} /></button>
+                                    </div>
+                                    <div className="m-2">
+                                        <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Number Of Boxes</span>
+                                        <input id="nboxes" value="1" type="text" className="mr-4" style={{ border: "1px solid black", "border-radius": "5px" }} size="4" />
+                                        <button style={{ "border-radius": "7px" }} onClick={(event) => this.addBoxes()} >
+                                            <FontAwesomeIcon icon={faCheck} />
+                                        </button>
+
+                                    </div>
+                                </Modal>
+                            </div>
+                            <div>
+
+                                <Modal
+                                    isOpen={this.state.setIsOpen2}
+                                    onAfterOpen={this.afterOpenModal2}
+                                    onRequestClose={this.closeModal2}
+                                    style={customStyles2}
+                                    contentLabel="Example Modal"
+                                >
+                                    <div style={{ "text-align": "right", "min-width": "400px", "border-bottom": "1px solid gray" }} className="mb-2 pb-2">
+                                        <button onClick={(event) => this.closeModal2()} style={{ "text-align": "right", "border": "0px", "width": "25px", "height": "25px", "background-color": "white" }}> <FontAwesomeIcon alt="Close" title="Close" onClick={(event) => this.show_sensors1()} style={{ "width": "30px", "height": "30px" }} icon={faClose} /></button>
+                                    </div>
+                                    <div className="m-2">
+                                        <div className="d-none">
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Title</span>
+                                            <div className="newline mt-1"></div>
+                                            <input id="box_title" type="text" className="ml-1 mr-4" placeholder="title" style={{ border: "1px solid black", width: "180px", "border-radius": "5px" }} size="4" />
+                                            <div className="newline mt-3"></div>
                                         </div>
-                                        <div className="m-2">
-                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Number Of Boxes</span>
-                                            <input id="nboxes" value="1" type="text" className="mr-4" style={{ border: "1px solid black", "border-radius": "5px" }} size="4" />
-                                            <button style={{ "border-radius": "7px" }} onClick={(event) => this.addBoxes()} >
-                                                <FontAwesomeIcon icon={faCheck} />
-                                            </button>
+                                        <div id="level0" className="mb-3">
 
-                                        </div>
-                                    </Modal>
-                                </div>
-                                <div>
-
-                                    <Modal
-                                        isOpen={this.state.setIsOpen2}
-                                        onAfterOpen={this.afterOpenModal2}
-                                        onRequestClose={this.closeModal2}
-                                        style={customStyles2}
-                                        contentLabel="Example Modal"
-                                    >
-                                        <div style={{ "text-align": "right", "min-width": "400px", "border-bottom": "1px solid gray" }} className="mb-2 pb-2">
-                                            <button onClick={(event) => this.closeModal2()} style={{ "text-align": "right", "border": "0px", "width": "25px", "height": "25px", "background-color": "white" }}> <FontAwesomeIcon alt="Close" title="Close" onClick={(event) => this.show_sensors1()} style={{ "width": "30px", "height": "30px" }} icon={faClose} /></button>
-                                        </div>
-                                        <div className="m-2">
-                                            <div className="d-none">
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Title</span>
-                                                <div className="newline mt-1"></div>
-                                                <input id="box_title" type="text" className="ml-1 mr-4" placeholder="title" style={{ border: "1px solid black", width: "180px", "border-radius": "5px" }} size="4" />
-                                                <div className="newline mt-3"></div>
-                                            </div>
-                                            <div id="level0" className="mb-3">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Element Type</span>
-                                                <div className="newline mt-1"></div>
-
-                                                <select className="ml-1" id="box_function" onChange={(event) => this.chooseOperation(event)} value={this.state.box_function} style={{ width: "90%", "padding": "8px", "border-radius": "5px" }}>
-                                                    <option value="-1">Choose Element type</option>
-                                                    <option value="0">Chart</option>
-                                                    <option value="1">Other</option>
-                                                </select>
-
-                                            </div>
-
-                                            <div id="level0_0" className="d-none mb-3">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Source Type</span>
-                                                <div className="newline mt-1"></div>
-
-                                                <select className="ml-1" id="source_type" onChange={(event) => this.chooseOperation_source(event)} value={this.state.source_type} style={{ width: "90%", "padding": "8px", "border-radius": "5px" }}>
-                                                    <option value="-1">Choose Source type</option>
-                                                    <option value="0">From Location</option>
-                                                    <option value="1">From Sensor</option>
-                                                </select>
-
-                                            </div>
-
-                                            <div id="level11" className="d-none mb-3">
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Location</span>
-                                                <div className="newline mt-1"></div>
-                                                <select className="ml-1" id="location_s" style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
-                                                    <option value="">Choose location</option>
-                                                    {this.renderLocationOptions()}
-                                                </select>
-                                            </div>
-
-                                            <div id="level11_1" className="d-none mb-3">
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Sensor</span>
-                                                <div className="newline mt-1"></div>
-                                                <select className="ml-1" id="sensor_s" style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
-                                                    <option value="">Choose sensor</option>
-                                                    {this.renderSensorsOptions()}
-                                                </select>
-                                            </div>
-
-                                            <div id="level1" className="d-none mb-3">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Chart Type</span>
-                                                <div className="newline mt-1"></div>
-
-                                                <select className="ml-1" id="box_chart" onChange={(event) => this.chooseOperation_chart(event)} value={this.state.box_chart} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
-                                                    <option value="0">Column Chart</option>
-                                                    <option value="1">Line   Chart</option>
-                                                    <option value="2">Bar   Chart</option>
-                                                </select>
-
-                                            </div>
-
-
-                                            <div id="level2" className="d-none mb-3">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Parametr Type</span>
-                                                <div className="newline mt-1"></div>
-                                                <select className="ml-1" id="box_parametr" onChange={(event) => this.chooseOperation_parametr(event)} value={this.state.box_parametr} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
-                                                    <option value="0">Temprature</option>
-                                                    <option value="1">Pressure</option>
-                                                    <option value="2">Humidity</option>
-                                                    <option value="3">Mass (PM)</option>
-                                                    <option value="4">Voltage</option>
-                                                </select>
-
-                                            </div>
-
-                                            <div id="level3" className="d-none mb-3">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Value Type</span>
-                                                <div className="newline mt-1"></div>
-                                                <select className="ml-1" id="box_value_type" onChange={(event) => this.chooseOperation_value_type(event)} value={this.state.box_value_type} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }} multiple>
-                                                    <option value="0">Average</option>
-                                                    <option value="1">Max</option>
-                                                    <option value="2">Min</option>
-                                                </select>
-
-                                            </div>
-
-
-                                            <div id="level4" className="d-none mb-4">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Type</span>
-                                                <div className="newline mt-1"></div>
-
-                                                <select className="ml-1" id="box_other" value={this.state.box_other} onChange={(event) => this.chooseOperation_other(event)} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
-                                                    <option value="0">Building Layout</option>
-                                                    <option value="1">Battery Percentage</option>
-                                                    <option value="2">Reward Function</option>
-                                                </select>
-
-                                            </div>
-
-
-
-                                            <div className="newline mt-4"></div>
-                                            <div style={{ "text-align": "center", "border-top": "1px solid gray" }} className="pt-4">
-                                                <button style={{ "padding": "10px", "padding-left": "20px", "padding-right": "20px", "border-radius": "7px", "background-color": "#ffbf1f", "color": "#000", "border": "0px", "font-weight": "bold" }} onClick={(event) => this.addItem()} >
-                                                    Add
-                                                </button>
-                                            </div>
-
-                                        </div>
-
-                                    </Modal>
-                                </div>
-
-                                <div>
-
-                                    <Modal
-                                        isOpen={this.state.setIsOpen3}
-                                        onAfterOpen={this.afterOpenModal3}
-                                        onRequestClose={this.closeModal3}
-                                        style={customStyles2}
-                                        contentLabel="Example Modal"
-                                    >
-                                        <div style={{ "text-align": "right", "min-width": "400px", "border-bottom": "1px solid gray" }} className="mb-2 pb-2">
-                                            <button onClick={(event) => this.closeModal3()} style={{ "text-align": "right", "border": "0px", "width": "25px", "height": "25px", "background-color": "white" }}> <FontAwesomeIcon alt="Close" title="Close" onClick={(event) => this.show_sensors1()} style={{ "width": "30px", "height": "30px" }} icon={faClose} /></button>
-                                        </div>
-                                        <div className="m-2">
-
-
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Element Type</span>
                                             <div className="newline mt-1"></div>
 
-
-
-                                            <div id="level2_0" className="mb-3">
-
-                                                <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Parametr Type</span>
-                                                <div className="newline mt-1"></div>
-                                                <select className="ml-1" id="box_parametr_2" style={{ width: "90%", "border-radius": "5px", "padding": "8px" }}>
-                                                    <option value="0">Cell temperature</option>
-                                                    <option value="1">Air temperature</option>
-                                                    <option value="2">Pressure</option>
-                                                    <option value="3">Humidity</option>
-                                                    <option value="4">Voltage</option>
-                                                    <option value="5">PM 1 (MASS)</option>
-                                                    <option value="6">PM 2.5 (MASS)</option>
-                                                    <option value="7">PM 4 (MASS)</option>
-                                                    <option value="8">PM 10 (MASS)</option>
-                                                    <option value="9">CO2</option>
-                                                    <option value="10">TVOC</option>
-                                                </select>
-
-                                            </div>
-
-
-
-                                            <div className="newline mt-4"></div>
-                                            <div style={{ "text-align": "center", "border-top": "1px solid gray" }} className="pt-4">
-                                                <button style={{ "padding": "10px", "padding-left": "20px", "padding-right": "20px", "border-radius": "7px", "background-color": "#ffbf1f", "color": "#000", "border": "0px", "font-weight": "bold" }} onClick={(event) => this.addItemTop()} >
-                                                    Add
-                                                </button>
-                                            </div>
+                                            <select className="ml-1" id="box_function" onChange={(event) => this.chooseOperation(event)} value={this.state.box_function} style={{ width: "90%", "padding": "8px", "border-radius": "5px" }}>
+                                                <option value="-1">Choose Element type</option>
+                                                <option value="0">Chart</option>
+                                                <option value="1">Other</option>
+                                            </select>
 
                                         </div>
 
-                                    </Modal>
-                                </div>
+                                        <div id="level0_0" className="d-none mb-3">
 
-                                <input type="hidden" id="row" />
-                                <input type="hidden" id="col" />
-                                <input type="hidden" id="boxes" />
-                                <input type="hidden" id="boxes_top" />
-                                <input type="hidden" id="edit" />
-                                
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Source Type</span>
+                                            <div className="newline mt-1"></div>
+
+                                            <select className="ml-1" id="source_type" onChange={(event) => this.chooseOperation_source(event)} value={this.state.source_type} style={{ width: "90%", "padding": "8px", "border-radius": "5px" }}>
+                                                <option value="-1">Choose Source type</option>
+                                                <option value="0">From Location</option>
+                                                <option value="1">From Sensor</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div id="level11" className="d-none mb-3">
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Location</span>
+                                            <div className="newline mt-1"></div>
+                                            <select className="ml-1" id="location_s" style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
+                                                <option value="">Choose location</option>
+                                                {this.renderLocationOptions()}
+                                            </select>
+                                        </div>
+
+                                        <div id="level11_1" className="d-none mb-3">
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Sensor</span>
+                                            <div className="newline mt-1"></div>
+                                            <select className="ml-1" id="sensor_s" style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
+                                                <option value="">Choose sensor</option>
+                                                {this.renderSensorsOptions()}
+                                            </select>
+                                        </div>
+
+                                        <div id="level1" className="d-none mb-3">
+
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Chart Type</span>
+                                            <div className="newline mt-1"></div>
+
+                                            <select className="ml-1" id="box_chart" onChange={(event) => this.chooseOperation_chart(event)} value={this.state.box_chart} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
+                                                <option value="0">Column Chart</option>
+                                                <option value="1">Line   Chart</option>
+                                                <option value="2">Bar   Chart</option>
+                                            </select>
+
+                                        </div>
+
+
+                                        <div id="level2" className="d-none mb-3">
+
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Parametr Type</span>
+                                            <div className="newline mt-1"></div>
+                                            <select className="ml-1" id="box_parametr" onChange={(event) => this.chooseOperation_parametr(event)} value={this.state.box_parametr} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
+                                                <option value="0">Temprature</option>
+                                                <option value="1">Pressure</option>
+                                                <option value="2">Humidity</option>
+                                                <option value="3">Mass (PM)</option>
+                                                <option value="4">Voltage</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div id="level3" className="d-none mb-3">
+
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Value Type</span>
+                                            <div className="newline mt-1"></div>
+                                            <select className="ml-1" id="box_value_type" onChange={(event) => this.chooseOperation_value_type(event)} value={this.state.box_value_type} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }} multiple>
+                                                <option value="0">Average</option>
+                                                <option value="1">Max</option>
+                                                <option value="2">Min</option>
+                                            </select>
+
+                                        </div>
+
+
+                                        <div id="level4" className="d-none mb-4">
+
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Type</span>
+                                            <div className="newline mt-1"></div>
+
+                                            <select className="ml-1" id="box_other" value={this.state.box_other} onChange={(event) => this.chooseOperation_other(event)} style={{ width: "180px", "border-radius": "5px", width: "90%", "padding": "8px" }}>
+                                                <option value="0">Building Layout</option>
+                                                <option value="1">Battery Percentage</option>
+                                                <option value="2">Reward Function</option>
+                                            </select>
+
+                                        </div>
+
+
+
+                                        <div className="newline mt-4"></div>
+                                        <div style={{ "text-align": "center", "border-top": "1px solid gray" }} className="pt-4">
+                                            <button style={{ "padding": "10px", "padding-left": "20px", "padding-right": "20px", "border-radius": "7px", "background-color": "#ffbf1f", "color": "#000", "border": "0px", "font-weight": "bold" }} onClick={(event) => this.addItem()} >
+                                                Add
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </Modal>
+                            </div>
+
+                            <div>
+
+                                <Modal
+                                    isOpen={this.state.setIsOpen3}
+                                    onAfterOpen={this.afterOpenModal3}
+                                    onRequestClose={this.closeModal3}
+                                    style={customStyles2}
+                                    contentLabel="Example Modal"
+                                >
+                                    <div style={{ "text-align": "right", "min-width": "400px", "border-bottom": "1px solid gray" }} className="mb-2 pb-2">
+                                        <button onClick={(event) => this.closeModal3()} style={{ "text-align": "right", "border": "0px", "width": "25px", "height": "25px", "background-color": "white" }}> <FontAwesomeIcon alt="Close" title="Close" onClick={(event) => this.show_sensors1()} style={{ "width": "30px", "height": "30px" }} icon={faClose} /></button>
+                                    </div>
+                                    <div className="m-2">
+
+
+                                        <div className="newline mt-1"></div>
+
+
+
+                                        <div id="level2_0" className="mb-3">
+
+                                            <span className="mr-2" style={{ "color": "#000", "font-weight": "bold" }}>Parametr Type</span>
+                                            <div className="newline mt-1"></div>
+                                            <select className="ml-1" id="box_parametr_2" style={{ width: "90%", "border-radius": "5px", "padding": "8px" }}>
+                                                <option value="0">Cell temperature</option>
+                                                <option value="1">Air temperature</option>
+                                                <option value="2">Pressure</option>
+                                                <option value="3">Humidity</option>
+                                                <option value="4">Voltage</option>
+                                                <option value="5">PM 1 (MASS)</option>
+                                                <option value="6">PM 2.5 (MASS)</option>
+                                                <option value="7">PM 4 (MASS)</option>
+                                                <option value="8">PM 10 (MASS)</option>
+                                                <option value="9">CO2</option>
+                                                <option value="10">TVOC</option>
+                                            </select>
+
+                                        </div>
+
+
+
+                                        <div className="newline mt-4"></div>
+                                        <div style={{ "text-align": "center", "border-top": "1px solid gray" }} className="pt-4">
+                                            <button style={{ "padding": "10px", "padding-left": "20px", "padding-right": "20px", "border-radius": "7px", "background-color": "#ffbf1f", "color": "#000", "border": "0px", "font-weight": "bold" }} onClick={(event) => this.addItemTop()} >
+                                                Add
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </Modal>
+                            </div>
+
+                            <input type="hidden" id="row" />
+                            <input type="hidden" id="col" />
+                            <input type="hidden" id="boxes" />
+                            <input type="hidden" id="boxes_top" />
+                            <input type="hidden" id="edit" />
+
                         </div>
                     </div>
                 </div>
