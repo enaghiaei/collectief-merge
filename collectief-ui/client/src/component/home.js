@@ -1424,7 +1424,7 @@ class Home extends React.Component {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ token: cookies.get('token'), "from": $("#date_from").val(), "to": $("#date_to").val() })
+            body: JSON.stringify({ token: cookies.get('token'), "from": $("#date_from").val().replace("T", " "), "to": $("#date_to").val().replace("T", " ") })
         })
             .then(data => data.json())
             .then(
@@ -5084,7 +5084,7 @@ class Home extends React.Component {
     set_measure_type(zone) {
         // <div id={title_short + "_t0"} className="date_pic date_pic_selected m-2" onClick={(event) => this.set_data_for_chart(0, title_short)}>
         console.log("set_measure_type")
-        for (var i = 0; i <= 4; i++) {
+        for (var i = 0; i <= 5; i++) {
             console.log("i", i)
             if ($("#" + zone + "_t" + i).hasClass("date_pic_selected")) {
                 console.log("zone in", zone)
@@ -5892,14 +5892,14 @@ class Home extends React.Component {
                         data_filter[data_filter.length] = data_tmp[key];
                     }
                 } else {
-                    if (data_tmp[key].measure_name.localeCompare("Air temperature")) {
+                    if (data_tmp[key].measure_name.localeCompare("Air temperature") === 0) {
                         data_filter[data_filter.length] = data_tmp[key];
                     }
                 }
             }
             else {
                 //Air temperature
-                if (data_tmp[key].measure_name.localeCompare("Air temperature")) {
+                if (data_tmp[key].measure_name.localeCompare("Air temperature") === 0) {
                     data_filter[data_filter.length] = data_tmp[key];
                 }
             }
